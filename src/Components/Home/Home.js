@@ -80,7 +80,7 @@ function Home() {
         </div>
       </div>
       <div>
-        <div className="flex justify-center mt-10 mr-[380px] -rotate-60">
+        <div className="flex justify-center align -rotate-60">
           <img className="h-[440px]" src="/Images/b.webp" alt="" />
         </div>
       </div>
