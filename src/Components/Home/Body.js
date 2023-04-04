@@ -56,80 +56,70 @@ function Body() {
         </div>
       </div>
       <div className="flex justify-center items-center mt-20">
-        <div className="flex flex-col w-72 space-y-6 mr-40">
+        <div className="flex flex-col w-72 space-y-6 mr-24">
           <h2 className="text-7xl text-black">Single Wall</h2>
 
-          <button className="bg-black  text-white text-md w-32 py-3 rounded-3xl">
+          <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
             SHOP NOW
           </button>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
+            className="w-60"
             src="https://speedexind.com/wp-content/uploads/2023/02/simplex-sipp-logo.png"
             alt=""
           />
-          <h3 className="text-lg">BOTTLES</h3>
-          <p className="text-sm text-gray-500">from $25</p>
+          <h3 className="text-xl">Simplex Dual tone</h3>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
-            src="https://www.datocms-assets.com/11645/1644498845-s2coffee_libertyblush.png?q=80&auto=format&dpr=1&w=320&fit=crop"
+            className="w-60"
+            src="https://speedexind.com/wp-content/uploads/2023/02/drip-tip-home.png"
             alt="poster"
           />
-          <h3 className="text-lg">COFFEE CUPS</h3>
-          <p className="text-sm text-gray-500">from $30</p>
+          <h3 className="text-xl">Drip Trip</h3>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
-            src="https://www.datocms-assets.com/11645/1605030422-s2accessories.png?q=80&auto=format&dpr=1&w=320&fit=crop"
+            className="w-60"
+            src="https://speedexind.com/wp-content/uploads/2023/02/liqaitic-home.png"
             alt=""
           />
-          <h3 className="text-lg">ACCESSORIES</h3>
-          <p className="text-sm text-gray-500">
-            Compatible with Series 2 products
-          </p>
+          <h3 className="text-xl">Liquatic</h3>
         </div>
       </div>
       {/* the originals */}
       <div className="flex justify-center items-center mt-20">
-        <div className="flex flex-col w-72 space-y-6 mr-40">
-          <h2 className="text-7xl pop text-black">The Original</h2>
-          <h3 className="text-sm">The original Chilly's experience</h3>
-          <button className="bg-black text-white text-xl w-40 py-3 rounded-3xl">
+        <div className="flex flex-col w-72 space-y-6 mr-24">
+          <h2 className="text-7xl pop text-black">HOT N COLD</h2>
+
+          <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
             SHOP NOW
           </button>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
-            src="https://www.datocms-assets.com/11645/1644929354-original_bottles_sporttile.png?q=80&auto=format&dpr=1&w=320&fit=crop"
+            className="w-72"
+            src="https://speedexind.com/wp-content/uploads/elementor/thumbs/blue-pygn9vaewne0tpy2p8qal4gn2yak4dm45csd0nhcmk.png"
             alt=""
           />
-          <h3 className="text-lg">BOTTLES</h3>
-          <p className="text-sm text-gray-500">from $15</p>
+          <h3 className="text-xl">MILO</h3>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
-            src="https://www.datocms-assets.com/11645/1615372282-originalcoffee.png?q=80&auto=format&dpr=1&w=320&fit=crop"
+            className="w-72"
+            src="https://speedexind.com/wp-content/uploads/2023/03/shark-new.png"
             alt=""
           />
-          <h3 className="text-lg">COFFEE CUPS</h3>
-          <p className="text-sm text-gray-500">from $20</p>
+          <h3 className="text-xl">Shark</h3>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
-            className="w-36"
-            src="https://www.datocms-assets.com/11645/1639394198-oriaccessoriessl.png?q=80&auto=format&dpr=1&w=320&fit=crop"
+            className="w-72"
+            src="https://speedexind.com/wp-content/uploads/2023/03/flasq-black-420x455.png"
             alt=""
           />
-          <h3 className="text-lg">ACCESSORIES</h3>
-          <p className="text-sm text-gray-500">
-            Compatible with Original Products
-          </p>
+          <h3 className="text-xl">Flask</h3>
         </div>
       </div>
       {/* cards */}

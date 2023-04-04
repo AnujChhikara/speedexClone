@@ -79,9 +79,15 @@ function Home() {
           </svg>
         </div>
       </div>
-      <div>
-        <div className="flex justify-center align -rotate-60">
+      <div className="flex">
+        <div className="flex justify-center w-44 align -rotate-60">
           <img className="h-[440px]" src="/Images/b.webp" alt="" />
+        </div>
+        <div className="w-[600px] text-5xl relative mt-40">
+          <h1>
+            Join the Reusable Revolution with Speedex's Eco-Friendly Water
+            Bottles.
+          </h1>
         </div>
       </div>
     </div>
