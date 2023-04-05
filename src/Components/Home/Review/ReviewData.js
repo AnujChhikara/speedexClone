@@ -15,7 +15,7 @@ const ReviewData = [
     id: 3,
     stars: "⭐⭐⭐⭐⭐",
     text: "I purchased one of Speedex's designer water bottles and I'm constantly getting compliments on it. It's sleek, stylish, and adds a little extra something to my outfit. Plus, it's so easy to clean and the cap never leaks.",
-    quality: "Designer",
+    quality: "Appealing Design",
   },
   {
     id: 4,

@@ -10,6 +10,13 @@ function Review() {
       />
     );
   });
-  return <div className="px-10 flex space-x-8">{reviews}</div>;
+  return (
+    <div className="flex flex-col items-center  ">
+      <h4 className=" font-semibold text-transparent text-5xl bg-clip-text mb-10 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+        What Our Customers Say
+      </h4>
+      <div className="px-10 flex justify-center space-x-8">{reviews}</div>
+    </div>
+  );
 }
 export default Review;

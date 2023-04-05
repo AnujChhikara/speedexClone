@@ -55,7 +55,7 @@ function Body() {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center mt-20 ml-10">
         <div className="flex flex-col w-72 space-y-6 mr-24">
           <h2 className="text-7xl text-black">Single Wall</h2>
 
@@ -89,7 +89,7 @@ function Body() {
         </div>
       </div>
       {/* the originals */}
-      <div className="flex justify-center items-center mt-20">
+      <div className="flex justify-center items-center mt-20 ml-10">
         <div className="flex flex-col w-72 space-y-6 mr-24">
           <h2 className="text-7xl pop text-black">HOT N COLD</h2>
 

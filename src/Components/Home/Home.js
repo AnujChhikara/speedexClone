@@ -3,13 +3,13 @@ function Home() {
     <div className="bg ">
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex space-x-6 text-gray-600 ">
-          <a className="hover:text-gray-900 hover:underline" href="">
+          <a className="hover:text-gray-900 hover:underline" href="#">
             SHOP
           </a>
-          <a className="hover:text-gray-900 hover:underline" href="">
+          <a className="hover:text-gray-900 hover:underline" href="#">
             CO-BRAND
           </a>
-          <a className="hover:text-gray-900 hover:underline" href="">
+          <a className="hover:text-gray-900 hover:underline" href="#">
             DISCOVER
           </a>
         </div>
@@ -21,10 +21,10 @@ function Home() {
           />
         </div>
         <div className="flex space-x-8 items-center">
-          <a href="">
+          <a href="#">
             <h3>REFER A FRIEND</h3>
           </a>
-          <a href="">
+          <a href="#">
             {" "}
             <div className="flex space-x-1 items-center">
               <svg
