@@ -16,6 +16,21 @@ module.exports = {
         fourthCard:
           "url('https://speedexind.com/wp-content/uploads/2023/02/shark-bottle-677x1024.png')",
       },
+      screens: {
+        sm: "300px",
+
+        md: "720px",
+
+        lg: "1040px",
+      },
+      fontFamily: {
+        nunito: ["nunito", "sans-serif"],
+        Sans: ["Source Sans Pro", "sans-serif"],
+        merri: ["Merriweather", "serif"],
+        play: ["Playfair Display", "serif"],
+        mon: ["Montserrat", "sans-serif"],
+        roboto: ["Roboto Condensed", "sans-serif"],
+      },
     },
   },
   plugins: [],
