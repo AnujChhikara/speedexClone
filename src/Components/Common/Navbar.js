@@ -1,14 +1,24 @@
 import { useState } from "react";
+import SidebarMenu from "./SideBar";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  const onClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div>
+      <SidebarMenu isOpen={isOpen} onClose={onClose} />
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex space-x-6 text-gray-600 ">
-          <a className="hover:text-gray-900 hover:underline" href="#">
+          <a
+            className="hover:text-gray-900 hover:underline"
+            onClick={toggleMenu}
+            href="#"
+          >
             SHOP
           </a>
           <a className="hover:text-gray-900 hover:underline" href="#">

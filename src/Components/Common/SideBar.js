@@ -1,13 +1,13 @@
 import { slide as Menu } from "react-burger-menu";
 
-function SidebarMenu() {
+function SidebarMenu(props) {
   const styles = {
     bmBurgerButton: {
       position: "fixed",
-      width: "36px",
-      height: "30px",
-      left: "20px",
-      top: "20px",
+      width: "0",
+      height: "0",
+      left: "0",
+      top: "0",
     },
     bmBurgerBars: {
       background: "#373a47",
@@ -44,7 +44,12 @@ function SidebarMenu() {
   };
 
   return (
-    <Menu styles={styles} width={500}>
+    <Menu
+      isOpen={props.isOpen}
+      onClose={props.onClose}
+      styles={styles}
+      width={500}
+    >
       <a
         className="menu-item flex justify-around items-center space-x-4"
         href="/single-wall"
