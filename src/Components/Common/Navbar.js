@@ -1,4 +1,9 @@
+import { useState } from "react";
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div>
       <div className="flex justify-evenly items-center pt-10">

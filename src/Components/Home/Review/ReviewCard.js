@@ -1,6 +1,6 @@
 function ReviewCard(props) {
   return (
-    <div className="w-[220px] flex flex-col items-center">
+    <div className=" flex flex-col items-center ">
       <div className="mb-1">{props.stars}</div>
       <div>{props.text}</div>
       {/* <hr className="w-40 border-1 border-black my-1" /> */}
