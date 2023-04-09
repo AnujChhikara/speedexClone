@@ -17,13 +17,12 @@ function Navbar() {
       <SidebarMenu isOpen={isOpen} onClose={onClose} />
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex space-x-6 text-gray-600 ">
-          <a
+          <h3
             className="hover:text-gray-900 hover:underline"
             onClick={toggleMenu}
-            href="/"
           >
             SHOP
-          </a>
+          </h3>
           <a className="hover:text-gray-900 hover:underline" href="/co-brand">
             CO-BRAND
           </a>
