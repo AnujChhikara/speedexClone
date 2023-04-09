@@ -18,7 +18,7 @@ function Navbar() {
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex space-x-6 text-gray-600 ">
           <h3
-            className="hover:text-gray-900 hover:underline"
+            className="hover:text-gray-900 hover:underline cursor-pointer"
             onClick={toggleMenu}
           >
             SHOP

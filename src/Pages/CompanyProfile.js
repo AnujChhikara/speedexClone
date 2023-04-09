@@ -1,10 +1,10 @@
 function CompanyProfile() {
   return (
-    <div className="flex flex-col justify-center items-center mt-12 mb-12 px-8">
-      <h2 className="mb-12 text-6xl font-Sans font-bold text-transparent bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text">
+    <div className="flex flex-col justify-center items-center mt-12  px-8">
+      <h2 className="mb-8 mt-10 text-6xl font-Sans font-bold text-transparent bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text">
         Company Profile
       </h2>
-      <div className="flex space-x-6 bg-gray-100 shadow-xl p-10 rounded-xl mt-12">
+      <div className="flex space-x-6 bg-gray-100 shadow-xl p-10 rounded-xl ">
         <div className="w-[500px]">
           <h3 className="text-2xl mb-4">
             WELCOME TO CHOOSE HEALTHY SOLUTIONS , STAINLESS STEEL WATER BOTTLES

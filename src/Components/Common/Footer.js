@@ -9,36 +9,48 @@ function Footer() {
             alt=""
           />
           <div className="flex space-x-1.5">
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
-              alt=""
-            />
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png"
-              alt=""
-            />
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/145/145808.png"
-              alt=""
-            />
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/4494/4494494.png"
-              alt=""
-            />
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
-              alt=""
-            />
-            <img
-              className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
-              src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
-              alt=""
-            />
+            <a href="https://www.instagram.com/speedex_bottles/">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/3955/3955024.png"
+                alt=""
+              />
+            </a>
+            <a href="https://www.facebook.com/speedexbottles">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/4494/4494475.png"
+                alt=""
+              />
+            </a>
+            <a href="https://in.pinterest.com/speedexindia/">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/145/145808.png"
+                alt=""
+              />
+            </a>
+            <a href="/">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/4494/4494494.png"
+                alt=""
+              />
+            </a>
+            <a href="https://www.linkedin.com/company/speedex-bottles/?originalSubdomain=in">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+                alt=""
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/UC0szp-yMuvsh_UftSdCVXyw">
+              <img
+                className="h-10 hover:-translate-y-0.5 hover:scale-105 hover:opacity-80 duration-1000"
+                src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png"
+                alt=""
+              />
+            </a>
           </div>
         </div>
         <div className="flex space-x-6">
