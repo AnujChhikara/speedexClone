@@ -91,7 +91,7 @@ function SingleWall() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-40">
+      <div className="flex flex-col justify-center items-center mb-32">
         <h2 className="text-[100px] text-gray-500 font-roboto">SINGLE WALL</h2>
         <p className="text-gray-600 w-[650px]">
           Your Hydration partner-The original Single-walled Stainless Steel

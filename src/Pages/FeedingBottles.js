@@ -28,12 +28,12 @@ function feedingBottles() {
   });
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-40">
+      <div className="flex flex-col justify-center items-center mb-28">
         <h2 className="text-[100px] text-gray-500 font-roboto">
           Feeding Bottles
         </h2>
         <p className="text-gray-600 w-[650px]">
-          The one-stop shop for purchasing kid’s stainless steel feeding
+          The one-stop shop for purchasing kid's stainless steel feeding
           bottles, Speedex has products that are BPA-free and leakproof. Speedex
           is one of the top manufacturers of stainless steel feeding bottles in
           India since it offers premium quality BPA- free steel feeding bottles

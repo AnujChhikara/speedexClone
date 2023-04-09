@@ -100,7 +100,7 @@ function DoubleWall() {
     <div>
       <Menu />
 
-      <div className="flex flex-col justify-center items-center mb-40">
+      <div className="flex flex-col justify-center items-center mb-32">
         <h2 className="text-[100px] text-gray-500 font-roboto">HOT n COLD</h2>
         <p className="text-gray-600 w-[650px]">
           Carry your favorite beverage hot or cold on the go. Enjoy your
