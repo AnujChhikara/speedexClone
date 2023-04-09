@@ -21,7 +21,7 @@ function Navbar() {
           >
             SHOP
           </a>
-          <a className="hover:text-gray-900 hover:underline" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="/co-brand">
             CO-BRAND
           </a>
           <a className="hover:text-gray-900 hover:underline" href="#">
@@ -29,11 +29,13 @@ function Navbar() {
           </a>
         </div>
         <div>
-          <img
-            className="w-48"
-            src="https://speedexind.com/wp-content/uploads/2022/11/Speedex-gold.png"
-            alt="imgae"
-          />
+          <a href="/">
+            <img
+              className="w-48"
+              src="https://speedexind.com/wp-content/uploads/2022/11/Speedex-gold.png"
+              alt="imgae"
+            />
+          </a>
         </div>
         <div className="flex space-x-8 items-center">
           <a href="#">

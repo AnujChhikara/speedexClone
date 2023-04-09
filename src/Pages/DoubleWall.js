@@ -1,8 +1,8 @@
-import Navbar from "../Common/Navbar";
-import Footer from "../Common/Footer";
-import BottleCard from "../BottleCard";
-import doubleWallData from "./DoubleWallData";
-import Menu from "../Common/SideBar";
+import Navbar from "../Components/Common/Navbar";
+import Footer from "../Components/Common/Footer";
+import BottleCard from "../Components/BottleCard";
+import doubleWallData from "../Components/DoubleWall/DoubleWallData";
+import Menu from "../Components/Common/SideBar";
 function DoubleWall() {
   const miloData = doubleWallData.find((obj) => obj.id === "Milo").data;
   const miloBottles = miloData.map(function (item) {

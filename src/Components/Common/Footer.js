@@ -43,10 +43,10 @@ function Footer() {
         </div>
         <div className="flex space-x-6">
           <div className="flex flex-col space-y-3 ">
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/career">
               Carrer
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/privacy-policy">
               Privacy Policy
             </a>
             <a className="hover:underline" href="#">

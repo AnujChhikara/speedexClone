@@ -1,7 +1,7 @@
-import Navbar from "../Common/Navbar";
-import Footer from "../Common/Footer";
-import BottleCard from "../BottleCard";
-import singleWallData from "./SingleWallData";
+import Navbar from "../Components/Common/Navbar";
+import Footer from "../Components/Common/Footer";
+import BottleCard from "../Components/BottleCard";
+import singleWallData from "../Components/SIngleWall/SingleWallData";
 
 function SingleWall() {
   const simplexData = singleWallData.find((obj) => obj.id === "Simplex").data;

@@ -1,7 +1,7 @@
 function BottleCard(props) {
   return (
     <div className="w-[350px] flex flex-col items-center space-y-3">
-      <img src={props.imgUrl} alt="" />
+      <img className="w-64" src={props.imgUrl} alt="" />
       <h5 className="font-medium">
         {props.bottleName} {props.name}
       </h5>
