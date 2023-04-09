@@ -6,10 +6,15 @@ import CoBrand from "./Pages/CoBrand";
 import FeedingBottles from "./Pages/FeedingBottles";
 import Career from "./Pages/Career";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
+import Refund from "./Pages/Refund";
+import CompanyProfile from "./Pages/CompanyProfile";
+import Footer from "./Components/Common/Footer";
+import Navbar from "./Components/Common/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/single-wall" element={<SingleWall />} />
@@ -18,7 +23,10 @@ function App() {
         <Route path="/feeding-bottles" element={<FeedingBottles />} />
         <Route path="/career" element={<Career />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/refund-cancellation-policy" element={<Refund />} />
+        <Route path="/about" element={<CompanyProfile />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

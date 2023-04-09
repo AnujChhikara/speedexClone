@@ -1,9 +1,6 @@
-import Navbar from "../Components/Common/Navbar";
-import Footer from "../Components/Common/Footer";
 function Career() {
   return (
     <div>
-      <Navbar />
       <div className="container mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold mb-10">Join Our Team</h1>
         <p className="text-lg mb-10">
@@ -40,7 +37,6 @@ function Career() {
           marital status, veteran status, or disability status.
         </p>
       </div>
-      <Footer />
     </div>
   );
 }

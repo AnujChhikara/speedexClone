@@ -1,5 +1,3 @@
-import Navbar from "../Components/Common/Navbar";
-import Footer from "../Components/Common/Footer";
 import BottleCard from "../Components/BottleCard";
 import singleWallData from "../Components/SIngleWall/SingleWallData";
 
@@ -93,10 +91,6 @@ function SingleWall() {
 
   return (
     <div>
-      <div className="mb-20">
-        {" "}
-        <Navbar />
-      </div>
       <div className="flex flex-col justify-center items-center mb-40">
         <h2 className="text-[100px] text-gray-500 font-roboto">SINGLE WALL</h2>
         <p className="text-gray-600 w-[650px]">
@@ -139,10 +133,6 @@ function SingleWall() {
           <h3 className=" uppercase text-[92px] font-roboto mb-4">kiddo</h3>
           <div className="flex flex-wrap justify-center">{kiddoBottles}</div>
         </div>
-      </div>
-      <div className="pt-20">
-        {" "}
-        <Footer />
       </div>
     </div>
   );

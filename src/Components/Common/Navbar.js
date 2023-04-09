@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import SidebarMenu from "./SideBar";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,40 +9,42 @@ function Navbar() {
   const onClose = () => {
     setIsOpen(false);
   };
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   return (
-    <div>
+    <div className={` ${isHome ? "bg" : ""}`}>
       <SidebarMenu isOpen={isOpen} onClose={onClose} />
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex space-x-6 text-gray-600 ">
           <a
             className="hover:text-gray-900 hover:underline"
             onClick={toggleMenu}
-            href="#"
+            href="/"
           >
             SHOP
           </a>
           <a className="hover:text-gray-900 hover:underline" href="/co-brand">
             CO-BRAND
           </a>
-          <a className="hover:text-gray-900 hover:underline" href="#">
+          <a className="hover:text-gray-900 hover:underline" href="/">
             DISCOVER
           </a>
         </div>
         <div>
           <a href="/">
             <img
-              className="w-48"
+              className="w-44"
               src="https://speedexind.com/wp-content/uploads/2022/11/Speedex-gold.png"
               alt="imgae"
             />
           </a>
         </div>
         <div className="flex space-x-8 items-center">
-          <a href="#">
+          <a href="/">
             <h3 className="hover:underline hover:opacity-50">REFER A FRIEND</h3>
           </a>
-          <a href="#">
+          <a href="/">
             {" "}
             <div className="flex space-x-1 items-center">
               <svg

@@ -1,9 +1,6 @@
-import Navbar from "../Components/Common/Navbar";
-import Footer from "../Components/Common/Footer";
 function CoBrand() {
   return (
     <div>
-      <Navbar />
       <div className="mt-36 mb-20 px-32 flex flex-col space-y-16">
         <div className="flex flex-col space-y-10">
           <h2 className="text-5xl">Your Brand, Our Steel bottles </h2>
@@ -59,7 +56,6 @@ function CoBrand() {
           </ul>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }

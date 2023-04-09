@@ -1,7 +1,6 @@
 import BottleCard from "../Components/BottleCard";
 import feedingBottlesData from "../Components/FeedingBottles.js/FeedingBottlesData";
-import Navbar from "../Components/Common/Navbar";
-import Footer from "../Components/Common/Footer";
+
 function feedingBottles() {
   const silkData = feedingBottlesData.find((obj) => obj.id === "Silk").data;
   const silkBottles = silkData.map(function (item) {
@@ -29,10 +28,6 @@ function feedingBottles() {
   });
   return (
     <div>
-      <div className="mb-20">
-        {" "}
-        <Navbar />
-      </div>
       <div className="flex flex-col justify-center items-center mb-40">
         <h2 className="text-[100px] text-gray-500 font-roboto">
           Feeding Bottles
@@ -57,10 +52,6 @@ function feedingBottles() {
           </h3>
           <div className="flex flex-wrap justify-center">{blissBottles}</div>
         </div>
-      </div>
-      <div className="pt-20">
-        {" "}
-        <Footer />
       </div>
     </div>
   );

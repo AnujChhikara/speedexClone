@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <div className="flex flex-col mt-10">
+    <div className="flex w-screen flex-col mt-20 bottom-0">
       <div className="flex space-x-16 bg-neutral-200 justify-center items-center py-6">
         <div className="flex flex-col justify-center items-center space-y-2">
           <img
@@ -44,23 +44,23 @@ function Footer() {
         <div className="flex space-x-6">
           <div className="flex flex-col space-y-3 ">
             <a className="hover:underline" href="/career">
-              Carrer
+              Career
             </a>
             <a className="hover:underline" href="/privacy-policy">
               Privacy Policy
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/refund-cancellation-policy">
               Refund & Cancellation Policy
             </a>
           </div>
           <div className="flex flex-col space-y-3 ">
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/">
               Bulk Order
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/">
               Contact us
             </a>
-            <a className="hover:underline" href="#">
+            <a className="hover:underline" href="/about">
               Company Profile
             </a>
           </div>

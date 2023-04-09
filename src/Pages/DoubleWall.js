@@ -1,5 +1,3 @@
-import Navbar from "../Components/Common/Navbar";
-import Footer from "../Components/Common/Footer";
 import BottleCard from "../Components/BottleCard";
 import doubleWallData from "../Components/DoubleWall/DoubleWallData";
 import Menu from "../Components/Common/SideBar";
@@ -101,10 +99,6 @@ function DoubleWall() {
   return (
     <div>
       <Menu />
-      <div className="mb-20">
-        {" "}
-        <Navbar />
-      </div>
 
       <div className="flex flex-col justify-center items-center mb-40">
         <h2 className="text-[100px] text-gray-500 font-roboto">HOT n COLD</h2>
@@ -163,10 +157,6 @@ function DoubleWall() {
             {royalGoldBottles}
           </div>
         </div>
-      </div>
-      <div className="pt-20">
-        {" "}
-        <Footer />
       </div>
     </div>
   );
