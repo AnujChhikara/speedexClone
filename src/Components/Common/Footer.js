@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <div className="flex w-screen flex-col mt-20 bottom-0">
-      <div className="flex space-x-16 bg-neutral-200 justify-center items-center py-6">
+      <div className="flex space-x-16 bg-neutral-200  justify-around  items-center py-6">
         <div className="flex flex-col justify-center items-center space-y-2">
           <img
             className="w-48"
