@@ -58,10 +58,11 @@ function Body() {
       <div className="flex justify-center items-center mt-20 ml-10">
         <div className="flex flex-col w-72 space-y-6 mr-24">
           <h2 className="text-7xl text-black">Single Wall</h2>
-
-          <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
-            SHOP NOW
-          </button>
+          <a href="/single-wall">
+            <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
+              SHOP NOW
+            </button>
+          </a>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
@@ -93,9 +94,11 @@ function Body() {
         <div className="flex flex-col w-72 space-y-6 mr-24">
           <h2 className="text-7xl pop text-black">HOT N COLD</h2>
 
-          <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
-            SHOP NOW
-          </button>
+          <a href="/hot-n-cold">
+            <button className="bg-black text-white text-md px-2 w-28 py-3 rounded-3xl">
+              SHOP NOW
+            </button>
+          </a>
         </div>
         <div className="flex flex-col justify-center items-center w-60">
           <img
@@ -128,9 +131,11 @@ function Body() {
         <div className="flex justify-center  items-center space-x-10">
           <div className="w-[600px] h-[800px] bg-firstCard rounded-lg flex flex-col justify-center  space-y-4 items-center">
             <h3 className="text-5xl mt-32 font-semibold text-white">Atelier</h3>
-            <button className="text-sm bg-white px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
-              Click here
-            </button>
+            <a href="/atelier">
+              <button className="text-sm bg-white px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
+                Click here
+              </button>
+            </a>
           </div>
           <div className="w-[600px] h-[800px] bg-secondCard rounded-lg flex flex-col justify-center  space-y-4 items-center">
             <h3 className="text-5xl mt-32 font-semibold  text-white">
@@ -153,9 +158,11 @@ function Body() {
           </div>
           <div className="w-[600px] h-[800px] bg-fourthCard rounded-lg flex flex-col justify-center  space-y-4 items-center">
             <h3 className="text-5xl mt-32 font-semibold text-white">Video</h3>
-            <button className="text-sm bg-white px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
-              click here
-            </button>
+            <a href="https://www.instagram.com/p/CqUVVwojKum/?hl=en">
+              <button className="text-sm bg-white px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
+                watch here
+              </button>
+            </a>
           </div>
         </div>
       </div>

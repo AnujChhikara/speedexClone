@@ -108,7 +108,7 @@ function SingleWall() {
           <div className="flex flex-wrap  justify-center">{simplexBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">glacia</h3>
+          <h3 className=" uppercase text-[92px] font-roboto mb-4">hydrate</h3>
           <div className="flex flex-wrap justify-center">{hydrateBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
