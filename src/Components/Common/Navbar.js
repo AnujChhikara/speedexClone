@@ -16,7 +16,7 @@ function Navbar() {
     <div className={` ${isHome ? "bg" : "mb-20"} `}>
       <SidebarMenu isOpen={isOpen} onClose={onClose} />
       <div className="flex justify-evenly items-center pt-10">
-        <div className="flex space-x-6 text-gray-600 ">
+        <div className="flex lg:space-x-6 text-gray-600 ">
           <h3
             className="hover:text-gray-900 hover:underline cursor-pointer"
             onClick={toggleMenu}
@@ -33,7 +33,7 @@ function Navbar() {
         <div>
           <a href="/">
             <img
-              className="w-44"
+              className="lg:w-44 md:w-24"
               src="https://speedexind.com/wp-content/uploads/2022/11/Speedex-gold.png"
               alt="imgae"
             />

@@ -4,7 +4,7 @@ import PageNotFound from "./Pages/PageNotFound";
 import SingleWall from "./Pages/SingleWall";
 import DoubleWall from "./Pages/DoubleWall";
 import CoBrand from "./Pages/CoBrand";
-
+import ViewBottleCard from "./Pages/ViewBottleCard";
 import FeedingBottles from "./Pages/FeedingBottles";
 import Career from "./Pages/Career";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
@@ -29,6 +29,10 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-cancellation-policy" element={<Refund />} />
         <Route path="/about" element={<CompanyProfile />} />
+        <Route
+          path="/view/:bottleName/:productId"
+          element={<ViewBottleCard />}
+        />
       </Routes>
       <Footer />
     </BrowserRouter>

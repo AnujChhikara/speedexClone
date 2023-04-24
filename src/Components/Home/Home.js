@@ -36,7 +36,7 @@ function Home() {
             alt=""
           />
         </div>
-        <div className="w-[400px] text-4xl font-medium flex ml-44 items-start relative mt-48">
+        <div className="w-[400px] sm:hidden lg:block text-4xl font-medium flex ml-44 items-start relative mt-48">
           <h1>
             Join the Reusable Revolution with Speedex's Eco-Friendly Water
             Bottles.
