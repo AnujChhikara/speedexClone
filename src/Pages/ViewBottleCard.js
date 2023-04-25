@@ -1,18 +1,22 @@
-import { useState } from "react";
 import { useParams } from "react-router-dom";
+import singleWallData from "../Components/SIngleWall/SingleWallData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
+  console.log(productId);
+  const allBottles = singleWallData.find((obj) => obj.id === bottleName).data;
+  console.log(allBottles);
+  const bottle = allBottles[productId - 1];
+  console.log(bottle.name);
 
   return (
     <div>
       <div className="flex justify-evenly items-center">
         <h2 className="font-semibold font-nunito text-3xl">
-          {bottleName} {productId}
+          {bottleName}
+          {"  "}
+          {bottle.name}
         </h2>
-        <img
-          src="https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png"
-          alt=""
-        />
+        <img src={bottle.imgUrl} alt="" />
         <div className="bg-white text-lg pr-20 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
@@ -73,7 +77,7 @@ function ViewBottleCard() {
           </div>
           <div className="flex flex-col space-y-2">
             <h4 className="font-bold text-base">Price</h4>
-            <h5>₹287.00/- per item</h5>
+            <h5>₹{bottle.price}/- per item</h5>
             <div className="flex space-x-4">
               <div className="flex space-x-3 text-3xl border border-gray-500 w-24 px-3 py-2">
                 <button>-</button>
@@ -107,7 +111,7 @@ function ViewBottleCard() {
           use for school, home, kitchen, gym & traveling, etc. Standard pickup
           because of its slim and lightweight design.
         </p> */}
-          <p className="px-4 py-2">
+          <div className="px-4 py-2">
             <div>
               <h4 className=" uppercase font-semibold mb-2 mt-1">
                 Standard delivery
@@ -124,7 +128,7 @@ function ViewBottleCard() {
               RETURN. Please click pictures of the products while initiating the
               return process.
             </div>
-          </p>
+          </div>
         </div>
       </div>
     </div>

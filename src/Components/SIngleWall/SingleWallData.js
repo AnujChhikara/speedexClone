@@ -1,10 +1,12 @@
 const singleWallData = [
   {
     id: "Simplex",
+
     data: [
       {
         id: 1,
         name: "Black",
+
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
         cutPrice: 359.0,
@@ -12,73 +14,73 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Black",
+        name: "Dark Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/blue-simplex-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 3,
-        name: "Black",
+        name: "Dark Grey",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 4,
-        name: "Black",
+        name: "Pastel Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/pastel-green-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 5,
-        name: "Black",
+        name: "Dual Blue Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/Simplex-Dual-blue-blue-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 6,
-        name: "Black",
+        name: "Dual Pink Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/green-pink-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 7,
-        name: "Black",
+        name: "Orchid",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 8,
-        name: "Black",
+        name: "Matt",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/simplex-Matt-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 9,
-        name: "Black",
+        name: "Pastel Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue2-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
       {
         id: 10,
-        name: "Black",
+        name: "Pastel Pink",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/pastel-pink-420x455.png",
         cutPrice: 359.0,
         price: 287,
       },
@@ -97,33 +99,33 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Black",
+        name: "Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-blue-420x455.png",
         cutPrice: 419.0,
         price: 287.0,
       },
       {
         id: 3,
-        name: "Black",
+        name: "Copper Gold",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-Copper-Gold-420x455.png",
         cutPrice: 419.0,
         price: 287.0,
       },
       {
         id: 4,
-        name: "Black",
+        name: "Matt",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-home11-420x455.png",
         cutPrice: 419.0,
         price: 287.0,
       },
       {
         id: 5,
-        name: "Black",
+        name: "Mint Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/hydrate-light-green-420x455.png",
         cutPrice: 419.0,
         price: 287.0,
       },
@@ -142,33 +144,33 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Apple Green",
+        name: "Cobalt Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/green-drip-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/blue-drip-trip-1-420x455.png",
         cutPrice: 449.0,
         price: 355.0,
       },
       {
         id: 3,
-        name: "Apple Green",
+        name: "Misty Teal",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/green-drip-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/turquoise-drip-trip-420x455.png",
         cutPrice: 449.0,
         price: 355.0,
       },
       {
         id: 4,
-        name: "Apple Green",
+        name: "Ruby Red",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/green-drip-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-420x455.png",
         cutPrice: 449.0,
         price: 355.0,
       },
       {
         id: 5,
-        name: "Apple Green",
+        name: "Space Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/green-drip-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/dark-blue-drip-420x455.png",
         cutPrice: 449.0,
         price: 355.0,
       },
@@ -187,33 +189,33 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Black",
+        name: "Lemon Yellow",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kurvey-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/yellow-kurvey-420x455.png",
         cutPrice: 429.0,
         price: 323.0,
       },
       {
         id: 3,
-        name: "Black",
+        name: "Matt",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kurvey-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/matt-1-420x455.png",
         cutPrice: 429.0,
         price: 323.0,
       },
       {
         id: 4,
-        name: "Black",
+        name: "Purple",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kurvey-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/kurvey-purple-420x455.png",
         cutPrice: 429.0,
         price: 323.0,
       },
       {
         id: 5,
-        name: "Black",
+        name: "Wine",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kurvey-black-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/wine-420x455.png",
         cutPrice: 429.0,
         price: 323.0,
       },
@@ -232,41 +234,41 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Aqua Blue",
+        name: "Black",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/PASTLE-BLUE-glacia-1-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/black-glacia-420x455.png",
         cutPrice: 419.0,
         price: 335.0,
       },
       {
         id: 3,
-        name: "Aqua Blue",
+        name: "Copper Gold",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/PASTLE-BLUE-glacia-1-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/copper-gold-glacia-420x455.png",
         cutPrice: 419.0,
         price: 335.0,
       },
       {
         id: 4,
-        name: "Aqua Blue",
+        name: "Matt",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/PASTLE-BLUE-glacia-1-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/matt-glacia-420x455.png",
         cutPrice: 419.0,
         price: 335.0,
       },
       {
         id: 5,
-        name: "Aqua Blue",
+        name: "Mustard",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/PASTLE-BLUE-glacia-1-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/orange-glacia-420x455.png",
         cutPrice: 419.0,
         price: 335.0,
       },
       {
         id: 6,
-        name: "Aqua Blue",
+        name: "Teal Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/PASTLE-BLUE-glacia-1-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/BLUE-glacia-420x455.png",
         cutPrice: 419.0,
         price: 335.0,
       },
@@ -285,33 +287,33 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Black Grey",
+        name: "Black Orange",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/grey-liquatick-sipper-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/orange-liquatick-sipper-420x455.png",
         cutPrice: 469.0,
         price: 371.0,
       },
       {
         id: 3,
-        name: "Black Grey",
+        name: "Black Red",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/grey-liquatick-sipper-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/red-liquatick-sipper-420x455.png",
         cutPrice: 469.0,
         price: 371.0,
       },
       {
         id: 4,
-        name: "Black Grey",
+        name: "Dark Light Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/grey-liquatick-sipper-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/blue-liquatick-sipper-420x455.png",
         cutPrice: 469.0,
         price: 371.0,
       },
       {
         id: 5,
-        name: "Black Grey",
+        name: "Silver Black",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/grey-liquatick-sipper-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/matt-liquatick-sipper-420x455.png",
         cutPrice: 469.0,
         price: 371.0,
       },
@@ -330,41 +332,41 @@ const singleWallData = [
       },
       {
         id: 2,
-        name: "Aqua",
+        name: "Black",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-ciyan-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-black-420x455.png",
         cutPrice: 379.0,
         price: 323.0,
       },
       {
         id: 3,
-        name: "Aqua",
+        name: "Matt",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-ciyan-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-matt-420x455.png",
         cutPrice: 379.0,
         price: 323.0,
       },
       {
         id: 4,
-        name: "Aqua",
+        name: "Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-ciyan-420x455.png",
+          "hhttps://speedexind.com/wp-content/uploads/2023/02/kiddo-green-1-420x455.png",
         cutPrice: 379.0,
         price: 323.0,
       },
       {
         id: 5,
-        name: "Aqua",
+        name: "Purple",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-ciyan-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/purple-kiddo-420x455.png",
         cutPrice: 379.0,
         price: 323.0,
       },
       {
         id: 6,
-        name: "Aqua",
+        name: "Teal Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-ciyan-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/02/kiddo-blue-dark-420x455.png",
         cutPrice: 379.0,
         price: 323.0,
       },

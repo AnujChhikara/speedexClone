@@ -15,7 +15,7 @@ function Home() {
       <div className="flex">
         <div className={`flex justify-center bottle w-44   `}>
           <img
-            className="h-[440px] -rotate-60 "
+            className="h-[440px] -rotate-60     "
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             src="/Images/b.webp"
