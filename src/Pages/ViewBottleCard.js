@@ -1,12 +1,9 @@
 import { useParams } from "react-router-dom";
-import singleWallData from "../Components/SIngleWall/SingleWallData";
+import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
-  console.log(productId);
-  const allBottles = singleWallData.find((obj) => obj.id === bottleName).data;
-  console.log(allBottles);
+  const allBottles = AllBottleData.find((obj) => obj.id === bottleName).data;
   const bottle = allBottles[productId - 1];
-  console.log(bottle.name);
 
   return (
     <div>

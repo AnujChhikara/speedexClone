@@ -13,7 +13,7 @@ function Home() {
   return (
     <div className="absolute top-40 align ">
       <div className="flex">
-        <div className={`flex justify-center bottle w-44   `}>
+        <div className={`flex justify-center bottle w-44  `}>
           <img
             className="h-[440px] -rotate-60     "
             onMouseEnter={handleMouseEnter}

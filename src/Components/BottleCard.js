@@ -26,7 +26,7 @@ function BottleCard(props) {
           >
             View
           </h4>
-          <img className="w-64" src={props.imgUrl} alt="" />
+          <img className="w-64 " src={props.imgUrl} alt="" />
         </div>
         <h5 className="font-medium">
           {props.bottleName} {props.name}
