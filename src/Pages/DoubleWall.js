@@ -37,7 +37,7 @@ function DoubleWall() {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
-        bottleName="Elite Gold"
+        bottleName="EliteGold"
         id={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
@@ -65,7 +65,7 @@ function DoubleWall() {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
-        bottleName="flasq"
+        bottleName="Flasq"
         id={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
@@ -95,7 +95,7 @@ function DoubleWall() {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
-        bottleName="Royal Gold"
+        bottleName="RoyalGold"
         id={item.id}
         name={item.name}
         cutPrice={item.cutPrice}

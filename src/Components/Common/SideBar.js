@@ -54,7 +54,7 @@ function SidebarMenu(props) {
     >
       <div className="flex flex-col space-y-10 pt-20 justify-center text-lg font-medium ">
         <a
-          className="menu-item flex justify-around items-center space-x-6"
+          className="menu-item flex  justify-around items-center space-x-6"
           href="/single-wall"
         >
           Single Wall{" "}

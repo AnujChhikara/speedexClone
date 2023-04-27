@@ -2,8 +2,18 @@ import { useParams } from "react-router-dom";
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
-  const allBottles = AllBottleData.find((obj) => obj.id === bottleName).data;
-  const bottle = allBottles[productId - 1];
+  const allBottles = AllBottleData.find((obj) => obj.id === bottleName);
+  const bottle = allBottles.data[productId - 1];
+  const Caps = allBottles.Cap.map(function (item) {
+    return <img src={item} alt="" />;
+  });
+  const Colors = allBottles.Colors.map(function (color) {
+    return (
+      <a href={`/view/${bottleName}/${color.id}`}>
+        <img src={color.link} alt="" />
+      </a>
+    );
+  });
 
   return (
     <div>
@@ -17,39 +27,13 @@ function ViewBottleCard() {
         <div className="bg-white text-lg pr-20 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
-            <img
-              src="https://speedexind.com/wp-content/uploads/2023/01/black-s.png"
-              alt=""
-            />
-            <img
-              src="https://speedexind.com/wp-content/uploads/2023/01/blue-s.png"
-              alt=""
-            />
-            <img
-              src="https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png"
-              alt=""
-            />
-            <img
-              src="https://speedexind.com/wp-content/uploads/2023/02/matt.png"
-              alt=""
-            />
+            {Colors}
           </div>
-          <div className="flex space-x-6">
+          <div
+            className={`flex space-x-6 ${Caps.length > 1 ? "block" : "hidden"}`}
+          >
             <h4 className="font-bold font-roboto">Cap</h4>
-            <div className="flex space-x-4">
-              <img
-                src="https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png"
-                alt=""
-              />
-              <img
-                src="https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png"
-                alt=""
-              />
-              <img
-                src="https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png"
-                alt=""
-              />
-            </div>
+            <div className="flex space-x-4">{Caps}</div>
           </div>
           <div className="flex space-x-6">
             <h4 className="font-bold font-roboto">Size</h4>

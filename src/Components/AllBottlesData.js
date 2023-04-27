@@ -1,6 +1,33 @@
 const AllBottleData = [
   {
     id: "Simplex",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Dark Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/blue-s.png",
+      },
+      {
+        id: 3,
+        color: "Dark Grey",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png",
+      },
+      {
+        id: 8,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+    ],
 
     data: [
       {
@@ -88,6 +115,11 @@ const AllBottleData = [
   },
   {
     id: "Hydrate",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -133,6 +165,11 @@ const AllBottleData = [
   },
   {
     id: "Drip Trip",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -178,6 +215,11 @@ const AllBottleData = [
   },
   {
     id: "Kurvey",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -223,6 +265,11 @@ const AllBottleData = [
   },
   {
     id: "Glacia",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -276,6 +323,11 @@ const AllBottleData = [
   },
   {
     id: "Liquatic",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -321,6 +373,11 @@ const AllBottleData = [
   },
   {
     id: "Kiddo",
+    Cap: [
+      "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
+      "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
     data: [
       {
         id: 1,
@@ -374,6 +431,7 @@ const AllBottleData = [
   },
   {
     id: "Milo",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -402,7 +460,8 @@ const AllBottleData = [
     ],
   },
   {
-    id: "CheckMate",
+    id: "Check & Mate",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -432,6 +491,7 @@ const AllBottleData = [
   },
   {
     id: "EliteGold",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -469,6 +529,7 @@ const AllBottleData = [
   },
   {
     id: "Nightingale",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -514,6 +575,7 @@ const AllBottleData = [
   },
   {
     id: "Flasq",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -551,6 +613,7 @@ const AllBottleData = [
   },
   {
     id: "Checkover",
+    Cap: [],
     data: [
       {
         id: 1,
@@ -580,6 +643,7 @@ const AllBottleData = [
   },
   {
     id: "RoyalGold",
+    Cap: [],
     data: [
       {
         id: 1,
