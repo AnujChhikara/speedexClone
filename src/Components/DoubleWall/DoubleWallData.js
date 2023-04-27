@@ -242,6 +242,100 @@ const doubleWallData = [
       },
     ],
   },
+  {
+    id: "Imperio",
+    Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Greenish Grey",
+        link: "https://speedexind.com/wp-content/uploads/2023/04/greenish-grey.png",
+      },
+      {
+        id: 3,
+        color: "Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-elite.png",
+      },
+    ],
+    data: [
+      {
+        id: 1,
+        name: "Black",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/black-imperio-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 2,
+        name: "Greenish Grey",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/imperio-GreenishGrey-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 3,
+        name: "Red",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/red-imerio-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+    ],
+  },
+  {
+    id: "Shark",
+    Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "White",
+        link: "https://speedexind.com/wp-content/uploads/2023/04/white-icon.png",
+      },
+      {
+        id: 3,
+        color: "Wine",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/wine-icon.png",
+      },
+    ],
+    data: [
+      {
+        id: 1,
+        name: "Black",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-black-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 2,
+        name: "White",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-white-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 3,
+        name: "Wine",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-wine-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+    ],
+  },
 ];
 
 export default doubleWallData;

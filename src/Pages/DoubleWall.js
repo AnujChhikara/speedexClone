@@ -103,6 +103,32 @@ function DoubleWall() {
       />
     );
   });
+  const imperioData = doubleWallData.find((obj) => obj.id === "Imperio").data;
+  const imperioBottles = imperioData.map(function (item) {
+    return (
+      <BottleCard
+        imgUrl={item.imgUrl}
+        bottleName="Imperio"
+        id={item.id}
+        name={item.name}
+        cutPrice={item.cutPrice}
+        price={item.price}
+      />
+    );
+  });
+  const sharkData = doubleWallData.find((obj) => obj.id === "Shark").data;
+  const sharkBottles = sharkData.map(function (item) {
+    return (
+      <BottleCard
+        imgUrl={item.imgUrl}
+        bottleName="Shark"
+        id={item.id}
+        name={item.name}
+        cutPrice={item.cutPrice}
+        price={item.price}
+      />
+    );
+  });
   return (
     <div>
       <Menu />
@@ -163,6 +189,14 @@ function DoubleWall() {
           <div className="flex flex-wrap justify-center">
             {royalGoldBottles}
           </div>
+        </div>
+        <div className="flex flex-col items-center">
+          <h3 className=" uppercase text-[92px] font-roboto mb-4">Imperio</h3>
+          <div className="flex flex-wrap justify-center">{imperioBottles}</div>
+        </div>
+        <div className="flex flex-col items-center">
+          <h3 className=" uppercase text-[92px] font-roboto mb-4">Shark</h3>
+          <div className="flex flex-wrap justify-center">{sharkBottles}</div>
         </div>
       </div>
     </div>

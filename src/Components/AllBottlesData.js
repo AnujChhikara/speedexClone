@@ -1,6 +1,7 @@
 const AllBottleData = [
   {
     id: "Simplex",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
@@ -115,11 +116,40 @@ const AllBottleData = [
   },
   {
     id: "Hydrate",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2022/12/black-30x30.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2022/12/blue-30x30.png",
+      },
+      {
+        id: 3,
+        color: "Copper Gold",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/copper-gold.png",
+      },
+      {
+        id: 4,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+      {
+        id: 5,
+        color: "Mint Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/green-icon.png",
+      },
+    ],
+
     data: [
       {
         id: 1,
@@ -165,10 +195,38 @@ const AllBottleData = [
   },
   {
     id: "Drip Trip",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 1,
+        color: "Apple Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/green-icon.png",
+      },
+      {
+        id: 2,
+        color: "Cobalt Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-elite.png",
+      },
+      {
+        id: 4,
+        color: "Ruby Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-icon.png",
+      },
+      {
+        id: 3,
+        color: "Misty Teal",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue-2.png",
+      },
+      {
+        id: 5,
+        color: "Space Blue",
+        link: "https://speedexind.com/wp-content/uploads/2022/12/blue-30x30.png",
+      },
     ],
     data: [
       {
@@ -215,10 +273,38 @@ const AllBottleData = [
   },
   {
     id: "Kurvey",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Lemon Yellow",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/yellow.png",
+      },
+      {
+        id: 3,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+      {
+        id: 4,
+        color: "Purple",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/pulple-icon.png",
+      },
+      {
+        id: 5,
+        color: "Wine",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/wine-icon.png",
+      },
     ],
     data: [
       {
@@ -265,10 +351,43 @@ const AllBottleData = [
   },
   {
     id: "Glacia",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 2,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 1,
+        color: "Aqua Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/light-blue-liquatic.png",
+      },
+      {
+        id: 3,
+        color: "Copper Gold",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/copper-gold.png",
+      },
+      {
+        id: 4,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+      {
+        id: 5,
+        color: "Mustard",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/mustard.png",
+      },
+      {
+        id: 6,
+        color: "Teal Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/dark-blue-icon.png",
+      },
     ],
     data: [
       {
@@ -300,8 +419,8 @@ const AllBottleData = [
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/matt-glacia-420x455.png",
-        cutPrice: 419.0,
-        price: 335.0,
+        cutPrice: 389.0,
+        price: 311.0,
       },
       {
         id: 5,
@@ -323,10 +442,38 @@ const AllBottleData = [
   },
   {
     id: "Liquatic",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 1,
+        color: "Black Grey",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png",
+      },
+      {
+        id: 2,
+        color: "Black Orange",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/orange.png",
+      },
+      {
+        id: 3,
+        color: "Black Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-icon.png",
+      },
+      {
+        id: 4,
+        color: "Dark Light Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/light-blue-liquatic.png",
+      },
+      {
+        id: 5,
+        color: "Silver Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
     ],
     data: [
       {
@@ -373,10 +520,43 @@ const AllBottleData = [
   },
   {
     id: "Kiddo",
+    Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    Colors: [
+      {
+        id: 1,
+        color: "Aqua",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/aqua.png",
+      },
+      {
+        id: 2,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 3,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+      {
+        id: 4,
+        color: "Mint Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/green-icon.png",
+      },
+      {
+        id: 5,
+        color: "Purple",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/purple.png",
+      },
+      {
+        id: 6,
+        color: "Teal Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/dark-blue-icon.png",
+      },
     ],
     data: [
       {
@@ -400,8 +580,8 @@ const AllBottleData = [
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/kiddo-matt-420x455.png",
-        cutPrice: 379.0,
-        price: 323.0,
+        cutPrice: 349.0,
+        price: 299.0,
       },
       {
         id: 4,
@@ -431,7 +611,25 @@ const AllBottleData = [
   },
   {
     id: "Milo",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Blue Blue Dual",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/blue-shade-s.png",
+      },
+      {
+        id: 2,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+      {
+        id: 3,
+        color: "Pink Blue Dual",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/blue-pink-s.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -461,7 +659,25 @@ const AllBottleData = [
   },
   {
     id: "Check & Mate",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-s.png",
+      },
+      {
+        id: 3,
+        color: "Fawn",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/yellow-s.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -491,7 +707,30 @@ const AllBottleData = [
   },
   {
     id: "EliteGold",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-elite.png",
+      },
+      {
+        id: 3,
+        color: "Brown",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/brown-elite.png",
+      },
+      {
+        id: 4,
+        color: "Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-icon.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -529,7 +768,42 @@ const AllBottleData = [
   },
   {
     id: "Nightingale",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+    ],
+    CARABINER: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Blue Carabiner",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-elite.png",
+      },
+      {
+        id: 3,
+        color: "Green Carabiner",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/brown-elite.png",
+      },
+      {
+        id: 4,
+        color: "Orange Carabiner",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-icon.png",
+      },
+      {
+        id: 5,
+        color: "Red Carabiner",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-drip-trip-icon.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -575,7 +849,30 @@ const AllBottleData = [
   },
   {
     id: "Flasq",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-elite.png",
+      },
+      {
+        id: 3,
+        color: "Dark Grey",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png",
+      },
+      {
+        id: 4,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -613,7 +910,25 @@ const AllBottleData = [
   },
   {
     id: "Checkover",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Fawn",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/yellow-s.png",
+      },
+      {
+        id: 2,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/black-s.png",
+      },
+      {
+        id: 3,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-s.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -643,7 +958,30 @@ const AllBottleData = [
   },
   {
     id: "RoyalGold",
+    Engrave: false,
     Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/blue-elite.png",
+      },
+      {
+        id: 3,
+        color: "Brown",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/brown-elite.png",
+      },
+      {
+        id: 4,
+        color: "Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-elite.png",
+      },
+    ],
     data: [
       {
         id: 1,
@@ -676,6 +1014,102 @@ const AllBottleData = [
           "https://speedexind.com/wp-content/uploads/2023/02/royal-gold-red-1-420x455.png",
         cutPrice: 939.0,
         price: 751,
+      },
+    ],
+  },
+  {
+    id: "Imperio",
+    Engrave: false,
+    Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "Greenish Grey",
+        link: "https://speedexind.com/wp-content/uploads/2023/04/greenish-grey.png",
+      },
+      {
+        id: 3,
+        color: "Red",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/red-elite.png",
+      },
+    ],
+    data: [
+      {
+        id: 1,
+        name: "Black",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/black-imperio-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 2,
+        name: "Greenish Grey",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/imperio-GreenishGrey-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 3,
+        name: "Red",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/red-imerio-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+    ],
+  },
+  {
+    id: "Shark",
+    Engrave: false,
+    Cap: [],
+    Colors: [
+      {
+        id: 1,
+        color: "Black",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
+      },
+      {
+        id: 2,
+        color: "White",
+        link: "https://speedexind.com/wp-content/uploads/2023/04/white-icon.png",
+      },
+      {
+        id: 3,
+        color: "Wine",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/wine-icon.png",
+      },
+    ],
+    data: [
+      {
+        id: 1,
+        name: "Black",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-black-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 2,
+        name: "White",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-white-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
+      },
+      {
+        id: 3,
+        name: "Wine",
+        imgUrl:
+          "https://speedexind.com/wp-content/uploads/2023/04/shark-wine-420x560.png",
+        cutPrice: 1149.0,
+        price: 919,
       },
     ],
   },

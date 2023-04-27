@@ -18,13 +18,13 @@ function ViewBottleCard() {
   return (
     <div>
       <div className="flex justify-evenly items-center">
-        <h2 className="font-semibold font-nunito text-3xl">
+        <h2 className="font-semibold font-nunito text-3xl w-96">
           {bottleName}
           {"  "}
           {bottle.name}
         </h2>
-        <img src={bottle.imgUrl} alt="" />
-        <div className="bg-white text-lg pr-20 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
+        <img className="" src={bottle.imgUrl} alt="" />
+        <div className="bg-white text-lg pr-28 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
             {Colors}
@@ -43,7 +43,11 @@ function ViewBottleCard() {
             </div>
           </div>
 
-          <div className="flex space-x-4">
+          <div
+            className={`flex space-x-4 ${
+              allBottles.Engrave ? "block" : "hidden"
+            }`}
+          >
             <h4 className="font-bold font-roboto">ENGRAVE</h4>
             <div className="flex flex-col">
               <label htmlFor="">RS. 30</label>
