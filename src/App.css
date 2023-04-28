@@ -12,6 +12,10 @@
   margin-left: 37%;
   margin-top: 2%;
 }
+select:focus {
+  border-color: gray;
+  outline: none;
+}
 .marquee {
   position: relative;
   width: 100vw;

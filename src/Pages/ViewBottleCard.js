@@ -1,19 +1,33 @@
 import { useState } from "react";
+import "../App.css";
 import { useParams } from "react-router-dom";
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
   const [quantity, setQuantity] = useState(1);
   const [engrave, setEngrave] = useState();
-  const [engraveColor, setEngraveColor] = useState("#d4af37");
+  const [engraveColor, setEngraveColor] = useState("");
   const handleEngraveColor = (e) => {
-    setEngraveColor(e.target.value);
+    const value = e.target.value;
+    const checkboxes = document.getElementsByName("engrave-color");
+    if (value === engraveColor) {
+      // If the same checkbox is clicked again, deselect it
+      setEngraveColor("");
+    } else {
+      // Otherwise, select the clicked checkbox and deselect the previously selected checkbox
+      setEngraveColor(value);
+      checkboxes.forEach((checkbox) => {
+        if (checkbox.value !== value) {
+          checkbox.checked = false;
+        }
+      });
+    }
   };
-  console.log(engraveColor);
+
   const handleEngrave = (e) => {
     setEngrave(e.target.value);
   };
-  console.log(engrave);
+
   const increaseQuantity = () => {
     setQuantity((prev) => prev + 1);
   };
@@ -42,7 +56,12 @@ function ViewBottleCard() {
           {"  "}
           {bottle.name}
         </h2>
-        <img className="" src={bottle.imgUrl} alt="" />
+        <img className="fixed" src={bottle.imgUrl} alt="" />
+        <div
+          className={`${engraveColor} -rotate-90 mt-52 ml-16 text-lg font-medium relative`}
+        >
+          {engrave}
+        </div>
         <div className="bg-white text-lg pr-28 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
@@ -76,30 +95,44 @@ function ViewBottleCard() {
                 className="border-gray-300 px-4 w-48 h-10 rounded-xl border-2"
                 id="engrave"
                 type="text"
-                maxLength={8}
+                maxLength={9}
               />
-              <div className="text-sm flex space-x-4 mt-1">
-                {" "}
-                Engrave Color
-                <select
-                  onChange={handleEngraveColor}
-                  className="flex space-x-1 ml-2 cursor-pointer "
-                >
-                  <option
-                    value={"black"}
-                    className="w-4 h-4 rounded-full bg-black"
-                  ></option>
-                  <option
-                    value={"gray-400"}
-                    className="w-4 h-4 rounded-full bg-gray-400"
-                  ></option>
-                  <option
-                    value={"#d4af37"}
-                    className="w-4 h-4 rounded-full bg-[#d4af37]"
-                  ></option>
-                </select>
+              <div className="text-sm flex flex-col space-y-1 px-1  py-1 mt-1">
+                <h3>Select Engraving Color</h3>
+                <div className="flex items-center">
+                  <label className="inline-flex items-center mr-4">
+                    <input
+                      type="checkbox"
+                      value="text-black"
+                      checked={engraveColor === "text-black"}
+                      className="form-checkbox h-4 w-4 text-black "
+                      onChange={handleEngraveColor}
+                    />
+                    <span className="ml-2 text-gray-700">Black</span>
+                  </label>
+                  <label className="inline-flex items-center mr-4">
+                    <input
+                      type="checkbox"
+                      value="text-gray-400"
+                      className="form-checkbox h-4 w-4 text-gray-400"
+                      checked={engraveColor === "text-gray-400"}
+                      onChange={handleEngraveColor}
+                    />
+                    <span className="ml-2 text-gray-700">Gray</span>
+                  </label>
+                  <label className="inline-flex items-center mr-4">
+                    <input
+                      type="checkbox"
+                      value="text-[#d4af37]"
+                      className="form-checkbox h-4 w-4 text-[#d4af37] bg-[#d4af37]"
+                      onChange={handleEngraveColor}
+                      checked={engraveColor === "text-[#d4af37]"}
+                    />
+                    <span className="ml-2 text-gray-700">Gold</span>
+                  </label>
+                </div>
               </div>
-              <p>8 Character Limit</p>
+              <p className="text-sm ml-4">9 Character Limit</p>
             </div>
           </div>
           <div className="flex flex-col space-y-2">
