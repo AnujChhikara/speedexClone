@@ -37,6 +37,7 @@ const AllBottleData = [
 
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
+        img: "",
         cutPrice: 359.0,
         price: 287,
       },
@@ -93,6 +94,7 @@ const AllBottleData = [
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/simplex-Matt-420x455.png",
+        img: "https://speedexind.com/wp-content/uploads/2023/03/simplex_0000_Layer-11.png",
         cutPrice: 359.0,
         price: 287,
       },

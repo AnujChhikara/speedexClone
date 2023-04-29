@@ -1,15 +1,9 @@
 import { useState } from "react";
 import "../App.css";
 import { useParams } from "react-router-dom";
-import { fill } from "@cloudinary/url-gen/actions/resize";
-import { AdvancedImage } from "@cloudinary/react";
-import { CloudinaryImage } from "@cloudinary/url-gen";
 
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
-  const myImage = new CloudinaryImage("publicIdTest1", {
-    cloudName: "dmurcewte",
-  }).resize(fill().width(100).height(150));
   const { bottleName, productId } = useParams();
   const [quantity, setQuantity] = useState(1);
   const [engrave, setEngrave] = useState();
@@ -57,18 +51,26 @@ function ViewBottleCard() {
 
   return (
     <div>
-      <div className="flex justify-around items-center mx-8">
+      <div className="flex justify-evenly items-center mx-8">
         <h2 className="font-semibold font-nunito text-3xl pl-16 w-96">
           {bottleName}
           {"  "}
           {bottle.name}
         </h2>
-        <img className="fixed" src={bottle.imgUrl} alt="" />
-        <div
-          className={`${engraveColor} -rotate-90 mt-52 ml-16 text-lg font-medium relative`}
-        >
-          {engrave}
+        <div class="relative inline-block">
+          <img
+            src="https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
+            alt=""
+            className="absolute w-[600px] -top-[6.3%] left-1"
+          />
+          <img src={bottle.img} alt="" class="w-full" />
+          <div
+            class={` ${engraveColor} absolute -rotate-90 top-[86%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
+          >
+            {engrave}
+          </div>
         </div>
+
         <div className="bg-white text-lg pr-28 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
@@ -195,9 +197,6 @@ function ViewBottleCard() {
               RETURN. Please click pictures of the products while initiating the
               return process.
             </div>
-          </div>
-          <div>
-            <AdvancedImage cldImg={myImage} />
           </div>
         </div>
       </div>
