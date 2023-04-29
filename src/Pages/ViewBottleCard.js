@@ -1,8 +1,15 @@
 import { useState } from "react";
 import "../App.css";
 import { useParams } from "react-router-dom";
+import { fill } from "@cloudinary/url-gen/actions/resize";
+import { AdvancedImage } from "@cloudinary/react";
+import { CloudinaryImage } from "@cloudinary/url-gen";
+
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
+  const myImage = new CloudinaryImage("publicIdTest1", {
+    cloudName: "dmurcewte",
+  }).resize(fill().width(100).height(150));
   const { bottleName, productId } = useParams();
   const [quantity, setQuantity] = useState(1);
   const [engrave, setEngrave] = useState();
@@ -188,6 +195,9 @@ function ViewBottleCard() {
               RETURN. Please click pictures of the products while initiating the
               return process.
             </div>
+          </div>
+          <div>
+            <AdvancedImage cldImg={myImage} />
           </div>
         </div>
       </div>
