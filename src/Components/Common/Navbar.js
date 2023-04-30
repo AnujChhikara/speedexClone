@@ -13,7 +13,7 @@ function Navbar() {
   const isHome = location.pathname === "/";
 
   return (
-    <div className={` ${isHome ? "bg" : "mb-4"} `}>
+    <div className={` ${isHome ? "bg" : "mb-12"} `}>
       <SidebarMenu isOpen={isOpen} onClose={onClose} />
       <div className="flex justify-evenly items-center pt-10">
         <div className="flex lg:space-x-6 text-gray-600 ">

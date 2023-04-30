@@ -1,8 +1,9 @@
 import BottleCard from "../Components/BottleCard";
-import feedingBottlesData from "../Components/FeedingBottles.js/FeedingBottlesData";
+
+import AllBottleData from "../Components/AllBottlesData";
 
 function feedingBottles() {
-  const silkData = feedingBottlesData.find((obj) => obj.id === "Silk").data;
+  const silkData = AllBottleData.find((obj) => obj.id === "Silk").data;
   const silkBottles = silkData.map(function (item) {
     return (
       <BottleCard
@@ -14,7 +15,7 @@ function feedingBottles() {
       />
     );
   });
-  const blissData = feedingBottlesData.find((obj) => obj.id === "Bliss").data;
+  const blissData = AllBottleData.find((obj) => obj.id === "Bliss").data;
   const blissBottles = blissData.map(function (item) {
     return (
       <BottleCard
@@ -43,11 +44,11 @@ function feedingBottles() {
 
       <div className="flex flex-col space-y-20">
         <div className="flex flex-col items-center">
-          <h3 className=" uppercase text-[92px] font-roboto">Maq Pure Silk</h3>
+          <h3 className=" uppercase text-[80px] font-roboto">Maq Pure Silk</h3>
           <div className="flex flex-wrap  justify-center">{silkBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">
+          <h3 className=" uppercase text-[80px] font-roboto mb-4">
             Maq pure bliss
           </h3>
           <div className="flex flex-wrap justify-center">{blissBottles}</div>

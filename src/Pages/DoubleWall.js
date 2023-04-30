@@ -1,8 +1,9 @@
 import BottleCard from "../Components/BottleCard";
-import doubleWallData from "../Components/DoubleWall/DoubleWallData";
+import AllBottleData from "../Components/AllBottlesData";
 import Menu from "../Components/Common/SideBar";
 function DoubleWall() {
-  const miloData = doubleWallData.find((obj) => obj.id === "Milo").data;
+  const miloData = AllBottleData.find((obj) => obj.id === "Milo").data;
+  console.log(miloData);
   const miloBottles = miloData.map(function (item) {
     return (
       <BottleCard
@@ -15,9 +16,10 @@ function DoubleWall() {
       />
     );
   });
-  const checkMateData = doubleWallData.find(
-    (obj) => obj.id === "CheckMate"
+  const checkMateData = AllBottleData.find(
+    (obj) => obj.id === "Check & Mate"
   ).data;
+  console.log(checkMateData);
   const checkMateBottles = checkMateData.map(function (item) {
     return (
       <BottleCard
@@ -30,9 +32,10 @@ function DoubleWall() {
       />
     );
   });
-  const eliteGoldData = doubleWallData.find(
+  const eliteGoldData = AllBottleData.find(
     (obj) => obj.id === "EliteGold"
   ).data;
+  console.log(eliteGoldData);
   const eliteGoldBottles = eliteGoldData.map(function (item) {
     return (
       <BottleCard
@@ -45,9 +48,10 @@ function DoubleWall() {
       />
     );
   });
-  const nightingleData = doubleWallData.find(
+  const nightingleData = AllBottleData.find(
     (obj) => obj.id === "Nightingale"
   ).data;
+  console.log(nightingleData);
   const nightingleBottles = nightingleData.map(function (item) {
     return (
       <BottleCard
@@ -60,7 +64,8 @@ function DoubleWall() {
       />
     );
   });
-  const flasqData = doubleWallData.find((obj) => obj.id === "Flasq").data;
+  const flasqData = AllBottleData.find((obj) => obj.id === "Flasq").data;
+  console.log(flasqData);
   const flasqBottles = flasqData.map(function (item) {
     return (
       <BottleCard
@@ -73,9 +78,10 @@ function DoubleWall() {
       />
     );
   });
-  const checkOverData = doubleWallData.find(
+  const checkOverData = AllBottleData.find(
     (obj) => obj.id === "Checkover"
   ).data;
+  console.log(checkOverData);
   const checkOverBottles = checkOverData.map(function (item) {
     return (
       <BottleCard
@@ -88,9 +94,10 @@ function DoubleWall() {
       />
     );
   });
-  const royalGoldData = doubleWallData.find(
+  const royalGoldData = AllBottleData.find(
     (obj) => obj.id === "RoyalGold"
   ).data;
+  console.log(royalGoldData);
   const royalGoldBottles = royalGoldData.map(function (item) {
     return (
       <BottleCard
@@ -103,7 +110,8 @@ function DoubleWall() {
       />
     );
   });
-  const imperioData = doubleWallData.find((obj) => obj.id === "Imperio").data;
+  const imperioData = AllBottleData.find((obj) => obj.id === "Imperio").data;
+  console.log(imperioData);
   const imperioBottles = imperioData.map(function (item) {
     return (
       <BottleCard
@@ -116,7 +124,8 @@ function DoubleWall() {
       />
     );
   });
-  const sharkData = doubleWallData.find((obj) => obj.id === "Shark").data;
+  const sharkData = AllBottleData.find((obj) => obj.id === "Shark").data;
+  console.log(sharkData);
   const sharkBottles = sharkData.map(function (item) {
     return (
       <BottleCard

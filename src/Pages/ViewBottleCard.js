@@ -41,7 +41,9 @@ function ViewBottleCard() {
   const bottle = allBottles.data[productId - 1];
   const myImage = new CloudinaryImage(`${bottle.imgId}`, {
     cloudName: "dmurcewte",
-  }).resize(fit().width(500).height(500));
+  });
+  const singleWallImages = myImage.resize(fit().width(700).height(700));
+  const doubleWallImages = myImage.resize(fit().width(500).height(500));
   const Caps = allBottles.Cap.map(function (item) {
     return <img src={item} alt="" />;
   });
@@ -59,27 +61,43 @@ function ViewBottleCard() {
         <h2 className="font-semibold font-nunito text-3xl pl-16 w-96">
           {bottleName} {bottle.name}
         </h2>
-        <div className="relative inline-block ">
-          <img
-            src="https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
-            alt=""
-            className={`${
-              allBottles.id === "Hydrate"
-                ? "absolute top-[-17%] right-1"
-                : "absolute  -top-[6.3%] left-0.5"
-            } `}
-          />
+        {Caps.length > 0 ? (
+          <div className="relative inline-block ">
+            <img
+              src="https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
+              alt=""
+              className={`${
+                allBottles.id === "Hydrate"
+                  ? " top-[-12%] right-0.5 scale-125"
+                  : allBottles.id === "Drip Trip"
+                  ? "absolute "
+                  : allBottles.id === "Kurvey"
+                  ? " top-[-9%] right-0.5 scale-125"
+                  : allBottles.id === "Glacia"
+                  ? " top-[-4%] -right-1.5 scale-110 "
+                  : allBottles.id === "Liquatic"
+                  ? " top-[2.5%] -right-0.5 scale-110 "
+                  : allBottles.id === "Kiddo"
+                  ? " top-[8%] -right-0.5 scale-110 "
+                  : " top-[-6%] left-0.5"
+              }  absolute  `}
+            />
+            <div className="">
+              <AdvancedImage cldImg={singleWallImages} />
+            </div>
+            <div
+              className={` ${engraveColor} absolute -rotate-90 top-[82%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
+            >
+              {engrave}
+            </div>
+          </div>
+        ) : (
           <div className="">
-            <AdvancedImage cldImg={myImage} />
+            <AdvancedImage cldImg={doubleWallImages} />
           </div>
-          <div
-            className={` ${engraveColor} absolute -rotate-90 top-[86%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
-          >
-            {engrave}
-          </div>
-        </div>
+        )}
 
-        <div className="bg-white text-lg pr-28 p-6 h-[550px] flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
+        <div className="bg-white text-lg pr-28 p-6   flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
             {Colors}
@@ -135,7 +153,7 @@ function ViewBottleCard() {
                       checked={engraveColor === "text-gray-400"}
                       onChange={handleEngraveColor}
                     />
-                    <span className="ml-2 text-gray-700">Gray</span>
+                    <span className="ml-2 text-gray-700">Silver</span>
                   </label>
                   <label className="inline-flex items-center mr-4">
                     <input

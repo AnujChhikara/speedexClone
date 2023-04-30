@@ -54,7 +54,7 @@ function SidebarMenu(props) {
     >
       <div className="flex flex-col space-y-10 pt-20 justify-center text-lg font-medium ">
         <a
-          className="menu-item flex hover:bg-gray-200 py-2 duration-500 justify-around items-center space-x-6"
+          className="menu-item flex hover:bg-gray-200 rounded-xl py-2 duration-500 justify-around items-center space-x-6"
           href="/single-wall"
         >
           Single Wall{" "}
@@ -65,7 +65,7 @@ function SidebarMenu(props) {
           />
         </a>
         <a
-          className="menu-item hover:bg-gray-200 py-2 duration-500 flex justify-around items-center space-x-6"
+          className="menu-item hover:bg-gray-200 py-2 rounded-xl  duration-500 flex justify-around items-center space-x-6"
           href="/hot-n-cold"
         >
           Hot & Cold
@@ -76,7 +76,7 @@ function SidebarMenu(props) {
           />
         </a>
         <a
-          className="menu-item flex hover:bg-gray-200 py-2 duration-500 justify-around items-center space-x-6"
+          className="menu-item flex hover:bg-gray-200 rounded-xl  py-2 duration-500 justify-around items-center space-x-6"
           href="/contact"
         >
           Atelier{" "}
@@ -87,7 +87,7 @@ function SidebarMenu(props) {
           />
         </a>
         <a
-          className="menu-item flex hover:bg-gray-200 py-2 duration-500 justify-around items-center space-x-6"
+          className="menu-item flex hover:bg-gray-200 rounded-xl  py-2 duration-500 justify-around items-center space-x-6"
           href="/feeding-bottles"
         >
           Feeding Bottle

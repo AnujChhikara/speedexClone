@@ -1,8 +1,9 @@
 import BottleCard from "../Components/BottleCard";
-import singleWallData from "../Components/SIngleWall/SingleWallData";
+
+import AllBottleData from "../Components/AllBottlesData";
 
 function SingleWall() {
-  const simplexData = singleWallData.find((obj) => obj.id === "Simplex").data;
+  const simplexData = AllBottleData.find((obj) => obj.id === "Simplex").data;
   const simplexBottles = simplexData.map(function (item) {
     return (
       <BottleCard
@@ -15,7 +16,7 @@ function SingleWall() {
       />
     );
   });
-  const hydrateData = singleWallData.find((obj) => obj.id === "Hydrate").data;
+  const hydrateData = AllBottleData.find((obj) => obj.id === "Hydrate").data;
   const hydrateBottles = hydrateData.map(function (item) {
     return (
       <BottleCard
@@ -28,9 +29,7 @@ function SingleWall() {
       />
     );
   });
-  const dripTripData = singleWallData.find(
-    (obj) => obj.id === "Drip Trip"
-  ).data;
+  const dripTripData = AllBottleData.find((obj) => obj.id === "Drip Trip").data;
   const dripTripBottles = dripTripData.map(function (item) {
     return (
       <BottleCard
@@ -43,7 +42,7 @@ function SingleWall() {
       />
     );
   });
-  const kurveyData = singleWallData.find((obj) => obj.id === "Kurvey").data;
+  const kurveyData = AllBottleData.find((obj) => obj.id === "Kurvey").data;
   const kurveyBottles = kurveyData.map(function (item) {
     return (
       <BottleCard
@@ -56,7 +55,7 @@ function SingleWall() {
       />
     );
   });
-  const glaciaData = singleWallData.find((obj) => obj.id === "Glacia").data;
+  const glaciaData = AllBottleData.find((obj) => obj.id === "Glacia").data;
   const glaciaBottles = glaciaData.map(function (item) {
     return (
       <BottleCard
@@ -69,7 +68,7 @@ function SingleWall() {
       />
     );
   });
-  const liquaticData = singleWallData.find((obj) => obj.id === "Liquatic").data;
+  const liquaticData = AllBottleData.find((obj) => obj.id === "Liquatic").data;
   const liquaticBottles = liquaticData.map(function (item) {
     return (
       <BottleCard
@@ -82,7 +81,7 @@ function SingleWall() {
       />
     );
   });
-  const kiddoData = singleWallData.find((obj) => obj.id === "Kiddo").data;
+  const kiddoData = AllBottleData.find((obj) => obj.id === "Kiddo").data;
   const kiddoBottles = kiddoData.map(function (item) {
     return (
       <BottleCard
