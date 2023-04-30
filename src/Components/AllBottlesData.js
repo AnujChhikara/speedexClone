@@ -7,6 +7,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+    ],
     Colors: [
       {
         id: 1,
@@ -37,7 +43,7 @@ const AllBottleData = [
 
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
-        imgId: "S1",
+        imgId: "S01",
         cutPrice: 359.0,
         price: 287,
       },
@@ -133,6 +139,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+    ],
     Colors: [
       {
         id: 1,
@@ -217,6 +229,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+    ],
     Colors: [
       {
         id: 1,
@@ -300,6 +318,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+    ],
     Colors: [
       {
         id: 1,
@@ -382,6 +406,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
     ],
     Colors: [
       {
@@ -479,6 +509,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+    ],
     Colors: [
       {
         id: 1,
@@ -561,6 +597,12 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
+    ],
+    CapImages: [
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+
+      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
     ],
     Colors: [
       {
@@ -1189,44 +1231,78 @@ const AllBottleData = [
   },
   {
     id: "Silk",
+    Engrave: false,
+    Cap: [],
+    Colors: [
+      {
+        id: 5,
+        color: "Pink",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/PINK.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/BLUE.png",
+      },
+      {
+        id: 4,
+        color: "Orange",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/orange.png",
+      },
+      {
+        id: 3,
+        color: "Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/green.png",
+      },
+      {
+        id: 1,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+    ],
     data: [
       {
         id: 1,
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-large-420x455.png",
+        imgId: "SB1",
         cutPrice: 449.0,
         price: 359,
       },
       {
         id: 2,
-        name: "Matt",
+        name: "Blue",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-large-420x455.png",
-        cutPrice: 449.0,
-        price: 359,
+          "https://speedexind.com/wp-content/uploads/2023/03/Maq-Pure-Silk-blue-420x455.png",
+        imgId: "SB2",
+        cutPrice: 499.0,
+        price: 399,
       },
       {
         id: 3,
-        name: "Matt",
+        name: "Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-large-420x455.png",
-        cutPrice: 449.0,
-        price: 359,
+          "https://speedexind.com/wp-content/uploads/2023/03/Maq-Pure-Silk-green-420x455.png",
+        imgId: "SB3",
+        cutPrice: 499.0,
+        price: 399,
       },
       {
         id: 4,
-        name: "Matt",
+        name: "Orange",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-large-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/Maq-Pure-Silk-orange-420x455.png",
+        imgId: "SB4",
         cutPrice: 449.0,
         price: 359,
       },
       {
         id: 5,
-        name: "Matt",
+        name: "Pink",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-large-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/Maq-Pure-Silk-pink-420x455.png",
+        imgId: "SB5",
         cutPrice: 449.0,
         price: 359,
       },
@@ -1234,12 +1310,42 @@ const AllBottleData = [
   },
   {
     id: "Bliss",
+    Engrave: false,
+    Cap: [],
+    Colors: [
+      {
+        id: 5,
+        color: "Pink",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/PINK.png",
+      },
+      {
+        id: 2,
+        color: "Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/BLUE.png",
+      },
+      {
+        id: 4,
+        color: "Orange",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/orange.png",
+      },
+      {
+        id: 3,
+        color: "Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/03/green.png",
+      },
+      {
+        id: 1,
+        color: "Matt",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
+      },
+    ],
     data: [
       {
         id: 1,
-        name: "Silk Blue",
+        name: "",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-blue-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/maq-pure-bliss-large-420x455.png",
+        imgId: "SBB1",
         cutPrice: 549.0,
         price: 439,
       },
@@ -1248,30 +1354,34 @@ const AllBottleData = [
         name: "Silk Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-blue-420x455.png",
+        imgId: "SBB2",
         cutPrice: 549.0,
         price: 439,
       },
       {
         id: 3,
-        name: "Silk Blue",
+        name: "Silk Green",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-blue-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-green-420x455.png",
+        imgId: "SBB3",
         cutPrice: 549.0,
         price: 439,
       },
       {
         id: 4,
-        name: "Silk Blue",
+        name: "Silk Orange",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-blue-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-orange-420x455.png",
+        imgId: "SBB4",
         cutPrice: 549.0,
         price: 439,
       },
       {
         id: 5,
-        name: "Silk Blue",
+        name: "Silk Pink",
         imgUrl:
-          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-blue-420x455.png",
+          "https://speedexind.com/wp-content/uploads/2023/03/pure-bliss-silk-pink-420x455.png",
+        imgId: "SBB5",
         cutPrice: 549.0,
         price: 439,
       },

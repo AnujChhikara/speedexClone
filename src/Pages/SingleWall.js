@@ -8,6 +8,7 @@ function SingleWall() {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
+        key={item.id}
         id={item.id}
         bottleName="Simplex"
         name={item.name}
@@ -22,6 +23,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Hydrate"
         name={item.name}
         cutPrice={item.cutPrice}
@@ -35,6 +37,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Drip Trip"
         name={item.name}
         cutPrice={item.cutPrice}
@@ -48,6 +51,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Kurvey"
         name={item.name}
         cutPrice={item.cutPrice}
@@ -61,6 +65,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Glacia"
         name={item.name}
         cutPrice={item.cutPrice}
@@ -74,6 +79,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Liquatic"
         name={item.name}
         cutPrice={item.cutPrice}
@@ -87,6 +93,7 @@ function SingleWall() {
       <BottleCard
         imgUrl={item.imgUrl}
         id={item.id}
+        key={item.id}
         bottleName="Kiddo"
         name={item.name}
         cutPrice={item.cutPrice}

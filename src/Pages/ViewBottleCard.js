@@ -8,6 +8,9 @@ import { AdvancedImage } from "@cloudinary/react";
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
+  const [selectedCap, setSelectedCap] = useState(
+    "https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
+  );
   const [quantity, setQuantity] = useState(1);
   const [engrave, setEngrave] = useState();
   const [engraveColor, setEngraveColor] = useState("");
@@ -37,15 +40,25 @@ function ViewBottleCard() {
     if (quantity <= 1) return;
     setQuantity((prev) => prev - 1);
   };
+  const handleClick = (image) => {
+    setSelectedCap(image);
+  };
   const allBottles = AllBottleData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[productId - 1];
   const myImage = new CloudinaryImage(`${bottle.imgId}`, {
     cloudName: "dmurcewte",
   });
-  const singleWallImages = myImage.resize(fit().width(700).height(700));
+  const singleWallImages = myImage.resize(fit().width(600).height(800));
   const doubleWallImages = myImage.resize(fit().width(500).height(500));
-  const Caps = allBottles.Cap.map(function (item) {
-    return <img src={item} alt="" />;
+  const Caps = allBottles.Cap.map(function (item, index) {
+    return (
+      <img
+        src={item}
+        alt=""
+        className=""
+        onClick={() => handleClick(allBottles.CapImages[index])}
+      />
+    );
   });
   const Colors = allBottles.Colors.map(function (color) {
     return (
@@ -57,20 +70,20 @@ function ViewBottleCard() {
 
   return (
     <div>
-      <div className="flex justify-evenly items-center mx-8">
+      <div className="flex justify-evenly items-center mx-8" key={bottle.id}>
         <h2 className="font-semibold font-nunito text-3xl pl-16 w-96">
           {bottleName} {bottle.name}
         </h2>
         {Caps.length > 0 ? (
           <div className="relative inline-block ">
             <img
-              src="https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
+              src={selectedCap}
               alt=""
               className={`${
                 allBottles.id === "Hydrate"
                   ? " top-[-12%] right-0.5 scale-125"
                   : allBottles.id === "Drip Trip"
-                  ? "absolute "
+                  ? "absolute -top-0.5 scale-105"
                   : allBottles.id === "Kurvey"
                   ? " top-[-9%] right-0.5 scale-125"
                   : allBottles.id === "Glacia"
@@ -79,7 +92,7 @@ function ViewBottleCard() {
                   ? " top-[2.5%] -right-0.5 scale-110 "
                   : allBottles.id === "Kiddo"
                   ? " top-[8%] -right-0.5 scale-110 "
-                  : " top-[-6%] left-0.5"
+                  : " top-[-7%] left-0.5"
               }  absolute  `}
             />
             <div className="">

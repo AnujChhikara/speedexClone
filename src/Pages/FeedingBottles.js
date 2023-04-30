@@ -4,11 +4,14 @@ import AllBottleData from "../Components/AllBottlesData";
 
 function feedingBottles() {
   const silkData = AllBottleData.find((obj) => obj.id === "Silk").data;
+  console.log(silkData);
   const silkBottles = silkData.map(function (item) {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
-        bottleName="Maq Pure"
+        id={item.id}
+        key={item.id}
+        bottleName="Silk"
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -20,7 +23,9 @@ function feedingBottles() {
     return (
       <BottleCard
         imgUrl={item.imgUrl}
-        bottleName="Maq Pure Bliss"
+        id={item.id}
+        key={item.id}
+        bottleName="Bliss"
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}

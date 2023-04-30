@@ -10,6 +10,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Milo"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -26,6 +27,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Check & Mate"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -42,6 +44,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="EliteGold"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -58,6 +61,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Nightingale"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -72,6 +76,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Flasq"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -88,6 +93,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Checkover"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -104,6 +110,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="RoyalGold"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -118,6 +125,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Imperio"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
@@ -132,6 +140,7 @@ function DoubleWall() {
         imgUrl={item.imgUrl}
         bottleName="Shark"
         id={item.id}
+        key={item.id}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}
