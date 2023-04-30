@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "../App.css";
 import { useParams } from "react-router-dom";
+import { fit } from "@cloudinary/url-gen/actions/resize";
+import { CloudinaryImage } from "@cloudinary/url-gen";
+import { AdvancedImage } from "@cloudinary/react";
 
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
@@ -12,10 +15,8 @@ function ViewBottleCard() {
     const value = e.target.value;
     const checkboxes = document.getElementsByName("engrave-color");
     if (value === engraveColor) {
-      // If the same checkbox is clicked again, deselect it
       setEngraveColor("");
     } else {
-      // Otherwise, select the clicked checkbox and deselect the previously selected checkbox
       setEngraveColor(value);
       checkboxes.forEach((checkbox) => {
         if (checkbox.value !== value) {
@@ -38,6 +39,9 @@ function ViewBottleCard() {
   };
   const allBottles = AllBottleData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[productId - 1];
+  const myImage = new CloudinaryImage(`${bottle.imgId}`, {
+    cloudName: "dmurcewte",
+  }).resize(fit().width(500).height(500));
   const Caps = allBottles.Cap.map(function (item) {
     return <img src={item} alt="" />;
   });
@@ -53,25 +57,29 @@ function ViewBottleCard() {
     <div>
       <div className="flex justify-evenly items-center mx-8">
         <h2 className="font-semibold font-nunito text-3xl pl-16 w-96">
-          {bottleName}
-          {"  "}
-          {bottle.name}
+          {bottleName} {bottle.name}
         </h2>
-        <div class="relative inline-block">
+        <div className="relative inline-block ">
           <img
             src="https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
             alt=""
-            className="absolute w-[600px] -top-[6.3%] left-1"
+            className={`${
+              allBottles.id === "Hydrate"
+                ? "absolute top-[-17%] right-1"
+                : "absolute  -top-[6.3%] left-0.5"
+            } `}
           />
-          <img src={bottle.img} alt="" class="w-full" />
+          <div className="">
+            <AdvancedImage cldImg={myImage} />
+          </div>
           <div
-            class={` ${engraveColor} absolute -rotate-90 top-[86%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
+            className={` ${engraveColor} absolute -rotate-90 top-[86%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
           >
             {engrave}
           </div>
         </div>
 
-        <div className="bg-white text-lg pr-28 p-6  flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
+        <div className="bg-white text-lg pr-28 p-6 h-[550px] flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
             {Colors}

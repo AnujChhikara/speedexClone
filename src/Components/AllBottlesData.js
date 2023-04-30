@@ -37,7 +37,7 @@ const AllBottleData = [
 
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/black-simplex-420x455.png",
-        img: "",
+        imgId: "S1",
         cutPrice: 359.0,
         price: 287,
       },
@@ -46,6 +46,7 @@ const AllBottleData = [
         name: "Dark Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/blue-simplex-420x455.png",
+        imgId: "S2",
         cutPrice: 359.0,
         price: 287,
       },
@@ -54,6 +55,7 @@ const AllBottleData = [
         name: "Dark Grey",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-420x455.png",
+        imgId: "S3",
         cutPrice: 359.0,
         price: 287,
       },
@@ -62,6 +64,7 @@ const AllBottleData = [
         name: "Pastel Green",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/pastel-green-420x455.png",
+        imgId: "S4",
         cutPrice: 359.0,
         price: 287,
       },
@@ -70,6 +73,7 @@ const AllBottleData = [
         name: "Dual Blue Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/Simplex-Dual-blue-blue-420x455.png",
+        imgId: "S5",
         cutPrice: 359.0,
         price: 287,
       },
@@ -78,6 +82,7 @@ const AllBottleData = [
         name: "Dual Pink Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/green-pink-420x455.png",
+        imgId: "S6",
         cutPrice: 359.0,
         price: 287,
       },
@@ -86,6 +91,7 @@ const AllBottleData = [
         name: "Orchid",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue-420x455.png",
+        imgId: "S7",
         cutPrice: 359.0,
         price: 287,
       },
@@ -94,7 +100,8 @@ const AllBottleData = [
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/simplex-Matt-420x455.png",
-        img: "https://speedexind.com/wp-content/uploads/2023/03/simplex_0000_Layer-11.png",
+        imgId: "S8",
+
         cutPrice: 359.0,
         price: 287,
       },
@@ -103,6 +110,7 @@ const AllBottleData = [
         name: "Pastel Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue2-420x455.png",
+        imgId: "S9",
         cutPrice: 359.0,
         price: 287,
       },
@@ -111,6 +119,7 @@ const AllBottleData = [
         name: "Pastel Pink",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/pastel-pink-420x455.png",
+        imgId: "S10",
         cutPrice: 359.0,
         price: 287,
       },
@@ -158,6 +167,7 @@ const AllBottleData = [
         name: "Black",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/hydrate-black-420x455.png",
+        imgId: "H1",
         cutPrice: 419.0,
         price: 287.0,
       },
@@ -166,6 +176,7 @@ const AllBottleData = [
         name: "Blue",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/hydrate-blue-420x455.png",
+        imgId: "H2",
         cutPrice: 419.0,
         price: 287.0,
       },
@@ -174,6 +185,7 @@ const AllBottleData = [
         name: "Copper Gold",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/hydrate-Copper-Gold-420x455.png",
+        imgId: "H3",
         cutPrice: 419.0,
         price: 287.0,
       },
@@ -182,6 +194,7 @@ const AllBottleData = [
         name: "Matt",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/hydrate-home11-420x455.png",
+        imgId: "H4",
         cutPrice: 419.0,
         price: 287.0,
       },
@@ -190,6 +203,7 @@ const AllBottleData = [
         name: "Mint Green",
         imgUrl:
           "https://speedexind.com/wp-content/uploads/2023/02/hydrate-light-green-420x455.png",
+        imgId: "H5",
         cutPrice: 419.0,
         price: 287.0,
       },
