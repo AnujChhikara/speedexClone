@@ -1,5 +1,4 @@
 import BottleCard from "../Components/BottleCard";
-
 import AllBottleData from "../Components/AllBottlesData";
 
 function SingleWall() {

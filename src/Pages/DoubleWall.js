@@ -1,6 +1,6 @@
 import BottleCard from "../Components/BottleCard";
 import AllBottleData from "../Components/AllBottlesData";
-import Menu from "../Components/Common/SideBar";
+
 function DoubleWall() {
   const miloData = AllBottleData.find((obj) => obj.id === "Milo").data;
   console.log(miloData);
@@ -149,8 +149,6 @@ function DoubleWall() {
   });
   return (
     <div>
-      <Menu />
-
       <div className="flex flex-col justify-center items-center mb-32">
         <h2 className="text-[100px] text-gray-500 font-roboto">HOT n COLD</h2>
         <p className="text-gray-600 w-[650px]">

@@ -43,6 +43,36 @@ const AllBottleData = [
         color: "Matt",
         link: "https://speedexind.com/wp-content/uploads/2023/02/matt.png",
       },
+      {
+        id: 5,
+        color: "Blue and Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png",
+      },
+      {
+        id: 6,
+        color: "Pink and Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/blue-pink-s.png",
+      },
+      {
+        id: 7,
+        color: "Purple",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/light-blue.png",
+      },
+      {
+        id: 9,
+        color: "Pastel Blue",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/pastel-blue-1.png",
+      },
+      {
+        id: 4,
+        color: "Pastel Green",
+        link: "https://speedexind.com/wp-content/uploads/2023/02/pastel-green-s.png",
+      },
+      {
+        id: 10,
+        color: "Pink",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/pink-s.png",
+      },
     ],
 
     data: [

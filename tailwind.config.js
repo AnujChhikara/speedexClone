@@ -8,13 +8,13 @@ module.exports = {
       },
       backgroundImage: {
         firstCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/01/studio1.jpg')",
+          "url('https://speedexind.com/wp-content/uploads/2023/04/home-ban.jpg')",
         secondCard:
           "url('https://speedexind.com/wp-content/uploads/2023/03/gift.webp')",
         thirdCard:
           "url('https://speedexind.com/wp-content/uploads/2023/03/access.webp')",
         fourthCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/02/shark-bottle-677x1024.png')",
+          "url('https://speedexind.com/wp-content/uploads/2023/04/milo-home.webp')",
       },
       screens: {
         sm: "300px",

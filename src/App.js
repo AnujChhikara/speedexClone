@@ -12,13 +12,11 @@ import Refund from "./Pages/Refund";
 import CompanyProfile from "./Pages/CompanyProfile";
 import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
-import FloatNav from "./Components/Common/FloatingNavbar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <FloatNav />
       <Navbar />
 
       <Routes>

@@ -71,7 +71,7 @@ function ViewBottleCard() {
   const Colors = allBottles.Colors.map(function (color) {
     return (
       <a href={`/view/${bottleName}/${color.id}`}>
-        <img src={color.link} alt="" />
+        <img src={color.link} alt="" />{" "}
       </a>
     );
   });
@@ -83,7 +83,7 @@ function ViewBottleCard() {
           {bottleName} {bottle.name}
         </h2>
         {Caps.length > 0 ? (
-          <div className="relative inline-block ">
+          <div className="relative inline-block z-0 ">
             <img
               src={selectedCap.img}
               alt=""
@@ -159,7 +159,7 @@ function ViewBottleCard() {
         <div className="bg-white text-lg pr-28 p-6   flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
-            {Colors}
+            <div className="flex w-60 flex-wrap "> {Colors}</div>
           </div>
           <div
             className={`flex space-x-6 ${Caps.length > 1 ? "block" : "hidden"}`}

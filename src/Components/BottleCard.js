@@ -15,9 +15,9 @@ function BottleCard(props) {
       href={`/view/${props.bottleName}/${props.id}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`${isHover ? "opacity-80" : ""}`}
+      className={`${isHover ? "" : ""}`}
     >
-      <div className="w-[350px] flex flex-col items-center relative space-y-3">
+      <div className="w-[350px] flex flex-col items-center  space-y-3">
         <div>
           <h4
             className={`${
