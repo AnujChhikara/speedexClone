@@ -50,14 +50,14 @@ function SidebarMenu(props) {
       isOpen={props.isOpen}
       onClose={props.onClose}
       styles={styles}
-      width={500}
+      width={400}
     >
-      <div className="flex flex-col space-y-10 pt-20 justify-center text-lg font-medium ">
+      <div className="flex flex-col space-y-4 pt-20 justify-center text-lg font-medium ">
         <a
           className="menu-item flex hover:bg-gray-200 rounded-xl py-2 duration-500 justify-around items-center space-x-6"
           href="/single-wall"
         >
-          Single Wall{" "}
+          Single Wall
           <img
             className="w-28"
             src="https://speedexind.com/wp-content/uploads/2023/04/S-WALL-icon.png"

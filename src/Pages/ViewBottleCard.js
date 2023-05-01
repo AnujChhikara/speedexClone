@@ -13,6 +13,7 @@ function ViewBottleCard() {
     img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
   });
   const [quantity, setQuantity] = useState(1);
+  const [info, setInfo] = useState(true);
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
   const handleEngraveColor = (e) => {
@@ -28,6 +29,12 @@ function ViewBottleCard() {
         }
       });
     }
+  };
+  const handleInfoT = () => {
+    setInfo(true);
+  };
+  const handleInfoF = () => {
+    setInfo(false);
   };
 
   const handleEngrave = (e) => {
@@ -241,24 +248,34 @@ function ViewBottleCard() {
       <div className="flex justify-end mr-[3.5%] mt-20">
         <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">
           <div className="flex justify-around">
-            <h2 className="hover:underline hover:text-blue-600 cursor-pointer">
+            <h2
+              className={`hover:underline hover:text-blue-600 cursor-pointer ${
+                info ? "text-blue-700" : ""
+              }`}
+              onClick={handleInfoT}
+            >
               Description
             </h2>
-            <h2 className="hover:underline hover:text-blue-600 cursor-pointer">
+            <h2
+              className={`hover:underline hover:text-blue-600 cursor-pointer ${
+                info ? "" : "text-blue-700"
+              }`}
+              onClick={handleInfoF}
+            >
               Delivery
             </h2>
           </div>
           <hr className="border-0.5 mt-2 border-black " />
-          {/* <p>
-          Skip the bland disposable bottles and show off your unique style or
-          mood with a water bottle. Speedex Light blue Simplex single-wall 1000
-          ML Stainless Steel Water Bottle with a newly designed smart cap.
-          Exquisitely holding varying qualities of Leak Proof, BPA-free fridge
-          bottle, and Grade SS201 value. The excellent go-to choice for everyday
-          use for school, home, kitchen, gym & traveling, etc. Standard pickup
-          because of its slim and lightweight design.
-        </p> */}
-          <div className="px-4 py-2">
+          <p className={`${info ? "block" : "hidden"} px-2 py-4 text-sm`}>
+            Skip the bland disposable bottles and show off your unique style or
+            mood with a water bottle. Speedex Light blue Simplex single-wall
+            1000 ML Stainless Steel Water Bottle with a newly designed smart
+            cap. Exquisitely holding varying qualities of Leak Proof, BPA-free
+            fridge bottle, and Grade SS201 value. The excellent go-to choice for
+            everyday use for school, home, kitchen, gym & traveling, etc.
+            Standard pickup because of its slim and lightweight design.
+          </p>
+          <div className={`${info ? "hidden" : "block"} px-4 py-2`}>
             <div>
               <h4 className=" uppercase font-semibold mb-2 mt-1">
                 Standard delivery

@@ -12,12 +12,15 @@ import Refund from "./Pages/Refund";
 import CompanyProfile from "./Pages/CompanyProfile";
 import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
+import FloatNav from "./Components/Common/FloatingNavbar";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
+      <FloatNav />
       <Navbar />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<PageNotFound />} />
@@ -29,6 +32,7 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-cancellation-policy" element={<Refund />} />
         <Route path="/about" element={<CompanyProfile />} />
+
         <Route
           path="/view/:bottleName/:productId"
           element={<ViewBottleCard />}

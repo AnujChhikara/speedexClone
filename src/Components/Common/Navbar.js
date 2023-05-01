@@ -15,7 +15,7 @@ function Navbar() {
   return (
     <div className={` ${isHome ? "bg" : "mb-12"} `}>
       <SidebarMenu isOpen={isOpen} onClose={onClose} />
-      <div className="flex justify-evenly items-center pt-10">
+      <div className="flex justify-evenly items-center pt-10  top-0">
         <div className="flex lg:space-x-6 text-gray-600 ">
           <h3
             className="hover:text-gray-900 hover:underline cursor-pointer"
@@ -33,9 +33,9 @@ function Navbar() {
         <div>
           <a href="/">
             <img
-              className="lg:w-60 md:w-24"
-              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911434/LogoG.png"
-              alt="imgae"
+              className="lg:w-40 md:w-24 ml-16"
+              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911671/LogoG1.png"
+              alt="Logoimgae"
             />
           </a>
         </div>
