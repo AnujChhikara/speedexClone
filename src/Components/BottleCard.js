@@ -17,7 +17,7 @@ function BottleCard(props) {
       onMouseLeave={handleMouseLeave}
       className={`${isHover ? "" : ""}`}
     >
-      <div className="w-[350px] flex flex-col items-center  space-y-3">
+      <div className="md:w-[350px] sm:w-40 flex flex-col items-center  space-y-3">
         <div>
           <h4
             className={`${
@@ -28,11 +28,11 @@ function BottleCard(props) {
           </h4>
           <img className="w-64 " src={props.imgUrl} alt="" />
         </div>
-        <h5 className="font-medium">
+        <h5 className="font-medium lg:text-lg">
           {props.bottleName} {props.name}
         </h5>
 
-        <div className="flex space-x-2 text-lg font-medium">
+        <div className="flex space-x-2 md:text-lg  font-medium">
           <h6 className="line-through text-gray-400">₹{props.cutPrice}.00</h6>
           <h6>₹{props.price}.00</h6>
         </div>

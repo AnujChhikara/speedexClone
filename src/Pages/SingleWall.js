@@ -104,8 +104,10 @@ function SingleWall() {
   return (
     <div>
       <div className="flex flex-col justify-center items-center mb-32">
-        <h2 className="text-[100px] text-gray-500 font-roboto">SINGLE WALL</h2>
-        <p className="text-gray-600 w-[650px]">
+        <h2 className="md:text-[100px] sm:text-[48px] text-gray-500 font-roboto">
+          SINGLE WALL
+        </h2>
+        <p className="text-gray-600 md:w-[650px] sm:w-[330px]">
           Your Hydration partner-The original Single-walled Stainless Steel
           Bottle. The highest grade that lasts a lifetime & never rusts and has
           completely matched leak-proof properties. Can store carbonated
@@ -116,33 +118,45 @@ function SingleWall() {
 
       <div className="flex flex-col space-y-20">
         <div className="flex flex-col items-center">
-          <h3 className=" uppercase text-[92px] font-roboto">simplex</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto">
+            simplex
+          </h3>
           <div className="flex flex-wrap  justify-center">{simplexBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">hydrate</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
+            hydrate
+          </h3>
           <div className="flex flex-wrap justify-center">{hydrateBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
             Drip & Trip
           </h3>
           <div className="flex flex-wrap justify-center">{dripTripBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">Kurvey</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
+            Kurvey
+          </h3>
           <div className="flex flex-wrap justify-center">{kurveyBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">glacia</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
+            glacia
+          </h3>
           <div className="flex flex-wrap justify-center">{glaciaBottles}</div>
         </div>
         <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">Liquatic</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
+            Liquatic
+          </h3>
           <div className="flex flex-wrap justify-center">{liquaticBottles}</div>
         </div>
         <div className="flex flex-col items-center">
-          <h3 className=" uppercase text-[92px] font-roboto mb-4">kiddo</h3>
+          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
+            kiddo
+          </h3>
           <div className="flex flex-wrap justify-center">{kiddoBottles}</div>
         </div>
       </div>

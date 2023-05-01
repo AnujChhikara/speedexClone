@@ -1,15 +1,24 @@
 function CompanyProfile() {
   return (
-    <div className="flex flex-col justify-center items-center mt-12  px-8">
-      <h2 className="mb-8 mt-10 text-6xl font-Sans font-bold text-transparent bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text">
+    <div className="flex flex-col justify-center items-center md:mt-12 sm:mt-4  md:px-8 sm:px-2">
+      <h2 className="mb-8 md:mt-10 md:text-6xl sm:text-3xl font-Sans font-bold text-transparent bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text">
         Company Profile
       </h2>
-      <div className="flex space-x-6 bg-gray-100 shadow-xl p-10 rounded-xl ">
-        <div className="w-[500px]">
-          <h3 className="text-2xl mb-4">
+      <div className="md:flex md:flex-row sm:flex sm:flex-col md:space-x-6 sm:space-y-6 md:space-y-0 justify-center items-center  bg-gray-100 shadow-xl p-6 md:p-10 rounded-xl ">
+        <div>
+          <h3 className="md:text-2xl sm:text-lg md:w-[440px] mb-4">
             WELCOME TO CHOOSE HEALTHY SOLUTIONS , STAINLESS STEEL WATER BOTTLES
             - #Passionofchange
           </h3>
+          <div>
+            <img
+              className="md:h-[450px] sm:h-88 rounded-xl"
+              src="https://speedexind.com/wp-content/uploads/2023/02/shark-bottle-677x1024.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="md:w-[500px] sm:w-[300px]">
           <p className="text-gray-500">
             The Speedex brand was founded in 2001, and we are now revealing
             advancements in our stainless steel water bottles to you. A dream
@@ -32,38 +41,40 @@ function CompanyProfile() {
             OEM (Original equipment manufacturer) in India.
           </p>
         </div>
-        <div>
+      </div>
+      <div className="flex space-x-6 bg-gray-100 shadow-xl md:p-10 sm:p-4 rounded-xl mt-12">
+        <div className="md:w-[900px] md:flex md:flex-row sm:flex sm:flex-col justify-center md:space-x-4 items-center  sm:w-[300px]">
+          <div>
+            <h3 className="md:text-6xl sm:text-4xl mb-8">Our Mission</h3>
+            <p className="text-gray-500">
+              In 2001, Maharaja Cookers Private Limited launched the brand
+              Speedex. Questioning ourselves that using more and more plastic
+              water bottles is good for the environment and us. This is the
+              motivation for this company. Our mission is to develop a
+              cost-effective and environmentally friendly alternative to plastic
+              water bottles.Also, to promote health through our extensive
+              selection of stainless steel products in our day-to-day lifestyle.
+              Moreover, we aims to maximize customer satisfaction by focusing on
+              innovation and enhancing the quality of our products
+            </p>
+          </div>
           <img
-            className="h-[580px] rounded-xl"
-            src="https://speedexind.com/wp-content/uploads/2023/02/shark-bottle-677x1024.png"
+            src="https://res.cloudinary.com/dmurcewte/image/upload/v1682956113/linkd2.jpg"
             alt=""
+            className="rounded-xl md:w-80 sm:mt-4 md:mt-0  md:mb-10"
           />
         </div>
       </div>
-      <div className="flex space-x-6 bg-gray-100 shadow-xl p-10 rounded-xl mt-12">
-        <img
-          className="h-[580px] rounded-xl"
-          src="https://scontent.fixc8-2.fna.fbcdn.net/v/t39.30808-6/340442868_972595120782107_7010399469263156117_n.jpg?stp=dst-jpg_p526x296&_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=kDq57Ms6vT0AX_7xOOq&_nc_ht=scontent.fixc8-2.fna&oh=00_AfBNwpd750mh06KeGB7oOrGS_exZGzMDuNB-RE9M3DAtkg&oe=64374E58"
-          alt=""
-        />
-        <div className="w-[500px]">
-          <h3 className="text-6xl mb-8">Our Mission</h3>
-          <p className="text-gray-500">
-            In 2001, Maharaja Cookers Private Limited launched the brand
-            Speedex. Questioning ourselves that using more and more plastic
-            water bottles is good for the environment and us. This is the
-            motivation for this company. Our mission is to develop a
-            cost-effective and environmentally friendly alternative to plastic
-            water bottles.Also, to promote health through our extensive
-            selection of stainless steel products in our day-to-day lifestyle.
-            Moreover, we aims to maximize customer satisfaction by focusing on
-            innovation and enhancing the quality of our products
-          </p>
-        </div>
-      </div>
-      <div className="flex space-x-6 bg-gray-100 shadow-xl p-10 rounded-xl mt-12">
-        <div>
-          <h3 className="text-6xl mb-8">Vision Statement</h3>
+      <div className="flex md:space-x-6 bg-gray-100 shadow-xl md:p-10 sm:p-6 rounded-xl mt-12">
+        <div className="md:w-[900px] md:flex md:flex-row sm:flex sm:flex-col justify-center items-center md:space-x-10 sm:w-[300px]">
+          <div>
+            <h3 className="md:text-6xl sm:text-4xl mb-8">Vision Statement</h3>
+            <img
+              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682956008/linkd1.jpg"
+              alt=""
+              className="rounded-xl w-80 mb-10"
+            />
+          </div>
           <p className="text-gray-500">
             Our objective is to design stainless steel products that are smart,
             adaptable, and reliable to win over customers. We try to ensure that
@@ -86,11 +97,6 @@ function CompanyProfile() {
             lot of interesting new products in the works.
           </p>
         </div>
-        <img
-          className="h-[580px] rounded-xl"
-          src="https://scontent.fixc8-2.fna.fbcdn.net/v/t39.30808-6/333273151_732733268432093_7026006730607108895_n.jpg?stp=dst-jpg_p526x296&_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=_scAMIj3dH0AX-Qgslo&_nc_ht=scontent.fixc8-2.fna&oh=00_AfDWKgGPxEAywFi5z0M2VFitR839j2qqaoMtGgNQN7pGTg&oe=643717A9"
-          alt=""
-        />
       </div>
     </div>
   );

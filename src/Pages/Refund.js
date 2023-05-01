@@ -1,8 +1,8 @@
 function Refund() {
   return (
-    <div className="px-16 mt-20 flex flex-col space-y-16">
+    <div className="md:px-16 sm:px-4 mt-20 flex flex-col space-y-16">
       <div>
-        <h2 className="text-5xl font-semibold">
+        <h2 className="md:text-5xl sm:text-3xl font-semibold">
           Refund and Cancellation Policy
         </h2>
         <p className="text-gray-600 mt-10">
@@ -22,7 +22,7 @@ function Refund() {
         </p>
       </div>
       <div>
-        <h3 className="text-4xl font-semibold">REFUND</h3>
+        <h3 className="md:text-4xl sm:text-3xl font-semibold">REFUND</h3>
         <p className="text-gray-600 mt-10">
           7 days from the original date of purchase only refund is possible in
           case of damage from company side. All such refund requests shall have

@@ -31,7 +31,7 @@
     /* background-color: #e49393; */
     position: relative;
     background-color: #eee; /* first solid color */
-    background-image: linear-gradient(-105deg, #ffc0cb 75.6%, transparent 0%);
+    background-image: linear-gradient(-105deg, #ffc0cb 74%, transparent 0%);
     /* diagonal stripe pattern */
 
     height: 600px;

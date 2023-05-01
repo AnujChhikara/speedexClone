@@ -1,7 +1,7 @@
 function PrivacyPolicy() {
   return (
     <div>
-      <div className="px-20 py-20 flex flex-col space-y-20">
+      <div className="md:px-20 sm:px-4 py-20 flex flex-col space-y-20">
         <div>
           <h2 className="text-5xl">Privacy Policy</h2>
           <p className="mt-10 text-gray-500">
@@ -130,15 +130,13 @@ function PrivacyPolicy() {
             In order to use your personal information as previously mentioned,
             we divulge it to third parties. You may learn more about how Big
             Rock uses your Personal Information here:
-            https://newfold.com/privacy-center. In order to better understand
-            how our users interact with the website, we also use Google
-            Analytics. You can learn more about how Google uses your personal
-            information here.
+            https://newfold.com/privacy. In order to better understand how our
+            users interact with the website, we also use Google Analytics. You
+            can learn more about how Google uses your personal information here.
           </p>
           <p className="mt-10 text-gray-500">
-            https://www.google.com/intl/en/policies/privacy/. You can also opt
-            out of Google Analytics here:
-            https://tools.google.com/dlpage/gaoptout.
+            https://www.google.com//en/policies/privacy/. You can also opt out
+            of Google Analytics here: https://tools.google.com/dlpage/gaoptout.
           </p>
           <p className="mt-10 text-gray-500">
             Finally, we may even share your Personal Information to meet
@@ -216,19 +214,19 @@ function PrivacyPolicy() {
             functions.
           </p>
           <p className="mt-10 text-gray-500">
-            http://www.networkadvertising.org/understanding-online-advertising/how-does-it-work.
+            http://www.networkadvertising.org/-online-advertising/how-does-it-work.
           </p>
           <p className="mt-10 text-gray-500">
             With the links below, you can choose not to get targeted
             advertising:
           </p>
-          <ul className="list-disc ml-12">
+          <ul className="list-disc md:ml-12 sm:ml-6">
             <li className="mt-10 text-gray-500">
               {" "}
               Facebook: https://www.facebook.com/settings/?tab=ads
             </li>
             <li className="mt-10 text-gray-500">
-              Google: https://www.google.com/settings/ads/anonymous
+              Google: https://www.google.com/settings/ads/
             </li>
             <li className="mt-10 text-gray-500">
               Bing:

@@ -8,13 +8,24 @@ module.exports = {
       },
       backgroundImage: {
         firstCard:
-          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944738/Card1.jpg')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/v1682944738/Card1.jpg')",
         secondCard:
-          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944753/Card2.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/v1682944753/Card2.webp')",
         thirdCard:
-          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944768/Card3.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/v1682944768/Card3.webp')",
         fourthCard:
-          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944788/Card4.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/v1682944788/Card4.webp')",
+        fifthCard:
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_336/v1682944738/Card1.jpg')",
+
+        sixCard:
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_336/v1682944753/Card2.webp')",
+
+        sevenCard:
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_336/v1682944768/Card3.webp')",
+
+        eightCard:
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_336/v1682944788/Card4.webp')",
       },
       screens: {
         sm: "300px",
