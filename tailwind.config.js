@@ -8,13 +8,13 @@ module.exports = {
       },
       backgroundImage: {
         firstCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/04/home-ban.jpg')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944738/Card1.jpg')",
         secondCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/03/gift.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944753/Card2.webp')",
         thirdCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/03/access.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944768/Card3.webp')",
         fourthCard:
-          "url('https://speedexind.com/wp-content/uploads/2023/04/milo-home.webp')",
+          "url('https://res.cloudinary.com/dmurcewte/image/upload/c_scale,w_391/v1682944788/Card4.webp')",
       },
       screens: {
         sm: "300px",

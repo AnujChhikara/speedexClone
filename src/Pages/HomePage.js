@@ -4,9 +4,9 @@ import Review from "../Components/Home/Review/Review";
 
 function HomePage() {
   return (
-    <div>
+    <div className="">
       <Home />
-      <div className="mt-10">
+      <div className="md:mt-10 sm:mt-4">
         <Body />
       </div>
       <div>

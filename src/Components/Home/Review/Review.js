@@ -11,11 +11,13 @@ function Review() {
     );
   });
   return (
-    <div className="flex flex-col items-center px-10  ">
-      <h4 className=" font-semibold text-transparent text-5xl bg-clip-text mb-10 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+    <div className="flex flex-col items-center justify-center md:px-10 sm:px-1 sm:mt-12">
+      <h4 className=" font-semibold text-transparent md:text-5xl sm:text-[32px] bg-clip-text md:mb-10 sm:mb-6 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
         What Our Customers Say
       </h4>
-      <div className="text-sm flex justify-center space-x-8">{reviews}</div>
+      <div className="text-sm md:flex md:flex-row sm:flex sm:flex-col justify-center md:space-y-0 sm:space-y-2 sm:px-4 md:px-0 md:space-x-8 sm:space-x-0">
+        {reviews}
+      </div>
     </div>
   );
 }

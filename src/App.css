@@ -1,28 +1,59 @@
-.bg {
-  /* background-color: #e49393; */
-  position: relative;
-  background-color: #eee; /* first solid color */
-  background-image: linear-gradient(-105deg, #ffc0cb 65%, transparent 0%);
-  /* diagonal stripe pattern */
+@media only screen and (min-width: 720px) {
+  .align {
+    margin-left: 37%;
+    margin-top: 2%;
+  }
+  .bg {
+    /* background-color: #e49393; */
+    position: relative;
+    background-color: #eee; /* first solid color */
+    background-image: linear-gradient(-105deg, #ffc0cb 65%, transparent 0%);
+    /* diagonal stripe pattern */
 
-  height: 800px;
+    height: 800px;
+  }
+  .content span {
+    color: #fff;
+    font-size: 90px;
+    position: absolute;
+  }
+  .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+  }
 }
 
-.align {
-  margin-left: 37%;
-  margin-top: 2%;
+@media only screen and (max-width: 720px) {
+  .bg {
+    /* background-color: #e49393; */
+    position: relative;
+    background-color: #eee; /* first solid color */
+    background-image: linear-gradient(-105deg, #ffc0cb 75.6%, transparent 0%);
+    /* diagonal stripe pattern */
+
+    height: 600px;
+  }
+  .content span {
+    color: #fff;
+    font-size: 60px;
+    position: absolute;
+  }
+  .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 150px;
+    overflow-x: hidden;
+  }
 }
 select:focus {
   border-color: gray;
   outline: none;
 }
-.marquee {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  height: 200px;
-  overflow-x: hidden;
-}
+
 .track {
   position: absolute;
   white-space: nowrap;
@@ -45,11 +76,6 @@ select:focus {
 }
 .pop {
   font-family: "Poppins", sans-serif;
-}
-.content span {
-  color: #fff;
-  font-size: 90px;
-  position: absolute;
 }
 
 .content span:nth-child(1) {

@@ -50,16 +50,16 @@ function SidebarMenu(props) {
       isOpen={props.isOpen}
       onClose={props.onClose}
       styles={styles}
-      width={400}
+      width={props.width}
     >
-      <div className="flex flex-col space-y-4 pt-20 justify-center text-lg font-medium ">
+      <div className="flex flex-col space-y-4 md:pt-20 sm:pt-12 justify-center lg:text-lg sm:text-sm font-medium ">
         <a
           className="menu-item flex hover:bg-gray-200 rounded-xl py-2 duration-500 justify-around items-center space-x-6"
           href="/single-wall"
         >
           Single Wall
           <img
-            className="w-28"
+            className="md:w-28 sm:w-16"
             src="https://speedexind.com/wp-content/uploads/2023/04/S-WALL-icon.png"
             alt=""
           />
@@ -70,7 +70,7 @@ function SidebarMenu(props) {
         >
           Hot & Cold
           <img
-            className="w-28"
+            className="md:w-28 sm:w-16"
             src="https://speedexind.com/wp-content/uploads/2023/04/hot2.png"
             alt=""
           />
@@ -81,7 +81,7 @@ function SidebarMenu(props) {
         >
           Atelier{" "}
           <img
-            className="w-28"
+            className="md:w-28 sm:w-16"
             src="https://speedexind.com/wp-content/uploads/2023/04/artisttic.png"
             alt=""
           />
@@ -92,7 +92,7 @@ function SidebarMenu(props) {
         >
           Feeding Bottle
           <img
-            className="w-24"
+            className="md:w-28 sm:w-16"
             src="https://speedexind.com/wp-content/uploads/2023/03/feeding-icon.png"
             alt=""
           />
