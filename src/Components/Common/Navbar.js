@@ -33,8 +33,8 @@ function Navbar() {
         <div>
           <a href="/">
             <img
-              className="lg:w-44 md:w-24"
-              src="https://speedexind.com/wp-content/uploads/2022/11/Speedex-gold.png"
+              className="lg:w-60 md:w-24"
+              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911434/LogoG.png"
               alt="imgae"
             />
           </a>

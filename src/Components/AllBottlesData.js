@@ -8,11 +8,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
+    Logo: true,
     Colors: [
       {
         id: 1,
@@ -140,11 +149,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
+    Logo: true,
     Colors: [
       {
         id: 1,
@@ -230,11 +248,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
+    Logo: true,
     Colors: [
       {
         id: 1,
@@ -318,11 +345,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    Logo: true,
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
     Colors: [
       {
@@ -407,11 +443,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    Logo: true,
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
     Colors: [
       {
@@ -509,11 +554,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    Logo: true,
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
     Colors: [
       {
@@ -598,11 +652,20 @@ const AllBottleData = [
       "https://speedexind.com/wp-content/uploads/2023/01/sippe-30x30.png",
       "https://speedexind.com/wp-content/uploads/2023/01/STEEL-30x30.png",
     ],
+    Logo: true,
     CapImages: [
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
-
-      "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      {
+        id: "Cap1",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+      },
+      {
+        id: "Cap2",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861247/cap2_rewodb.png",
+      },
+      {
+        id: "Cap3",
+        img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861474/cap3_vhuxzy.png",
+      },
     ],
     Colors: [
       {

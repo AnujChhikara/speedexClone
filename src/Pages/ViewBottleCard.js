@@ -8,11 +8,12 @@ import { AdvancedImage } from "@cloudinary/react";
 import AllBottleData from "../Components/AllBottlesData";
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
-  const [selectedCap, setSelectedCap] = useState(
-    "https://speedexind.com/wp-content/uploads/2023/03/drip-trip_0000_Layer-9.png"
-  );
+  const [selectedCap, setSelectedCap] = useState({
+    id: "Cap1",
+    img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
+  });
   const [quantity, setQuantity] = useState(1);
-  const [engrave, setEngrave] = useState();
+  const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
   const handleEngraveColor = (e) => {
     const value = e.target.value;
@@ -77,32 +78,70 @@ function ViewBottleCard() {
         {Caps.length > 0 ? (
           <div className="relative inline-block ">
             <img
-              src={selectedCap}
+              src={selectedCap.img}
               alt=""
               className={`${
                 allBottles.id === "Hydrate"
-                  ? " top-[-12%] right-0.5 scale-125"
+                  ? selectedCap.id === "Cap1"
+                    ? "top-[-12%] right-0.5 scale-125"
+                    : selectedCap.id === "Cap2"
+                    ? " top-[-16%] right-1.5 scale-125"
+                    : " top-[-13%] right-1 scale-125"
                   : allBottles.id === "Drip Trip"
                   ? "absolute -top-0.5 scale-105"
                   : allBottles.id === "Kurvey"
-                  ? " top-[-9%] right-0.5 scale-125"
+                  ? selectedCap.id === "Cap1"
+                    ? " top-[-9%] right-0.5 scale-125"
+                    : selectedCap.id === "Cap2"
+                    ? " top-[-11.5%] right-1.5 scale-125"
+                    : " top-[-9.7%] right-0.5 scale-125"
                   : allBottles.id === "Glacia"
-                  ? " top-[-4%] -right-1.5 scale-110 "
+                  ? selectedCap.id === "Cap1"
+                    ? " top-[-4%] -right-1.5 scale-110 "
+                    : selectedCap.id === "Cap2"
+                    ? " top-[-5%] -right-0.5 scale-110 "
+                    : " top-[-4.6%] -right-1.5 scale-110 "
                   : allBottles.id === "Liquatic"
-                  ? " top-[2.5%] -right-0.5 scale-110 "
+                  ? selectedCap.id === "Cap1"
+                    ? " top-[2.5%] -right-0.5 scale-110 "
+                    : selectedCap.id === "Cap2"
+                    ? " top-[.5%]  scale-110 "
+                    : " top-[2.2%] -right-0.5 scale-110 "
                   : allBottles.id === "Kiddo"
-                  ? " top-[8%] -right-0.5 scale-110 "
+                  ? selectedCap.id === "Cap1"
+                    ? " top-[8%] -right-0.5 scale-110 "
+                    : selectedCap.id === "Cap2"
+                    ? " top-[7%] -right-0.5 scale-110 "
+                    : " top-[8%] -right-1 scale-110 "
                   : " top-[-7%] left-0.5"
               }  absolute  `}
             />
             <div className="">
               <AdvancedImage cldImg={singleWallImages} />
             </div>
+
             <div
-              className={` ${engraveColor} absolute -rotate-90 top-[82%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-md`}
+              className={` ${engraveColor} absolute -rotate-90 top-[82%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-lg`}
             >
               {engrave}
             </div>
+            <img
+              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911671/LogoG1.png"
+              alt=""
+              className={`${
+                allBottles.Logo
+                  ? engrave === ""
+                    ? "block"
+                    : "hidden"
+                  : "hidden"
+              } ${
+                allBottles.id === "Liquatic"
+                  ? "top-[94%]"
+                  : allBottles.id === "Kiddo"
+                  ? "top-[87%]"
+                  : "top-[91%]"
+              } absolute w-20  left-1/2 transform -translate-x-1/2 -translate-y-2/3 `}
+            />
           </div>
         ) : (
           <div className="">
