@@ -1,4 +1,5 @@
 import AOS from "aos";
+
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
 AOS.init({
@@ -63,7 +64,7 @@ function Body() {
       </div>
       {/* first card */}
       <div
-        // data-aos="slide-left"
+        data-aos="slide-right"
         className="md:flex md:flex-row sm:flex sm:flex-col justify-center items-center md:mt-20 sm:mt-0 md:ml-10 sm:ml-0 "
       >
         <div className="">
@@ -116,7 +117,7 @@ function Body() {
       {/* second vard */}
 
       <div
-        // data-aos="slide-left"
+        data-aos="slide-left"
         className="md:flex md:flex-row sm:flex sm:flex-col justify-center items-center md:mt-20 sm:mt-10 md:ml-10 sm:ml-0 "
       >
         <div className="">
@@ -191,7 +192,7 @@ function Body() {
           </div>
         </div>
         {/* second set */}
-        <div className="md:flex md:flex-row sm:flex sm:flex-col sm:space-y-8 md:space-y-0 justify-evenly items-center md:space-x-10 sm:spcae-x-0">
+        <div className="md:flex md:flex-row sm:flex sm:flex-col sm:space-y-8 md:space-y-0 justify-center items-center md:space-x-10 sm:spcae-x-0">
           <div className="lg:w-[615px] lg:h-[922px] sm:w-[336px] sm:h-[504px]  shadow-lg shadow-gray-700 sm:bg-sevenCard  lg:bg-thirdCard rounded-lg flex flex-col justify-center  space-y-4 items-center">
             <h3 className="text-5xl mt-32 font-semibold text-white">
               Accessories

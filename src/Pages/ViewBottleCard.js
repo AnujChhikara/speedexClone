@@ -70,7 +70,7 @@ function ViewBottleCard() {
   });
   const Colors = allBottles.Colors.map(function (color) {
     return (
-      <a href={`/view/${bottleName}/${color.id}`}>
+      <a className="w-12" href={`/view/${bottleName}/${color.id}`}>
         <img src={color.link} alt="" />{" "}
       </a>
     );
@@ -78,8 +78,11 @@ function ViewBottleCard() {
 
   return (
     <div>
-      <div className="flex justify-evenly items-center mx-8" key={bottle.id}>
-        <h2 className="font-semibold font-nunito text-3xl pl-16 w-96">
+      <div
+        className="md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center md:mx-8"
+        key={bottle.id}
+      >
+        <h2 className="font-semibold font-nunito text-3xl md:pl-16 md:w-96">
           {bottleName} {bottle.name}
         </h2>
         {Caps.length > 0 ? (
@@ -156,10 +159,10 @@ function ViewBottleCard() {
           </div>
         )}
 
-        <div className="bg-white text-lg pr-28 p-6   flex flex-col space-y-8 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
+        <div className="bg-white md:text-lg md:pr-28 md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
-            <div className="flex w-60 flex-wrap "> {Colors}</div>
+            <div className="flex  md:w-60 flex-wrap "> {Colors}</div>
           </div>
           <div
             className={`flex space-x-6 ${Caps.length > 1 ? "block" : "hidden"}`}
@@ -170,8 +173,8 @@ function ViewBottleCard() {
           <div className="flex space-x-6">
             <h4 className="font-bold font-roboto">Size</h4>
             <div className="flex space-x-4 font-light text-base">
-              <div>750ml</div>
-              <div>1000ml</div>
+              <div className="border px-1 border-gray-400">750ml</div>
+              <div className="border px-1 border-gray-400">1000ml</div>
             </div>
           </div>
 

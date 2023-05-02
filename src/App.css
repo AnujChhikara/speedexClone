@@ -61,6 +61,11 @@ select:focus {
   animation: marquee 32s linear infinite;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 @keyframes marquee {
   from {
     transform: translateX(0);
