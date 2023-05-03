@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       rotate: {
         60: "15deg",
+        50: "22deg",
       },
       backgroundImage: {
         firstCard:

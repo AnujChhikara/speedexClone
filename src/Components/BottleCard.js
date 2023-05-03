@@ -22,7 +22,7 @@ function BottleCard(props) {
           <h4
             className={`${
               isHover ? " block" : "hidden"
-            } absolute mt-40 ml-[88px] h-7 text-white rounded flex items-center justify-center font-semibold text-sm font-Sans duration-1000 bg-black w-20`}
+            } absolute sm:mt-20 sm:ml-12 md:mt-40 md:ml-[88px] h-7 text-white rounded flex items-center justify-center font-semibold text-sm font-Sans duration-1000 bg-black sm:w-16 md:w-20`}
           >
             View
           </h4>

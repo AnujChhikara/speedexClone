@@ -79,87 +79,89 @@ function ViewBottleCard() {
   return (
     <div>
       <div
-        className="md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center md:mx-8"
+        className="md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8"
         key={bottle.id}
       >
-        <h2 className="font-semibold font-nunito text-3xl md:pl-16 md:w-96">
-          {bottleName} {bottle.name}
-        </h2>
-        {Caps.length > 0 ? (
-          <div className="relative inline-block z-0 ">
-            <img
-              src={selectedCap.img}
-              alt=""
-              className={`${
-                allBottles.id === "Hydrate"
-                  ? selectedCap.id === "Cap1"
-                    ? "top-[-12%] right-0.5 scale-125"
-                    : selectedCap.id === "Cap2"
-                    ? " top-[-16%] right-1.5 scale-125"
-                    : " top-[-13%] right-1 scale-125"
-                  : allBottles.id === "Drip Trip"
-                  ? "absolute -top-0.5 scale-105"
-                  : allBottles.id === "Kurvey"
-                  ? selectedCap.id === "Cap1"
-                    ? " top-[-9%] right-0.5 scale-125"
-                    : selectedCap.id === "Cap2"
-                    ? " top-[-11.5%] right-1.5 scale-125"
-                    : " top-[-9.7%] right-0.5 scale-125"
-                  : allBottles.id === "Glacia"
-                  ? selectedCap.id === "Cap1"
-                    ? " top-[-4%] -right-1.5 scale-110 "
-                    : selectedCap.id === "Cap2"
-                    ? " top-[-5%] -right-0.5 scale-110 "
-                    : " top-[-4.6%] -right-1.5 scale-110 "
-                  : allBottles.id === "Liquatic"
-                  ? selectedCap.id === "Cap1"
-                    ? " top-[2.5%] -right-0.5 scale-110 "
-                    : selectedCap.id === "Cap2"
-                    ? " top-[.5%]  scale-110 "
-                    : " top-[2.2%] -right-0.5 scale-110 "
-                  : allBottles.id === "Kiddo"
-                  ? selectedCap.id === "Cap1"
-                    ? " top-[8%] -right-0.5 scale-110 "
-                    : selectedCap.id === "Cap2"
-                    ? " top-[7%] -right-0.5 scale-110 "
-                    : " top-[8%] -right-1 scale-110 "
-                  : " top-[-7%] left-0.5"
-              }  absolute  `}
-            />
-            <div className="">
-              <AdvancedImage cldImg={singleWallImages} />
-            </div>
+        <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-2 md:-space-y-0  justify-center items-center">
+          <h2 className="font-semibold sm:mt-4 md:mt-0 font-nunito text-3xl md:pl-16 md:w-96 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+            {bottleName} {bottle.name}
+          </h2>
+          {Caps.length > 0 ? (
+            <div className="relative inline-block z-0 ">
+              <img
+                src={selectedCap.img}
+                alt=""
+                className={`${
+                  allBottles.id === "Hydrate"
+                    ? selectedCap.id === "Cap1"
+                      ? "top-[-12%] right-0.5 scale-125"
+                      : selectedCap.id === "Cap2"
+                      ? " top-[-16%] right-1.5 scale-125"
+                      : " top-[-13%] right-1 scale-125"
+                    : allBottles.id === "Drip Trip"
+                    ? "absolute -top-0.5 scale-105"
+                    : allBottles.id === "Kurvey"
+                    ? selectedCap.id === "Cap1"
+                      ? " top-[-9%] right-0.5 scale-125"
+                      : selectedCap.id === "Cap2"
+                      ? " top-[-11.5%] right-1.5 scale-125"
+                      : " top-[-9.7%] right-0.5 scale-125"
+                    : allBottles.id === "Glacia"
+                    ? selectedCap.id === "Cap1"
+                      ? " top-[-4%] -right-1.5 scale-110 "
+                      : selectedCap.id === "Cap2"
+                      ? " top-[-5%] -right-0.5 scale-110 "
+                      : " top-[-4.6%] -right-1.5 scale-110 "
+                    : allBottles.id === "Liquatic"
+                    ? selectedCap.id === "Cap1"
+                      ? " top-[2.5%] -right-0.5 scale-110 "
+                      : selectedCap.id === "Cap2"
+                      ? " top-[.5%]  scale-110 "
+                      : " top-[2.2%] -right-0.5 scale-110 "
+                    : allBottles.id === "Kiddo"
+                    ? selectedCap.id === "Cap1"
+                      ? " top-[8%] -right-0.5 scale-110 "
+                      : selectedCap.id === "Cap2"
+                      ? " top-[7%] -right-0.5 scale-110 "
+                      : " top-[8%] -right-1 scale-110 "
+                    : " top-[-7%] left-0.5"
+                }  absolute  `}
+              />
+              <div className="">
+                <AdvancedImage cldImg={singleWallImages} />
+              </div>
 
-            <div
-              className={` ${engraveColor} absolute -rotate-90 top-[82%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-lg`}
-            >
-              {engrave}
-            </div>
-            <img
-              src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911671/LogoG1.png"
-              alt=""
-              className={`${
-                allBottles.Logo
-                  ? engrave === ""
-                    ? "block"
+              <div
+                className={` ${engraveColor} absolute -rotate-90 top-[82%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto font-semibold  text-lg`}
+              >
+                {engrave}
+              </div>
+              <img
+                src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911671/LogoG1.png"
+                alt=""
+                className={`${
+                  allBottles.Logo
+                    ? engrave === ""
+                      ? "block"
+                      : "hidden"
                     : "hidden"
-                  : "hidden"
-              } ${
-                allBottles.id === "Liquatic"
-                  ? "top-[94%]"
-                  : allBottles.id === "Kiddo"
-                  ? "top-[87%]"
-                  : "top-[91%]"
-              } absolute w-20  left-1/2 transform -translate-x-1/2 -translate-y-2/3 `}
-            />
-          </div>
-        ) : (
-          <div className="">
-            <AdvancedImage cldImg={doubleWallImages} />
-          </div>
-        )}
+                } ${
+                  allBottles.id === "Liquatic"
+                    ? "top-[94%]"
+                    : allBottles.id === "Kiddo"
+                    ? "top-[87%]"
+                    : "top-[91%]"
+                } absolute w-20  left-1/2 transform -translate-x-1/2 -translate-y-2/3 `}
+              />
+            </div>
+          ) : (
+            <div className="">
+              <AdvancedImage cldImg={doubleWallImages} />
+            </div>
+          )}
+        </div>
 
-        <div className="bg-white md:text-lg md:pr-28 md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-600 hover:shadow-xl hover:shadow-gray-600 duration-1000">
+        <div className="bg-white md:text-lg md:pr-28 sm:w-[350px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-400  duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
             <div className="flex  md:w-60 flex-wrap "> {Colors}</div>
@@ -248,7 +250,9 @@ function ViewBottleCard() {
           </div>
         </div>
       </div>
-      <div className="flex justify-end mr-[3.5%] mt-20">
+      <div className="flex md:justify-evenly  sm:mx-4 md:mx-0 mt-20">
+        <div className="md:block sm:hidden w-80"></div>
+        <div className=" md:block sm:hidden w-[290px]"></div>
         <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">
           <div className="flex justify-around">
             <h2
