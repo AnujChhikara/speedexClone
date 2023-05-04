@@ -24,14 +24,14 @@ function Navbar() {
   return (
     <div className={` ${isHome ? "bg" : "mb-12"} sm:pb-16  `}>
       {isDesktop ? (
-        <div>
+        <div className="fixed w-full z-10 top-0 bg-white py-3 shadow-xl text-gray-500 text-sm">
           <SidebarMenu
             isOpen={isOpen}
             onClose={onClose}
             width={400}
             itemWidth={20}
           />
-          <div className="flex justify-evenly items-center pt-10">
+          <div className="flex justify-around items-center">
             <div className="flex lg:space-x-6 text-gray-600 ">
               <h3
                 className="hover:text-gray-900 hover:underline cursor-pointer"
@@ -52,8 +52,8 @@ function Navbar() {
             <div>
               <a href="/">
                 <img
-                  className="lg:w-40 md:w-24 ml-16"
-                  src="https://res.cloudinary.com/dmurcewte/image/upload/v1682911671/LogoG1.png"
+                  className="w-12 "
+                  src="https://jkrisk.in/speedex/wp-content/uploads/2022/11/small-Logo.png"
                   alt="Logoimgae"
                 />
               </a>
@@ -68,7 +68,7 @@ function Navbar() {
                 {" "}
                 <div className="flex space-x-1 items-center">
                   <svg
-                    className="w-6 hover:fill-gray-200"
+                    className="w-4 hover:fill-gray-200"
                     viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg"
                   >
@@ -84,7 +84,7 @@ function Navbar() {
               </a>
 
               <svg
-                className="w-8 "
+                className="w-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +104,7 @@ function Navbar() {
               </svg>
 
               <svg
-                className="w-8 hover:fill-zinc-800 hover:scale-105 duration-500"
+                className="w-6 hover:fill-zinc-800 hover:scale-105 duration-500"
                 viewBox="0 0 48 48"
                 xmlns="http://www.w3.org/2000/svg"
               >

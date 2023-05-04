@@ -28,12 +28,14 @@ function BottleCard(props) {
           </h4>
           <img className="w-64 " src={props.imgUrl} alt="" />
         </div>
-        <h5 className="font-medium lg:text-lg">
+        <h5 className="font-medium lg:text-lg sm:text-sm">
           {props.bottleName} {props.name}
         </h5>
 
-        <div className="flex space-x-2 md:text-lg  font-medium">
-          <h6 className="line-through text-gray-400">₹{props.cutPrice}.00</h6>
+        <div className="flex space-x-2 md:text-lg sm:text-xs font-medium">
+          <h6 className="line-through sm:hidden md:block text-gray-400">
+            ₹{props.cutPrice}.00
+          </h6>
           <h6>₹{props.price}.00</h6>
         </div>
       </div>

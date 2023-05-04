@@ -26,6 +26,7 @@ const AllBottleData = [
       {
         id: 1,
         color: "Black",
+        hex: "#454545",
         link: "https://speedexind.com/wp-content/uploads/2023/01/black-s.png",
       },
       {

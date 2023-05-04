@@ -64,6 +64,7 @@ select:focus {
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 @keyframes marquee {

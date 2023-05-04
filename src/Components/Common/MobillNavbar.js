@@ -25,7 +25,7 @@ function MobileNav() {
 
     bmMenuWrap: {
       position: "fixed",
-      height: "40%",
+      height: "45%",
       margin: "0px 0",
     },
     bmMenu: {

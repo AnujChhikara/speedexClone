@@ -14,6 +14,7 @@ function ViewBottleCard() {
   });
   const [quantity, setQuantity] = useState(1);
   const [info, setInfo] = useState(true);
+
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
   const handleEngraveColor = (e) => {
@@ -53,6 +54,8 @@ function ViewBottleCard() {
   };
   const allBottles = AllBottleData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[productId - 1];
+  // const [hexColor, setHexColor] = useState(bottle.hex);
+
   const myImage = new CloudinaryImage(`${bottle.imgId}`, {
     cloudName: "dmurcewte",
   });
@@ -79,7 +82,7 @@ function ViewBottleCard() {
   return (
     <div>
       <div
-        className="md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8"
+        className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8 `}
         key={bottle.id}
       >
         <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
@@ -250,7 +253,7 @@ function ViewBottleCard() {
           </div>
         </div>
       </div>
-      <div className="flex md:justify-evenly  sm:mx-4 md:mx-0 mt-20">
+      <div className="flex md:justify-evenly bg-white  sm:mx-4 md:mx-0 mt-20">
         <div className="md:block sm:hidden w-80"></div>
         <div className=" md:block sm:hidden w-[290px]"></div>
         <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">

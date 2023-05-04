@@ -65,15 +65,18 @@ function Body() {
       {/* first card */}
       <div
         data-aos="slide-right"
-        className="md:flex md:flex-row sm:flex sm:flex-col justify-center items-center md:mt-20 sm:mt-0 md:ml-10 sm:ml-0 "
+        className="md:flex md:flex-row sm:flex sm:flex-col justify-around items-center md:mt-20 sm:mt-0  sm:ml-0 "
       >
         <div className="">
-          <div className="flex flex-col md:justify-start sm:justify-center md:items-start sm:items-center  md:w-72 sm:w-60 md:space-y-6 sm:space-y-0 md:mr-24 sm:mr-0 sm:mx-4 md:mx-0">
-            <h2 className="md:text-7xl sm:text-[40px] text-black sm:font-medium md:font-normal">
+          <div className="flex flex-col md:justify-start sm:justify-center md:items-start sm:items-center  md:w-72 sm:w-60 md:space-y-6 sm:space-y-2 md:mr-24 sm:mr-0 sm:mx-4 md:mx-0">
+            <h2 className="md:text-[56px] sm:text-[40px] text-black sm:font-medium md:font-normal">
               Single Wall
             </h2>
+            <h4 className="sm:text-[14px] text-gray-600 sm:text-center md:text-left sm:pb-1  md:text-base">
+              Stay cool and hydrated with our stylish single wall bottles.
+            </h4>
             <a href="/single-wall">
-              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[12px] md:px-2 md:w-28 sm:w-20 md:py-2 rounded-3xl">
+              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
                 SHOP NOW
               </button>
             </a>
@@ -118,15 +121,18 @@ function Body() {
 
       <div
         data-aos="slide-left"
-        className="md:flex md:flex-row sm:flex sm:flex-col justify-center items-center md:mt-20 sm:mt-10 md:ml-10 sm:ml-0 "
+        className="md:flex md:flex-row sm:flex sm:flex-col md:justify-around sm:justify-center items-center md:mt-20 sm:mt-10 "
       >
         <div className="">
-          <div className="flex flex-col md:justify-start sm:justify-center md:items-start sm:items-center  md:w-72 sm:w-60 md:space-y-6 sm:space-y-0 md:mr-24 sm:mr-0 sm:mx-4 md:mx-0">
-            <h2 className="md:text-7xl sm:text-[40px] text-black sm:font-medium md:font-normal">
+          <div className="flex flex-col md:justify-start sm:justify-center md:items-start sm:items-center  md:w-72 sm:w-60 md:space-y-6 sm:space-y-2 md:mr-24 sm:mr-0 sm:mx-4 md:mx-0">
+            <h2 className="md:text-[58px] sm:text-[40px] text-black sm:font-medium md:font-normal">
               Hot N Cold
             </h2>
+            <h4 className="sm:text-[14px] text-gray-600 sm:text-center md:text-left sm:pb-1  md:text-base">
+              Stay refreshed no matter the temperature.
+            </h4>
             <a href="/hot-n-cold">
-              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[12px] md:px-2 md:w-28 sm:w-20 md:py-2 rounded-3xl">
+              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
                 SHOP NOW
               </button>
             </a>
