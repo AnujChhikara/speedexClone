@@ -82,8 +82,8 @@ function ViewBottleCard() {
         className="md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8"
         key={bottle.id}
       >
-        <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-2 md:-space-y-0  justify-center items-center">
-          <h2 className="font-semibold sm:mt-4 md:mt-0 font-nunito text-3xl md:pl-16 md:w-96 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+        <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
+          <h2 className="font-semibold sm:mt-4  md:mt-0 font-nunito text-3xl md:pl-16 md:w-96 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
             {bottleName} {bottle.name}
           </h2>
           {Caps.length > 0 ? (

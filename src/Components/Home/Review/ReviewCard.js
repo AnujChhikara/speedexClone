@@ -3,7 +3,7 @@ function ReviewCard(props) {
   const text = typeof props.text === "string" ? [props.text] : props.text;
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center sm:px-4 md:px-0">
       <div className="mb-1">{stars}</div>
       <div>{text}</div>
       {/* <hr className="w-40 border-1 border-black my-1" /> */}
