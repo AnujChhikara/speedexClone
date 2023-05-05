@@ -181,11 +181,9 @@ function Body() {
             <h3 className="text-5xl mt-32 font-semibold text-white">Speedex</h3>
             <h3 className="text-5xl mt-32 font-semibold text-white">Atelier</h3>
             <a href="/atelier">
-              <a href="/">
-                <button className="text-sm bg-white mt-4 px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
-                  Click here
-                </button>
-              </a>
+              <button className="text-sm bg-white mt-4 px-4 py-3 rounded-3xl hover:-translate-y-0.5 duration-700 shadow-md">
+                Click here
+              </button>
             </a>
           </div>
           <div className="lg:w-[615px] lg:h-[922px] sm:w-[336px] sm:h-[504px]  shadow-lg shadow-gray-700 sm:bg-sixCard  lg:bg-secondCard rounded-lg flex flex-col justify-center  space-y-4 items-center">

@@ -61,7 +61,7 @@ function MobileNav() {
       <div className="py-2 space-x-20 bg-white flex justify-center items-center">
         <div className="-ml-6">
           <Hamburger
-            size={30}
+            size={22}
             toggled={isOpen}
             toggle={setIsOpen}
             duration={0.5}
@@ -79,7 +79,7 @@ function MobileNav() {
         </div>
         <div>
           <svg
-            className="w-8 hover:fill-gray-200"
+            className="w-6 hover:fill-gray-200"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >

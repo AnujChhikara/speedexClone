@@ -68,12 +68,13 @@ function ViewBottleCard() {
         alt=""
         className=""
         onClick={() => handleClick(allBottles.CapImages[index])}
+        key={index}
       />
     );
   });
-  const Colors = allBottles.Colors.map(function (color) {
+  const Colors = allBottles.Colors.map(function (color, index) {
     return (
-      <a className="w-12" href={`/view/${bottleName}/${color.id}`}>
+      <a key={index} className="w-12" href={`/view/${bottleName}/${color.id}`}>
         <img src={color.link} alt="" />{" "}
       </a>
     );
@@ -164,7 +165,7 @@ function ViewBottleCard() {
           )}
         </div>
 
-        <div className="bg-white md:text-lg md:pr-28 sm:w-[350px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-400  duration-1000">
+        <div className="bg-white md:text-lg md:pr-28 sm:w-[330px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-400  duration-1000">
           <div className="flex space-x-4">
             <h4 className="font-bold font-roboto">Color</h4>
             <div className="flex  md:w-60 flex-wrap "> {Colors}</div>
@@ -188,7 +189,9 @@ function ViewBottleCard() {
               allBottles.Engrave ? "block" : "hidden"
             }`}
           >
-            <h4 className="font-bold font-roboto">ENGRAVE</h4>
+            <h4 className="font-bold sm:text-sm md:text-base font-roboto">
+              ENGRAVE
+            </h4>
             <div className="flex flex-col">
               <label htmlFor="">RS. 30</label>
               <input
@@ -253,7 +256,7 @@ function ViewBottleCard() {
           </div>
         </div>
       </div>
-      <div className="flex md:justify-evenly bg-white  sm:mx-4 md:mx-0 mt-20">
+      <div className="flex md:justify-evenly bg-white  sm:mx-6 md:mx-0 mt-20">
         <div className="md:block sm:hidden w-80"></div>
         <div className=" md:block sm:hidden w-[290px]"></div>
         <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">
@@ -276,7 +279,11 @@ function ViewBottleCard() {
             </h2>
           </div>
           <hr className="border-0.5 mt-2 border-black " />
-          <p className={`${info ? "block" : "hidden"} px-2 py-4 text-sm`}>
+          <p
+            className={`${
+              info ? "block" : "hidden"
+            } px-2 py-4 text-gray-500 text-sm`}
+          >
             Skip the bland disposable bottles and show off your unique style or
             mood with a water bottle. Speedex Light blue Simplex single-wall
             1000 ML Stainless Steel Water Bottle with a newly designed smart
@@ -285,7 +292,9 @@ function ViewBottleCard() {
             everyday use for school, home, kitchen, gym & traveling, etc.
             Standard pickup because of its slim and lightweight design.
           </p>
-          <div className={`${info ? "hidden" : "block"} px-4 py-2`}>
+          <div
+            className={`${info ? "hidden" : "block"} text-gray-500 px-4 py-2`}
+          >
             <div>
               <h4 className=" uppercase font-semibold mb-2 mt-1">
                 Standard delivery

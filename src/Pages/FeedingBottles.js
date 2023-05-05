@@ -4,7 +4,7 @@ import AllBottleData from "../Components/AllBottlesData";
 
 function feedingBottles() {
   const silkData = AllBottleData.find((obj) => obj.id === "Silk").data;
-  console.log(silkData);
+
   const silkBottles = silkData.map(function (item) {
     return (
       <BottleCard
