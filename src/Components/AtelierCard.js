@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { crop, scale } from "@cloudinary/url-gen/actions/resize";
+// import { backgroundRemoval } from "@cloudinary/url-gen/actions/effect";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 function AtelierCard(props) {
@@ -15,13 +16,14 @@ function AtelierCard(props) {
   const myImage = new CloudinaryImage(`Milo_500/${props.imgId}`, {
     cloudName: "dmurcewte",
   });
+  // .effect(backgroundRemoval());
   const milo500Images = myImage
     .resize(scale().height(300))
     .resize(crop().height(270).aspectRatio(2.5))
     .resize(scale().height(280));
   return (
     <a
-      href={`/product/${props.bottleName}/${props.id}`}
+      href={`/product/Atelier/${props.bottleName}/${props.id}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${isHover ? "" : ""}`}

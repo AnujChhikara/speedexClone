@@ -13,6 +13,7 @@ import CompanyProfile from "./Pages/CompanyProfile";
 import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
 import MiloAtelier from "./Pages/MiloAtelier";
+import AtelirerViewCard from "./Pages/AtelirerViewCard";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -30,11 +31,15 @@ function App() {
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/refund-cancellation-policy" element={<Refund />} />
         <Route path="/about" element={<CompanyProfile />} />
-        <Route path="/Atelier_milo" element={<MiloAtelier />} />
+        <Route path="/Atelier" element={<MiloAtelier />} />
 
         <Route
           path="/product/:bottleName/:productId"
           element={<ViewBottleCard />}
+        />
+        <Route
+          path="/product/Atelier/:bottleName/:productId"
+          element={<AtelirerViewCard />}
         />
       </Routes>
       <Footer />
