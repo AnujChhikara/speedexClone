@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "../App.css";
 import { useParams } from "react-router-dom";
-import { crop, scale } from "@cloudinary/url-gen/actions/resize";
+import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import AtelierData from "../Components/AtelierData";
 function AtelirerViewCard() {
   const { bottleName, productId } = useParams();
-  const [quantity, setQuantity] = useState(1);
+
   const [info, setInfo] = useState(true);
   const handleInfoT = () => {
     setInfo(true);
@@ -15,31 +15,21 @@ function AtelirerViewCard() {
   const handleInfoF = () => {
     setInfo(false);
   };
-  const increaseQuantity = () => {
-    setQuantity((prev) => prev + 1);
-  };
-  const decreaseQuantity = () => {
-    if (quantity <= 1) return;
-    setQuantity((prev) => prev - 1);
-  };
 
   const numStr = productId.slice(2);
   const num = parseInt(numStr);
   const index = num - 1;
   const allBottles = AtelierData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[index];
-
-  const myImage = new CloudinaryImage(`Milo_500/Milo 500/${bottle.imgIdBg}`, {
+  const Image_m5 = new CloudinaryImage(`Milo_500/${bottle.imdId}`, {
     cloudName: "dmurcewte",
-  })
-    .resize(scale().height(600))
-    .resize(crop().height(500).aspectRatio(2.5))
-    .resize(scale().height(400));
+  });
+  const milo500Images = Image_m5.resize(fit().width(300).height(450));
   return (
     <div>
-      <div className=" bg-pink-200">
+      <div style={{ backgroundColor: bottle.bgHex }} className="pt-12 ">
         <div
-          className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8 `}
+          className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-around sm:justify-center items-center  md:pb-20 md:mx-2 `}
           key={bottle.id}
         >
           <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
@@ -48,39 +38,37 @@ function AtelirerViewCard() {
             </h2>
 
             <div className="pt-10">
-              <AdvancedImage cldImg={myImage} />
+              <div className="">
+                <AdvancedImage cldImg={milo500Images} />
+              </div>
             </div>
           </div>
-          <div className="bg-white md:text-lg md:pr-28 sm:w-[330px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4  sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-md rounded-2xl shadow-gray-400  duration-1000">
-            <div className="font-medium text-md">Bottles</div>
-            <div></div>
+          <div className="bg-white md:text-lg md:pr-28 sm:w-[330px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4 text-[12px] sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-lg rounded-lg shadow-gray-400  duration-1000">
+            <div className="font-medium text-md">
+              BOTTLES
+              <div></div>
+            </div>
 
-            <div className="flex space-x-6">
+            <div className="flex items-center space-x-6">
               <h4 className="font-bold font-roboto">Size</h4>
-              <div className="flex space-x-4 font-light text-base">
-                <div className="border px-1 border-gray-400">
+              <div className="flex  font-light text-base">
+                <div className="underline underline-offset-4 text-sm border-gray-500">
                   {bottle.capacity}ml
                 </div>
               </div>
             </div>
 
-            <div className="flex flex-col space-y-2">
-              <h4 className="font-bold text-base">Price</h4>
-              <h5>₹{bottle.price}/- per item</h5>
+            <div className="flex items-center  space-x-4">
+              <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
               <div className="flex space-x-4">
-                <div className="flex space-x-3 text-3xl border border-gray-500 w-24 px-3 py-2">
-                  <button onClick={decreaseQuantity}>-</button>
-                  <div>{quantity}</div>
-                  <button onClick={increaseQuantity}>+</button>
-                </div>
-                <button className="bg-[#28303d] text-white px-2 h-10 ">
+                <button className="bg-[#000000] rounded-3xl text-white px-4  h-10 ">
                   Add To Cart
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex md:justify-evenly bg-white  sm:mx-6 md:mx-0 mt-20">
+        <div className="flex md:justify-evenly bg-white md:pt-20 sm:mx-6 md:mx-0 ">
           <div className="md:block sm:hidden w-80"></div>
           <div className=" md:block sm:hidden w-[290px]"></div>
           <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">

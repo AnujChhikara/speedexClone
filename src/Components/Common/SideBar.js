@@ -41,7 +41,7 @@ function SidebarMenu(props) {
       display: "flex",
     },
     bmOverlay: {
-      background: "rgba(0, 0, 0, 0.3)",
+      background: "rgba(0, 0, 0, 0.)",
     },
   };
 

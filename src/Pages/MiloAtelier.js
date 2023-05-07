@@ -9,6 +9,7 @@ function MiloAtelier() {
         key={item.id}
         id={item.id}
         bottleName="Milo_500"
+        quantity={item.capacity}
         name={item.name}
         cutPrice={item.cutPrice}
         price={item.price}

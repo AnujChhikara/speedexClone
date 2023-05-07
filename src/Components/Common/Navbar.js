@@ -22,13 +22,13 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={` ${isHome ? "bg" : "mb-12"} sm:pb-16  `}>
+    <div className={` ${isHome ? "bg" : ""} sm:pb-16  `}>
       {isDesktop ? (
         <div className="fixed w-full z-10 top-0 bg-white py-3 shadow-xl text-gray-500 text-sm">
           <SidebarMenu
             isOpen={isOpen}
             onClose={onClose}
-            width={400}
+            width={450}
             itemWidth={20}
           />
           <div className="flex justify-around items-center">
