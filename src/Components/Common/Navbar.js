@@ -4,6 +4,14 @@ import SidebarMenu from "./SideBar";
 import MobileNav from "./MobillNavbar";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [item, setItem] = useState(0);
+
+  const cartData = localStorage.getItem("cartData");
+  const hasCartItems = !!cartData;
+
+  useEffect(() => {
+    setItem(hasCartItems ? 1 : 0);
+  }, [hasCartItems]);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -64,7 +72,7 @@ function Navbar() {
                   REFER A FRIEND
                 </h3>
               </a>
-              <a href="/">
+              <a href="/cart">
                 {" "}
                 <div className="flex space-x-1 items-center">
                   <svg
@@ -79,7 +87,9 @@ function Navbar() {
                       fill="#000000"
                     />
                   </svg>
-                  <h4>0 items</h4>
+                  <h4>
+                    {item} {"  "}items
+                  </h4>
                 </div>
               </a>
 
@@ -122,7 +132,7 @@ function Navbar() {
         </div>
       ) : (
         <div className="fixed w-full z-10 top-0 ">
-          <MobileNav />
+          <MobileNav item={item} />
         </div>
       )}
     </div>

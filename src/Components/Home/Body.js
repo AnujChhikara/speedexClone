@@ -76,7 +76,7 @@ function Body() {
               Stay cool and hydrated with our stylish single wall bottles.
             </h4>
             <a href="/single-wall">
-              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
+              <button className="bg-black duration-500 hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
                 SHOP NOW
               </button>
             </a>
@@ -132,7 +132,7 @@ function Body() {
               Stay refreshed no matter the temperature.
             </h4>
             <a href="/hot-n-cold">
-              <button className="bg-black hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
+              <button className="bg-black duration-500 hover:bg-gray-800 sm:px-1 sm:py-1.5 text-white md:text-md sm:text-[11px] md:px-4 md:w-28 sm:w-24 md:py-3 rounded-3xl">
                 SHOP NOW
               </button>
             </a>

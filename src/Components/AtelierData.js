@@ -1,6 +1,6 @@
 const AtelierData = [
   {
-    id: "Milo_500",
+    id: "Milo-500",
     colors: [
       {
         theme: "Floral and Fauna",
@@ -482,7 +482,7 @@ const AtelierData = [
         name: "Boss Lady",
         price: "1099",
         capacity: "500",
-        bgHex: "",
+        bgHex: "#a2d2ff",
       },
 
       {

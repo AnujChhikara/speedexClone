@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../App.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -8,7 +8,7 @@ import AtelierData from "../Components/AtelierData";
 
 function AtelirerViewCard() {
   const { bottleName, productId } = useParams();
-
+  const [cartData, setCartData] = useState(null);
   const [info, setInfo] = useState(true);
   const handleInfoT = () => {
     setInfo(true);
@@ -23,6 +23,22 @@ function AtelirerViewCard() {
   const allBottles = AtelierData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[index];
   const Colors = allBottles.colors;
+  const navigate = useNavigate();
+  const addToCartHandler = () => {
+    const data = {
+      bottleName: bottleName,
+      product: bottle.id,
+    };
+
+    localStorage.setItem("cartData", JSON.stringify(data));
+    setCartData(data);
+  };
+  const goToCartHandler = () => {
+    navigate("/cart");
+  };
+
+  const buttonText = cartData ? "Go to Cart" : "Add to Cart";
+  const handleClick = cartData ? goToCartHandler : addToCartHandler;
 
   const floral = Colors.find((obj) => obj.theme === "Floral and Fauna");
   const floralLink = floral.data.map(function (color, index) {
@@ -131,7 +147,7 @@ function AtelirerViewCard() {
       <div>
         <div
           style={{ backgroundColor: bottle.bgHex }}
-          className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-around sm:justify-center items-center pt-12 sm:pb-12 md:pb-20 md:mx-2 `}
+          className={`md:flex md:flex-row w-screen md:h-screen sm:flex sm:flex-col md:justify-around sm:justify-center items-center pt-12 sm:pb-12 md:pb-20 md:px-2 `}
           key={bottle.id}
         >
           <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
@@ -217,13 +233,17 @@ function AtelirerViewCard() {
             <div className="flex items-center  space-x-4">
               <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
               <div className="flex space-x-4">
-                <button className="bg-[#000000] rounded-3xl text-white px-4  h-10 ">
-                  Add To Cart
+                <button
+                  onClick={handleClick}
+                  className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
+                >
+                  {buttonText}
                 </button>
               </div>
             </div>
           </div>
         </div>
+
         <div className="flex md:justify-evenly bg-white md:pt-20 sm:mt-10 sm:mx-6 md:mx-0 ">
           <div className="md:block sm:hidden w-80"></div>
           <div className=" md:block sm:hidden w-[290px]"></div>

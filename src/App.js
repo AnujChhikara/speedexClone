@@ -14,6 +14,7 @@ import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
 import MiloAtelier from "./Pages/MiloAtelier";
 import AtelirerViewCard from "./Pages/AtelirerViewCard";
+import Cart from "./Pages/Cart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/refund-cancellation-policy" element={<Refund />} />
         <Route path="/about" element={<CompanyProfile />} />
         <Route path="/Atelier" element={<MiloAtelier />} />
+        <Route path="/cart" element={<Cart />} />
 
         <Route
           path="/product/:bottleName/:productId"
