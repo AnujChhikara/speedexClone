@@ -74,7 +74,7 @@ function ViewBottleCard() {
   });
   const Colors = allBottles.Colors.map(function (color, index) {
     return (
-      <a key={index} className="w-12" href={`/view/${bottleName}/${color.id}`}>
+      <a key={index} className="w-12" href={`/product/${bottleName}/${color.id}`}>
         <img src={color.link} alt="" />{" "}
       </a>
     );
