@@ -1,3 +1,9 @@
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 @media only screen and (min-width: 720px) {
   .align {
     margin-left: 37%;
@@ -59,12 +65,6 @@ select:focus {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 32s linear infinite;
-}
-
-html,
-body {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 @keyframes marquee {

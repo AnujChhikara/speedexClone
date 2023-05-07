@@ -1,7 +1,193 @@
 const AtelierData = [
   {
     id: "Milo_500",
-    colors: [{}],
+    colors: [
+      {
+        theme: "Floral and Fauna",
+        data: [
+          {
+            id: "m51",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/bird_blackLogo_copy_hztiej.jpg",
+          },
+          {
+            id: "m52",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442115/Milo_500_colors/swan_newLogo_copy_yzij7d.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Sporty",
+        data: [
+          {
+            id: "m53",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442113/Milo_500_colors/Never_give_UP_Logo_Color_copy_ruviyg.jpg",
+          },
+          {
+            id: "m54",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442114/Milo_500_colors/sports_mt5uk2.jpg",
+          },
+          {
+            id: "m55",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442113/Milo_500_colors/no_excuseLogoColor_copy_chebpc.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Best Buddies",
+        data: [
+          {
+            id: "m56",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/coffee_mug_newLogo_copy_p8wqyb.jpg",
+          },
+          {
+            id: "m57",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442110/Milo_500_colors/Baklol_newLogo_copy_kjgptm.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Just Kidding",
+        data: [
+          {
+            id: "m58",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442110/Milo_500_colors/back_to_school_WCV_newLogo_copy_lovdej.jpg",
+          },
+          {
+            id: "m59",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442110/Milo_500_colors/bear_song_WCV_logo_color_copy_zw0aha.jpg",
+          },
+          {
+            id: "m510",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442116/Milo_500_colors/unicorns_wcv_newLogo_copy_wylbtx.jpg",
+          },
+          {
+            id: "m511",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442115/Milo_500_colors/Unicorn_WCV_newLogo_copy_rj1w1e.jpg",
+          },
+          {
+            id: "m512",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442110/Milo_500_colors/Baklol_newLogo_copy_kjgptm.jpg",
+          },
+          {
+            id: "m513",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442115/Milo_500_colors/Stationary_dual_WCV_newLogo_copy_hrpwcu.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Magical Art",
+        data: [
+          {
+            id: "m514",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442113/Milo_500_colors/music_art_copy_qnpzqy.jpg",
+          },
+          {
+            id: "m515",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442114/Milo_500_colors/peacock_WCV_copy_bua2vj.jpg",
+          },
+          {
+            id: "m516",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442116/Milo_500_colors/valentine_glass_copy_n2o9zo.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Nirvana",
+        data: [
+          {
+            id: "m517",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442113/Milo_500_colors/peace_newLogo_copy_a9i5hg.jpg",
+          },
+          {
+            id: "m518",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/know_YOURSELF_WCV_newLogo_copy_newy8v.jpg",
+          },
+          {
+            id: "m519",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/improve_life_quotes_newLogo_copy_qcu8zq.jpg",
+          },
+          {
+            id: "m520",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/happy_mind_newLogo_copy_bqo0rw.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Teen",
+        data: [
+          {
+            id: "m521",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442111/Milo_500_colors/chase_dream_newLogo_copy_zrs5nx.jpg",
+          },
+          {
+            id: "m522",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442114/Milo_500_colors/college_art_NewLogo_copy_du4thj.jpg",
+          },
+          {
+            id: "m523",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442113/Milo_500_colors/own_world_NewLogo_copy_sm2pcg.jpg",
+          },
+          {
+            id: "m524",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442114/Milo_500_colors/perfect_newLogo_copy_aywuvm.jpg",
+          },
+          {
+            id: "m525",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442114/Milo_500_colors/see_world_newLogo_copy_mygujs.jpg",
+          },
+        ],
+      },
+      {
+        theme: "Limited Edition",
+        data: [
+          {
+            id: "m526",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442116/Milo_500_colors/worldMap_jz8gaw.jpg",
+          },
+          {
+            id: "m527",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442112/Milo_500_colors/ladyBoss_newLogo_copy_zczghd.jpg",
+          },
+          {
+            id: "m528",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442112/Milo_500_colors/krishna_WCV_newLogo_copy_wpn3uo.jpg",
+          },
+          {
+            id: "m529",
+            imgUrl:
+              "https://res.cloudinary.com/dmurcewte/image/upload/v1683442110/Milo_500_colors/army_copy_gqqfl2.jpg",
+          },
+        ],
+      },
+    ],
     data: [
       {
         id: "m51",

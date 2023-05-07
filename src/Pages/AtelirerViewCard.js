@@ -5,6 +5,7 @@ import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import AtelierData from "../Components/AtelierData";
+
 function AtelirerViewCard() {
   const { bottleName, productId } = useParams();
 
@@ -21,19 +22,120 @@ function AtelirerViewCard() {
   const index = num - 1;
   const allBottles = AtelierData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[index];
+  const Colors = allBottles.colors;
+
+  const floral = Colors.find((obj) => obj.theme === "Floral and Fauna");
+  const floralLink = floral.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const sporty = Colors.find((obj) => obj.theme === "Sporty");
+  const sportyLink = sporty.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const bestBuddies = Colors.find((obj) => obj.theme === "Best Buddies");
+  const bestBuddiesLink = bestBuddies.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const justKidding = Colors.find((obj) => obj.theme === "Just Kidding");
+  const justKiddingLink = justKidding.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const teen = Colors.find((obj) => obj.theme === "Teen");
+  const teenLink = teen.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const nirvana = Colors.find((obj) => obj.theme === "Nirvana");
+  const nirvanaLink = nirvana.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const limitedEdition = Colors.find((obj) => obj.theme === "Limited Edition");
+  const limitedEditionLink = limitedEdition.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+  const magicalArt = Colors.find((obj) => obj.theme === "Magical Art");
+  const magicalArtLink = magicalArt.data.map(function (color, index) {
+    return (
+      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+        <img
+          className="border border-gray-300 w-6 h-6 rounded-full"
+          src={color.imgUrl}
+          alt=""
+        />{" "}
+      </a>
+    );
+  });
+
   const Image_m5 = new CloudinaryImage(`Milo_500/${bottle.imdId}`, {
     cloudName: "dmurcewte",
   });
   const milo500Images = Image_m5.resize(fit().width(300).height(450));
+
   return (
-    <div>
-      <div style={{ backgroundColor: bottle.bgHex }} className="pt-12 ">
+    <div className=" ">
+      <div>
         <div
-          className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-around sm:justify-center items-center  md:pb-20 md:mx-2 `}
+          style={{ backgroundColor: bottle.bgHex }}
+          className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-around sm:justify-center items-center pt-12 sm:pb-12 md:pb-20 md:mx-2 `}
           key={bottle.id}
         >
           <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
-            <h2 className="font-semibold sm:mt-4  md:mt-0 font-nunito text-3xl md:pl-16 md:w-96 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+            <h2 className="font-semibold sm:mt-4   md:mt-0 font-nunito text-2xl md:pl-16 md:w-80 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
               {bottle.name}
             </h2>
 
@@ -43,12 +145,66 @@ function AtelirerViewCard() {
               </div>
             </div>
           </div>
-          <div className="bg-white md:text-lg md:pr-28 sm:w-[330px] md:w-auto md:p-6 sm:mt-8 md:mt-0 sm:p-4 text-[12px] sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-lg rounded-lg shadow-gray-400  duration-1000">
+          <div className="bg-white md:text-lg md:w-[420px] sm:w-[350px] md:p-6 sm:mt-12 md:mt-3 sm:p-4 text-[12px] sm:mx-4 md:mx-0  flex flex-col md:space-y-8 sm:space-y-4 shadow-lg rounded-lg shadow-gray-400  duration-1000">
             <div className="font-medium text-md">
-              BOTTLES
-              <div></div>
+              <h4 className="mb-6"> BOTTLES</h4>
+              <div className="flex flex-col  items-start space-y-4">
+                {/* floral */}
+                <div className="flex space-x-4 items-center">
+                  <h3 className="text-sm hover:underline duration-1000 w-28 text-gray-500 font-mon">
+                    Floral and Fauna
+                  </h3>
+                  <div className="flex space-x-2 ">{floralLink}</div>
+                </div>
+                {/* sporty */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Sporty
+                  </h3>
+                  <div className="flex space-x-2 ">{sportyLink}</div>
+                </div>
+                {/* bestBuddies */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Best Buddies
+                  </h3>
+                  <div className="flex space-x-2 ">{bestBuddiesLink}</div>
+                </div>
+                {/* just Kidding */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Just Kidding
+                  </h3>
+                  <div className="flex space-x-2 ">{justKiddingLink}</div>
+                </div>
+                {/* magical Art */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Magical Art
+                  </h3>
+                  <div className="flex space-x-2 ">{magicalArtLink}</div>
+                </div>
+                {/* nirvana */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Nirvana
+                  </h3>
+                  <div className="flex space-x-2 ">{nirvanaLink}</div>
+                </div>
+                {/* teen */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">Teen</h3>
+                  <div className="flex space-x-2 ">{teenLink}</div>
+                </div>
+                {/* limitedEdition */}
+                <div className="flex space-x-4 justify-start items-center">
+                  <h3 className="text-sm w-28 text-gray-500 font-mon">
+                    Limited Edition
+                  </h3>
+                  <div className="flex space-x-2 ">{limitedEditionLink}</div>
+                </div>
+              </div>
             </div>
-
             <div className="flex items-center space-x-6">
               <h4 className="font-bold font-roboto">Size</h4>
               <div className="flex  font-light text-base">
@@ -68,7 +224,7 @@ function AtelirerViewCard() {
             </div>
           </div>
         </div>
-        <div className="flex md:justify-evenly bg-white md:pt-20 sm:mx-6 md:mx-0 ">
+        <div className="flex md:justify-evenly bg-white md:pt-20 sm:mt-10 sm:mx-6 md:mx-0 ">
           <div className="md:block sm:hidden w-80"></div>
           <div className=" md:block sm:hidden w-[290px]"></div>
           <div className="shadow-gray-400 shadow-md px-8 py-4 rounded-xl flex flex-col w-[450px]">
