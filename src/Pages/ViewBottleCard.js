@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../App.css";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
@@ -12,9 +12,9 @@ function ViewBottleCard() {
     id: "Cap1",
     img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
   });
-  const [quantity, setQuantity] = useState(1);
-  const [info, setInfo] = useState(true);
 
+  const [info, setInfo] = useState(true);
+  const [cartData, setCartData] = useState(null);
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
   const handleEngraveColor = (e) => {
@@ -42,13 +42,6 @@ function ViewBottleCard() {
     setEngrave(e.target.value);
   };
 
-  const increaseQuantity = () => {
-    setQuantity((prev) => prev + 1);
-  };
-  const decreaseQuantity = () => {
-    if (quantity <= 1) return;
-    setQuantity((prev) => prev - 1);
-  };
   const handleClick = (image) => {
     setSelectedCap(image);
   };
@@ -74,16 +67,36 @@ function ViewBottleCard() {
   });
   const Colors = allBottles.Colors.map(function (color, index) {
     return (
-      <a key={index} className="w-12" href={`/product/${bottleName}/${color.id}`}>
+      <a
+        key={index}
+        className="w-12"
+        href={`/product/${bottleName}/${color.id}`}
+      >
         <img src={color.link} alt="" />{" "}
       </a>
     );
   });
+  const navigate = useNavigate();
+  const addToCartHandler = () => {
+    const data = {
+      bottleName: bottleName,
+      product: bottle.id,
+    };
+
+    localStorage.setItem("cartData", JSON.stringify(data));
+    setCartData(data);
+  };
+  const goToCartHandler = () => {
+    navigate("/cart");
+  };
+
+  const buttonText = cartData ? "Go to Cart" : "Add to Cart";
+  const handleNavClick = cartData ? goToCartHandler : addToCartHandler;
 
   return (
     <div>
       <div
-        className={`md:flex md:flex-row sm:flex sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8 `}
+        className={`md:flex md:flex-row sm:flex pt-32 sm:flex-col md:justify-evenly sm:justify-center items-center  md:mx-8 `}
         key={bottle.id}
       >
         <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
@@ -240,17 +253,14 @@ function ViewBottleCard() {
               <p className="text-sm ml-4">9 Character Limit</p>
             </div>
           </div>
-          <div className="flex flex-col space-y-2">
-            <h4 className="font-bold text-base">Price</h4>
-            <h5>₹{bottle.price}/- per item</h5>
+          <div className="flex items-center  space-x-4">
+            <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
             <div className="flex space-x-4">
-              <div className="flex space-x-3 text-3xl border border-gray-500 w-24 px-3 py-2">
-                <button onClick={decreaseQuantity}>-</button>
-                <div>{quantity}</div>
-                <button onClick={increaseQuantity}>+</button>
-              </div>
-              <button className="bg-[#28303d] text-white px-2 h-10 ">
-                Add To Cart
+              <button
+                onClick={handleNavClick}
+                className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
+              >
+                {buttonText}
               </button>
             </div>
           </div>

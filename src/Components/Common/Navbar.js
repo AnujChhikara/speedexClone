@@ -30,7 +30,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className={` ${isHome ? "bg" : ""} sm:pb-16  `}>
+    <div className={` ${isHome ? "bg" : ""}   `}>
       {isDesktop ? (
         <div className="fixed w-full z-10 top-0 bg-white py-3 shadow-xl text-gray-500 text-sm">
           <SidebarMenu

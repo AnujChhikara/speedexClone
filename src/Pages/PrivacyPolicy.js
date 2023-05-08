@@ -1,7 +1,7 @@
 function PrivacyPolicy() {
   return (
     <div>
-      <div className="md:px-20 sm:px-4 py-20 flex flex-col space-y-20">
+      <div className="md:px-20 sm:pt-28  sm:px-4 py-20 flex flex-col space-y-20">
         <div>
           <h2 className="text-5xl">Privacy Policy</h2>
           <p className="mt-10 text-gray-500">

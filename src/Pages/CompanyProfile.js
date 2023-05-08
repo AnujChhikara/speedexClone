@@ -1,6 +1,6 @@
 function CompanyProfile() {
   return (
-    <div className="flex flex-col justify-center items-center md:mt-12 sm:mt-4  md:px-8 sm:px-2">
+    <div className="flex flex-col sm:pt-24  justify-center items-center md:mt-12 sm:mt-4  md:px-8 sm:px-2">
       <h2 className="mb-8 md:mt-10 md:text-6xl sm:text-3xl font-Sans font-bold text-transparent bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text">
         Company Profile
       </h2>

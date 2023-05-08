@@ -149,7 +149,7 @@ function DoubleWall() {
   });
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-32">
+      <div className="flex flex-col sm:pt-28  justify-center items-center mb-32">
         <h2 className="md:text-[100px] sm:text-[48px] text-gray-500 font-roboto">
           HOT n COLD
         </h2>

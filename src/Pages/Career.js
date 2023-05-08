@@ -1,7 +1,7 @@
 function Career() {
   return (
     <div>
-      <div className="container mx-auto px-4 py-20">
+      <div className="container sm:pt-40  mx-auto px-4 py-20">
         <h1 className="text-4xl font-bold mb-10">Join Our Team</h1>
         <p className="text-lg mb-10">
           At Speedex Company, we believe that everyone deserves access to clean

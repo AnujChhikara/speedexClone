@@ -143,15 +143,21 @@ function AtelirerViewCard() {
   const milo500Images = Image_m5.resize(fit().width(300).height(450));
 
   return (
-    <div className=" ">
+    <div className="">
       <div>
         <div
           style={{ backgroundColor: bottle.bgHex }}
-          className={`md:flex md:flex-row w-screen md:h-screen sm:flex sm:flex-col md:justify-around sm:justify-center items-center pt-12 sm:pb-12 md:pb-20 md:px-2 `}
+          className={`md:flex md:flex-row w-screen sm:pt-40  md:h-screen sm:flex sm:flex-col md:justify-around sm:justify-center items-center pt-12 sm:pb-12 md:pb-20 md:px-2 `}
           key={bottle.id}
         >
           <div className="md:flex md:flex-row sm:flex sm:flex-col-reverse sm:-space-y-10 md:-space-y-0  justify-center items-center">
-            <h2 className="font-semibold sm:mt-4   md:mt-0 font-nunito text-2xl md:pl-16 md:w-80 text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-900 to-black">
+            <h2
+              className={`font-semibold sm:mt-4   md:mt-0 font-nunito text-2xl text-black md:pl-16 md:w-80 ${
+                bottle.id === "m51" || bottle.id === "m55"
+                  ? "text-white"
+                  : "text-black"
+              }`}
+            >
               {bottle.name}
             </h2>
 

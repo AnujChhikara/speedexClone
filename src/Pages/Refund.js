@@ -1,6 +1,6 @@
 function Refund() {
   return (
-    <div className="md:px-16 sm:px-4 mt-20 flex flex-col space-y-16">
+    <div className="md:px-16 sm:pt-28  sm:px-4 mt-20 flex flex-col space-y-16">
       <div>
         <h2 className="md:text-5xl sm:text-3xl font-semibold">
           Refund and Cancellation Policy

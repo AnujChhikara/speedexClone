@@ -471,7 +471,7 @@ const AtelierData = [
         name: "Wanderlust",
         price: "1099",
         capacity: "500",
-        bgHex: "",
+        bgHex: "#f9dcc4",
       },
 
       {
@@ -503,7 +503,7 @@ const AtelierData = [
         name: "Dil Maange More",
         price: "1099",
         capacity: "500",
-        bgHex: "",
+        bgHex: "#a3b18a",
       },
     ],
   },

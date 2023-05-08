@@ -18,7 +18,7 @@ function MiloAtelier() {
   });
   return (
     <div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col sm:pt-28  items-center">
         <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto">
           Atelier
         </h3>

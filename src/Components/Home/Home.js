@@ -36,10 +36,12 @@ function Home() {
             alt=""
           />
         </div>
-        <div className="md:w-[400px] sm:w-40  md:text-4xl sm:text-xl font-medium flex md:ml-44 sm:ml-6 items-start relative md:mt-48 sm:mt-8">
+        <div className="md:w-[400px] sm:w-44 tracking-tighter  md:text-2xl sm:text-sm font-medium md:ml-60 flex items-start relative  sm:mt-2">
           <h1>
-            Join the Reusable Revolution with Speedex's Eco-Friendly Water
-            Bottles.
+            Please note that this website is a project that clones the
+            e-commerce platform Speedex. The content on this website is solely
+            for educational or personal purposes, and all rights to the original
+            content belong to Speedex.
           </h1>
         </div>
       </div>

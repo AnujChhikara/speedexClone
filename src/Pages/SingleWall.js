@@ -103,7 +103,7 @@ function SingleWall() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-32">
+      <div className="flex sm:pt-28  flex-col justify-center items-center mb-32">
         <h2 className="md:text-[100px] sm:text-[48px] text-gray-500 font-roboto">
           SINGLE WALL
         </h2>

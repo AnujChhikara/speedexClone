@@ -31,7 +31,7 @@ function AtelierCard(props) {
           <h4
             className={`${
               isHover ? " block" : "hidden"
-            } absolute sm:mt-20 sm:ml-12 md:mt-24 md:-ml-3  sm:h-7 md:h-8  text-white rounded flex items-center justify-center font-semibold text-sm font-Sans duration-1000 bg-black sm:w-16 md:w-24`}
+            } absolute sm:mt-28 sm:ml-1 md:mt-24 md:-ml-3  sm:h-7 md:h-8  text-white rounded flex items-center justify-center font-semibold text-sm font-Sans duration-1000 bg-black sm:w-16 md:w-24`}
           >
             View
           </h4>

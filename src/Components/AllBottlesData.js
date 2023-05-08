@@ -1,6 +1,7 @@
 const AllBottleData = [
   {
     id: "Simplex",
+    capacity: 1000,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -47,7 +48,7 @@ const AllBottleData = [
       {
         id: 5,
         color: "Blue and Blue",
-        link: "https://speedexind.com/wp-content/uploads/2023/02/grey-simplex-icon.png",
+        link: "https://speedexind.com/wp-content/uploads/2023/01/blue-shade-s.png",
       },
       {
         id: 6,
@@ -173,6 +174,7 @@ const AllBottleData = [
   },
   {
     id: "Hydrate",
+    capacity: 1000,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -272,6 +274,7 @@ const AllBottleData = [
   },
   {
     id: "Drip Trip",
+    capacity: 750,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -370,6 +373,7 @@ const AllBottleData = [
   },
   {
     id: "Kurvey",
+    capacity: 750,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -468,6 +472,7 @@ const AllBottleData = [
   },
   {
     id: "Glacia",
+    capacity: 1000,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -579,6 +584,7 @@ const AllBottleData = [
   },
   {
     id: "Liquatic",
+    capacity: 750,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -677,6 +683,7 @@ const AllBottleData = [
   },
   {
     id: "Kiddo",
+    capacity: 500,
     Engrave: true,
     Cap: [
       "https://speedexind.com/wp-content/uploads/2023/01/flipper-30x30.png",
@@ -789,6 +796,7 @@ const AllBottleData = [
   },
   {
     id: "Milo",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -840,6 +848,7 @@ const AllBottleData = [
   },
   {
     id: "Check & Mate",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -891,6 +900,7 @@ const AllBottleData = [
   },
   {
     id: "EliteGold",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -956,6 +966,7 @@ const AllBottleData = [
   },
   {
     id: "Nightingale",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1042,6 +1053,7 @@ const AllBottleData = [
   },
   {
     id: "Flasq",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1107,6 +1119,7 @@ const AllBottleData = [
   },
   {
     id: "Checkover",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1158,6 +1171,7 @@ const AllBottleData = [
   },
   {
     id: "RoyalGold",
+    capacity: 1000,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1223,6 +1237,7 @@ const AllBottleData = [
   },
   {
     id: "Imperio",
+    capacity: 750,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1274,6 +1289,7 @@ const AllBottleData = [
   },
   {
     id: "Shark",
+    capacity: 750,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1325,6 +1341,7 @@ const AllBottleData = [
   },
   {
     id: "Silk",
+    capacity: 250,
     Engrave: false,
     Cap: [],
     Colors: [
@@ -1404,6 +1421,7 @@ const AllBottleData = [
   },
   {
     id: "Bliss",
+    capacity: 250,
     Engrave: false,
     Cap: [],
     Colors: [
