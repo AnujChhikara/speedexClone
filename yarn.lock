@@ -1704,6 +1704,18 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@stripe/react-stripe-js@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-2.1.0.tgz#71541107628731fb790e1f31d8994fecbcd6cf13"
+  integrity sha512-Zb6Ycrj5QuhYkvtlvvLzo+cysUyA6wkx3zWHQ7uVnHRYRM/n1jtQD6VGBrdmptC8e8PJN6L091gBCyB5P0FqmA==
+  dependencies:
+    prop-types "^15.7.2"
+
+"@stripe/stripe-js@^1.52.1":
+  version "1.52.1"
+  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.52.1.tgz#d821bcd627a34227c20fe87d7c8f8bd4386eaf2e"
+  integrity sha512-fza40OPSpGQlFxc5TZWiYC/6Lk89Sep1fLuv9ss33YS6lCAF8UZbfA1E6W+lwO4c7WRKZIZumHIEbPJfP/O9uw==
+
 "@surma/rollup-plugin-off-main-thread@^2.2.3":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.2.3.tgz#ee34985952ca21558ab0d952f00298ad2190c053"
@@ -6815,6 +6827,11 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
+os-browserify@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/os-browserify/-/os-browserify-0.3.0.tgz#854373c7f5c2315914fc9bfc6bd8238fdda1ec27"
+  integrity sha512-gjcpUc3clBf9+210TRaDWbf+rZZZEshZ+DlXMRCeAjp0xhTrnQsKHypIy1J3d5hKdUzj69t708EHtU8P6bUn0A==
+
 p-limit@^2.0.0, p-limit@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/p-limit/-/p-limit-2.3.0.tgz#3dd33c647a214fdfffd835933eb086da0dc21db1"
@@ -6906,6 +6923,11 @@ pascal-case@^3.1.2:
     no-case "^3.0.4"
     tslib "^2.0.3"
 
+path-browserify@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/path-browserify/-/path-browserify-1.0.1.tgz#d98454a9c3753d5790860f16f68867b9e46be1fd"
+  integrity sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==
+
 path-exists@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/path-exists/-/path-exists-3.0.0.tgz#ce0ebeaa5f78cb18925ea7d810d7b59b010fd515"
@@ -6940,6 +6962,11 @@ path-type@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
+
+path-webpack-plugin@^1.0.22:
+  version "1.0.22"
+  resolved "https://registry.yarnpkg.com/path-webpack-plugin/-/path-webpack-plugin-1.0.22.tgz#fce3816fa05c125669701d90ad7238ee9daf2e20"
+  integrity sha512-6/FxiuqcmDzx87nMpjIR0B8qfhZnqGSI/6zmIAaKNM3FhQX1tfHpMngasbZLIOXndFuiejXMQpJP3HcopySc3w==
 
 performance-now@^2.1.0:
   version "2.1.0"

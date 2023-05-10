@@ -72,8 +72,8 @@ function Cart() {
   };
 
   return (
-    <div className="flex  flex-col space-y-6 justify-center font-play sm:pt-40  items-center text-xl w-screen mt-20 md:px-12 pb-20">
-      <div className="border md:flex md:flex-row sm:flex sm:w-80 sm:flex-col sm:space-y-4 md:space-y-0 sm:p-6 md:w-screen shadow-lg bg-white shadow-gray-400 justify-around items-center border-gray-300 md:p-8">
+    <div className="flex  flex-col space-y-6 md:w-[90%] justify-center font-play sm:pt-40  items-center text-xl  mt-20 md:px-4 pb-20">
+      <div className="border md:flex md:flex-row sm:flex md:w-[90%] sm:w-80 sm:flex-col sm:space-y-4 md:space-y-0 sm:p-6  shadow-lg bg-white shadow-gray-400 justify-around items-center border-gray-300 md:p-8">
         {allBottles.id === "Milo-500" ? (
           <AdvancedImage cldImg={image} />
         ) : (
