@@ -15,12 +15,19 @@ import Navbar from "./Components/Common/Navbar";
 import MiloAtelier from "./Pages/MiloAtelier";
 import AtelirerViewCard from "./Pages/AtelirerViewCard";
 import Cart from "./Pages/Cart";
+import ScrollToTop from './Components/Common/ScrollToTop'
 // import Checkout from "./Pages/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
+
+
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <ScrollToTop/>
 
       <Routes>
         <Route path="/" element={<HomePage />} />

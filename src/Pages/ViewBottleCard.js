@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import { useParams} from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
@@ -72,13 +73,13 @@ function ViewBottleCard() {
   });
   const Colors = allBottles.Colors.map(function (color, index) {
     return (
-      <a
+      <Link
         key={index}
         className="w-12"
-        href={`/product/${bottleName}/${color.id}`}
+        to={`/product/${bottleName}/${color.id}`}
       >
         <img src={color.link} alt="" />{" "}
-      </a>
+      </Link>
     );
   });
  

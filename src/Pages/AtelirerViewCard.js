@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../App.css";
 import { useParams } from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
@@ -50,97 +51,97 @@ function AtelirerViewCard() {
   const floral = Colors.find((obj) => obj.theme === "Floral and Fauna");
   const floralLink = floral.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const sporty = Colors.find((obj) => obj.theme === "Sporty");
   const sportyLink = sporty.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const bestBuddies = Colors.find((obj) => obj.theme === "Best Buddies");
   const bestBuddiesLink = bestBuddies.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const justKidding = Colors.find((obj) => obj.theme === "Just Kidding");
   const justKiddingLink = justKidding.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const teen = Colors.find((obj) => obj.theme === "Teen");
   const teenLink = teen.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const nirvana = Colors.find((obj) => obj.theme === "Nirvana");
   const nirvanaLink = nirvana.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const limitedEdition = Colors.find((obj) => obj.theme === "Limited Edition");
   const limitedEditionLink = limitedEdition.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
   const magicalArt = Colors.find((obj) => obj.theme === "Magical Art");
   const magicalArtLink = magicalArt.data.map(function (color, index) {
     return (
-      <a key={index} href={`/product/Atelier/${bottleName}/${color.id}`}>
+      <Link key={index} to={`/product/Atelier/${bottleName}/${color.id}`}>
         <img
           className="border border-gray-300 w-6 h-6 rounded-full"
           src={color.imgUrl}
           alt=""
         />{" "}
-      </a>
+      </Link>
     );
   });
 
