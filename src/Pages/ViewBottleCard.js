@@ -1,22 +1,27 @@
 import { useState } from "react";
 import "../App.css";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams} from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
-
+import { useDispatch } from 'react-redux';
 import AllBottleData from "../Components/AllBottlesData";
+import { cartActions } from "../Store/cartSlice";
+
+
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
+  const dispatch =  useDispatch()
   const [selectedCap, setSelectedCap] = useState({
     id: "Cap1",
     img: "https://res.cloudinary.com/dmurcewte/image/upload/v1682861484/cap1_yizqrd.png",
   });
 
   const [info, setInfo] = useState(true);
-  const [cartData, setCartData] = useState(null);
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
+
+
   const handleEngraveColor = (e) => {
     const value = e.target.value;
     const checkboxes = document.getElementsByName("engrave-color");
@@ -76,22 +81,28 @@ function ViewBottleCard() {
       </a>
     );
   });
-  const navigate = useNavigate();
-  const addToCartHandler = () => {
-    const data = {
-      bottleName: bottleName,
-      product: bottle.id,
-    };
+ 
 
-    localStorage.setItem("cartData", JSON.stringify(data));
-    setCartData(data);
-  };
-  const goToCartHandler = () => {
-    navigate("/cart");
-  };
+const price = bottle.price
+const id = bottle.id
+const title = bottleName
 
-  const buttonText = cartData ? "Go to Cart" : "Add to Cart";
-  const handleNavClick = cartData ? goToCartHandler : addToCartHandler;
+
+
+  function handleCartData(){
+    dispatch(cartActions.addItemToCart({
+      id,
+     title,
+      price
+    }))
+    
+
+  }
+ 
+  
+
+  const buttonText = 'Add To Cart'
+  
 
   return (
     <div>
@@ -257,7 +268,7 @@ function ViewBottleCard() {
             <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
             <div className="flex space-x-4">
               <button
-                onClick={handleNavClick}
+                onClick={handleCartData}
                 className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
               >
                 {buttonText}

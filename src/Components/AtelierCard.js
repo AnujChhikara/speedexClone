@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { fit } from "@cloudinary/url-gen/actions/resize";
-
+import { Link } from "react-router-dom";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 function AtelierCard(props) {
@@ -20,8 +20,8 @@ function AtelierCard(props) {
   const milo500Images = myImage.resize(fit().width(100).height(200));
 
   return (
-    <a
-      href={`/product/Atelier/${props.bottleName}/${props.id}`}
+    <Link
+      to={`/product/Atelier/${props.bottleName}/${props.id}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${isHover ? "opacity-70" : ""} duration-700`}
@@ -51,7 +51,7 @@ function AtelierCard(props) {
           </div>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 export default AtelierCard;

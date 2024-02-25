@@ -1,23 +1,28 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import SidebarMenu from "./SideBar";
 import MobileNav from "./MobillNavbar";
+import TopBar from "./topBar";
+import { useSelector } from 'react-redux';
+
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [item, setItem] = useState(0);
+  const totalQuantity =  useSelector((state) => state.cart.totalQuantity)
+ 
 
-  const cartData = localStorage.getItem("cartData");
-  const hasCartItems = !!cartData;
 
-  useEffect(() => {
-    setItem(hasCartItems ? 1 : 0);
-  }, [hasCartItems]);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
   const onClose = () => {
     setIsOpen(false);
   };
+
+  function handleClick(){
+    setIsOpen(false)
+  }
   const location = useLocation();
   const isHome = location.pathname === "/";
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
@@ -32,14 +37,18 @@ function Navbar() {
   return (
     <div className={` ${isHome ? "bg" : ""}   `}>
       {isDesktop ? (
-        <div className="fixed w-full z-10 top-0 bg-white py-3 shadow-xl text-gray-500 text-sm">
+        <div className="fixed font-bold w-full z-10 top-0 bg-white pb-3 shadow-xl text-gray-500 text-sm">
           <SidebarMenu
             isOpen={isOpen}
             onClose={onClose}
             width={450}
             itemWidth={20}
+            handleClick={handleClick}
           />
-          <div className="flex justify-around items-center">
+            <TopBar/>
+          
+          <div className="flex justify-around items-center pt-2">
+        
             <div className="flex lg:space-x-6 text-gray-600 ">
               <h3
                 className="hover:text-gray-900 hover:underline cursor-pointer"
@@ -47,32 +56,32 @@ function Navbar() {
               >
                 SHOP
               </h3>
-              <a
+              <Link
                 className="hover:text-gray-900 hover:underline"
-                href="/co-brand"
+                to="/co-brand"
               >
                 CO-BRAND
-              </a>
-              <a className="hover:text-gray-900 hover:underline" href="/">
+              </Link>
+              <Link className="hover:text-gray-900 hover:underline" to="/">
                 DISCOVER
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="/">
+              <Link to="/">
                 <img
-                  className="w-12 "
-                  src="https://jkrisk.in/speedex/wp-content/uploads/2022/11/small-Logo.png"
+                  className="w-24 "
+                  src="https://speedexind.com/wp-content/uploads/2022/11/logo-final.webp"
                   alt="Logoimgae"
                 />
-              </a>
+              </Link>
             </div>
             <div className="flex space-x-8 items-center">
-              <a href="/">
+              <Link to="/">
                 <h3 className="hover:underline hover:opacity-50">
                   REFER A FRIEND
                 </h3>
-              </a>
-              <a href="/cart">
+              </Link>
+              <Link to="/cart">
                 {" "}
                 <div className="flex space-x-1 items-center">
                   <svg
@@ -88,10 +97,10 @@ function Navbar() {
                     />
                   </svg>
                   <h4>
-                    {item} {"  "}items
+                  {totalQuantity}  items
                   </h4>
                 </div>
-              </a>
+              </Link>
 
               <svg
                 className="w-6"
@@ -132,7 +141,8 @@ function Navbar() {
         </div>
       ) : (
         <div className="fixed w-full z-10 top-0 ">
-          <MobileNav item={item} />
+          <TopBar/>
+          <MobileNav totalQuantity={totalQuantity} />
         </div>
       )}
     </div>

@@ -1,14 +1,17 @@
 import { useState } from "react";
 import "../App.css";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import AtelierData from "../Components/AtelierData";
+import { useDispatch } from 'react-redux';
+import { cartActions } from "../Store/cartSlice";
 
 function AtelirerViewCard() {
   const { bottleName, productId } = useParams();
-  const [cartData, setCartData] = useState(null);
+  const dispatch =  useDispatch()
+ 
   const [info, setInfo] = useState(true);
   const handleInfoT = () => {
     setInfo(true);
@@ -23,22 +26,26 @@ function AtelirerViewCard() {
   const allBottles = AtelierData.find((obj) => obj.id === bottleName);
   const bottle = allBottles.data[index];
   const Colors = allBottles.colors;
-  const navigate = useNavigate();
-  const addToCartHandler = () => {
-    const data = {
-      bottleName: bottleName,
-      product: bottle.id,
-    };
+  
 
-    localStorage.setItem("cartData", JSON.stringify(data));
-    setCartData(data);
-  };
-  const goToCartHandler = () => {
-    navigate("/cart");
-  };
-
-  const buttonText = cartData ? "Go to Cart" : "Add to Cart";
-  const handleClick = cartData ? goToCartHandler : addToCartHandler;
+  const price = bottle.price
+  const id = bottle.id
+  const title = bottleName
+  
+  
+    function handleCartData(){
+      dispatch(cartActions.addItemToCart({
+        id,
+       title,
+        price
+      }))
+      
+  
+    }
+   
+    
+  
+    const buttonText = 'Add To Cart'
 
   const floral = Colors.find((obj) => obj.theme === "Floral and Fauna");
   const floralLink = floral.data.map(function (color, index) {
@@ -239,12 +246,12 @@ function AtelirerViewCard() {
             <div className="flex items-center  space-x-4">
               <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
               <div className="flex space-x-4">
-                <button
-                  onClick={handleClick}
-                  className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
-                >
-                  {buttonText}
-                </button>
+              <button
+                onClick={handleCartData}
+                className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
+              >
+                {buttonText}
+              </button>
               </div>
             </div>
           </div>

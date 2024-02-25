@@ -15,7 +15,7 @@ import Navbar from "./Components/Common/Navbar";
 import MiloAtelier from "./Pages/MiloAtelier";
 import AtelirerViewCard from "./Pages/AtelirerViewCard";
 import Cart from "./Pages/Cart";
-import Checkout from "./Pages/Checkout";
+// import Checkout from "./Pages/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -35,7 +35,7 @@ function App() {
         <Route path="/about" element={<CompanyProfile />} />
         <Route path="/Atelier" element={<MiloAtelier />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
+        {/* <Route path="/checkout" element={<Checkout />} /> */}
 
         <Route
           path="/product/:bottleName/:productId"

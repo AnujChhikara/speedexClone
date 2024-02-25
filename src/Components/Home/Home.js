@@ -36,13 +36,11 @@ function Home() {
             alt=""
           />
         </div>
-        <div className="md:w-[400px] sm:w-44 tracking-tighter  md:text-2xl sm:text-sm font-medium md:ml-60 flex items-start relative  sm:mt-2">
-          <h1>
-            Please note that this website is a project that clones the
-            e-commerce platform Speedex. The content on this website is solely
-            for educational or personal purposes, and all rights to the original
-            content belong to Speedex.
-          </h1>
+        <div className="md:w-[400px] space-y-6 text-center flex-col sm:w-44 tracking-tighter md:font-bold text-zinc-800  md:text-6xl sm:text-sm font-medium md:ml-60 flex items-start relative  sm:mt-2">
+          <h1 className="underline">
+
+          Sustainable Sips:</h1> <span className="text-5xl text-zinc-700">Steel and Printed Water Bottles for Eco-Conscious Living</span>
+          
         </div>
       </div>
     </div>

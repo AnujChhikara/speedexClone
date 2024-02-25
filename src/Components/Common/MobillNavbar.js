@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Fade as Hamburger } from "hamburger-react";
 import { fallDown as Menu } from "react-burger-menu";
 import AOS from "aos";
+import { Link } from "react-router-dom";
 
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..
@@ -11,9 +12,11 @@ AOS.init({
 
 function MobileNav(props) {
   const [isOpen, setIsOpen] = useState(false);
+
   const onClose = () => {
     setIsOpen(false);
   };
+
   const styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -69,17 +72,17 @@ function MobileNav(props) {
           />
         </div>
         <div>
-          <a href="/">
+          <Link to="/" onClick={onClose}>
             <img
               className="w-12 "
-              src="https://jkrisk.in/speedex/wp-content/uploads/2022/11/small-Logo.png"
+              src="https://speedexind.com/wp-content/uploads/2022/11/logo-final.webp"
               alt="Logoimgae"
             />
-          </a>
+          </Link>
         </div>
         <div>
-          <a href="/cart" className="flex">
-            {props.item}
+          <Link to="/cart" onClick={onClose} className="flex">
+            {props.totalQuantity}
             <svg
               className="w-6 hover:fill-gray-200"
               viewBox="0 0 24 24"
@@ -92,15 +95,15 @@ function MobileNav(props) {
                 fill="#000000"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       </div>
       <div className={`w-screen bg-white`}>
         <Menu isOpen={isOpen} onClose={onClose} styles={styles} width={400}>
           <div className="flex flex-col space-y-6 md:pt-20 justify-center lg:text-lg sm:text-sm font-medium ">
-            <a
+            <Link onClick={onClose}
               className="menu-item flex rounded-xl  duration-500 justify-around items-center space-x-6"
-              href="/single-wall"
+              to="/single-wall"
             >
               Single Wall
               <img
@@ -108,10 +111,10 @@ function MobileNav(props) {
                 src="https://speedexind.com/wp-content/uploads/2023/04/S-WALL-icon.png"
                 alt=""
               />
-            </a>
-            <a
+            </Link>
+            <Link onClick={onClose}
               className="menu-item rounded-xl  duration-500 flex justify-around items-center space-x-6"
-              href="/hot-n-cold"
+              to="/hot-n-cold"
             >
               Hot & Cold
               <img
@@ -119,10 +122,10 @@ function MobileNav(props) {
                 src="https://speedexind.com/wp-content/uploads/2023/04/hot2.png"
                 alt=""
               />
-            </a>
-            <a
+            </Link>
+            <Link onClick={onClose}
               className="menu-item flex  rounded-xlduration-500 justify-around items-center space-x-6"
-              href="/Atelier"
+              to="/Atelier"
             >
               Atelier{" "}
               <img
@@ -130,10 +133,10 @@ function MobileNav(props) {
                 src="https://speedexind.com/wp-content/uploads/2023/04/artisttic.png"
                 alt=""
               />
-            </a>
-            <a
+            </Link>
+            <Link onClick={onClose}
               className="menu-item flex  rounded-xl  duration-500 justify-around items-center space-x-6"
-              href="/feeding-bottles"
+              to="/feeding-bottles"
             >
               Feeding Bottle
               <img
@@ -141,7 +144,7 @@ function MobileNav(props) {
                 src="https://speedexind.com/wp-content/uploads/2023/03/feeding-icon.png"
                 alt=""
               />
-            </a>
+            </Link>
           </div>
         </Menu>
       </div>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 
 function BottleCard(props) {
   const [isHover, setIsHover] = useState(false);
@@ -11,8 +13,8 @@ function BottleCard(props) {
   };
 
   return (
-    <a
-      href={`/product/${props.bottleName}/${props.id}`}
+    <Link
+      to={`/product/${props.bottleName}/${props.id}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       className={`${isHover ? "" : ""}`}
@@ -39,7 +41,7 @@ function BottleCard(props) {
           <h6>₹{props.price}.00</h6>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 export default BottleCard;

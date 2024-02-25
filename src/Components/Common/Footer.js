@@ -1,4 +1,9 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
+  function handleClick() {
+    window.scrollTo(0,0)
+  }
   return (
     <div className="flex flex-col  mt-28  bottom-0">
       <div className="lg:flex lg:flex-row lg:space-y-0 sm:space-y-8 sm:flex sm:flex-col lg:px-0 sm:px-4 md:items-center lg:space-x-16 bg-[#DBDFEA] lg:justify-around  py-6">
@@ -55,26 +60,26 @@ function Footer() {
         </div>
         <div className="md:flex md:flex-row sm:flex sm:flex-col sm:space-y-3 md:space-y-0 sm:justify-start ml-6 md:space-x-6">
           <div className="flex flex-col space-y-3 ">
-            <a className="hover:underline" href="/career">
+            <Link onClick={handleClick} className="hover:underline" to="/career">
               Career
-            </a>
-            <a className="hover:underline" href="/privacy-policy">
+            </Link>
+            <Link onClick={handleClick} className="hover:underline" to="/privacy-policy">
               Privacy Policy
-            </a>
-            <a className="hover:underline" href="/refund-cancellation-policy">
+            </Link>
+            <Link onClick={handleClick} className="hover:underline" to="/refund-cancellation-policy">
               Refund & Cancellation Policy
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col space-y-3 ">
-            <a className="hover:underline" href="/">
+            <Link onClick={handleClick} className="hover:underline" to="/">
               Bulk Order
-            </a>
-            <a className="hover:underline" href="/">
+            </Link>
+            <Link onClick={handleClick} className="hover:underline" to="/">
               Contact us
-            </a>
-            <a className="hover:underline" href="/about">
+            </Link>
+            <Link onClick={handleClick} className="hover:underline" to="/about">
               Company Profile
-            </a>
+            </Link>
           </div>
         </div>
 

@@ -1,6 +1,13 @@
 import { slide as Menu } from "react-burger-menu";
 
+import { Link } from "react-router-dom";
+
 function SidebarMenu(props) {
+
+  
+
+
+
   const styles = {
     bmBurgerButton: {
       position: "fixed",
@@ -53,9 +60,9 @@ function SidebarMenu(props) {
       width={props.width}
     >
       <div className="flex flex-col space-y-4 md:pt-20 sm:pt-12 justify-center lg:text-lg sm:text-sm font-medium ">
-        <a
+        <Link onClick={props.handleClick}
           className="menu-item flex bg-gray-100 hover:bg-gray-200 rounded-xl py-2 duration-500 justify-around items-center space-x-6"
-          href="/single-wall"
+          to="/single-wall"
         >
           Single Wall
           <img
@@ -63,10 +70,10 @@ function SidebarMenu(props) {
             src="https://speedexind.com/wp-content/uploads/2023/04/S-WALL-icon.png"
             alt=""
           />
-        </a>
-        <a
+        </Link>
+        <Link onClick={props.handleClick}
           className="menu-item bg-gray-100 hover:bg-gray-200 py-2 rounded-xl  duration-500 flex justify-around items-center space-x-6"
-          href="/hot-n-cold"
+          to="/hot-n-cold"
         >
           Hot & Cold
           <img
@@ -74,10 +81,10 @@ function SidebarMenu(props) {
             src="https://speedexind.com/wp-content/uploads/2023/04/hot2.png"
             alt=""
           />
-        </a>
-        <a
+        </Link>
+        <Link onClick={props.handleClick}
           className="menu-item flex bg-gray-100 hover:bg-gray-200 rounded-xl  py-2 duration-500 justify-around items-center space-x-6"
-          href="/Atelier"
+          to="/Atelier"
         >
           Atelier{" "}
           <img
@@ -85,10 +92,10 @@ function SidebarMenu(props) {
             src="https://speedexind.com/wp-content/uploads/2023/04/artisttic.png"
             alt=""
           />
-        </a>
-        <a
+        </Link>
+        <Link onClick={props.handleClick}
           className="menu-item flex bg-gray-100 hover:bg-gray-200 rounded-xl  py-2 duration-500 justify-around items-center space-x-6"
-          href="/feeding-bottles"
+          to="/feeding-bottles"
         >
           Feeding Bottle
           <img
@@ -96,7 +103,7 @@ function SidebarMenu(props) {
             src="https://speedexind.com/wp-content/uploads/2023/03/feeding-icon.png"
             alt=""
           />
-        </a>
+        </Link>
       </div>
     </Menu>
   );
