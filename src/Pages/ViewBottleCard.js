@@ -21,6 +21,7 @@ function ViewBottleCard() {
   const [info, setInfo] = useState(true);
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
+  const [isChecked, setIsChecked] = useState(false);
 
 
   const handleEngraveColor = (e) => {
@@ -82,19 +83,27 @@ function ViewBottleCard() {
       </Link>
     );
   });
+
+  const handleCheckboxChange = () => {
+    if(engrave.length > 0) {
+      setIsChecked(!isChecked);
+    }
+    
+     // Toggle the value (true to false, false to true)
+  };
  
 
 const price = bottle.price
 const id = bottle.id
 const title = bottleName
 
-
-
   function handleCartData(){
     dispatch(cartActions.addItemToCart({
       id,
      title,
-      price
+      price,
+      isEngrave: isChecked
+      
     }))
     
 
@@ -218,7 +227,7 @@ const title = bottleName
               ENGRAVE
             </h4>
             <div className="flex flex-col">
-              <label htmlFor="">RS. 30</label>
+              <label className="font-semibold text-base" htmlFor="">+30 ruppee</label>
               <input
                 value={engrave}
                 onChange={handleEngrave}
@@ -263,10 +272,22 @@ const title = bottleName
                 </div>
               </div>
               <p className="text-sm ml-4">9 Character Limit</p>
+              { engrave.length > 0 && (
+                <div className="flex items-center space-x-2 pt-2 ">
+            
+                <input onChange={handleCheckboxChange}  type="checkbox" id="confirmation-checkbox" className="w-5 h-5 form-checkbox text-indigo-600"/>
+           
+            <h1 className="text-base font-bold ">Confirm Engraving</h1>
+    
+            
+    
+        </div>
+              )}
             </div>
+           
           </div>
           <div className="flex items-center  space-x-4">
-            <h5 className="font-semibold text-xl">₹{bottle.price}</h5>
+            <h5 className="font-semibold text-xl">₹{isChecked ? bottle.price+30 : bottle.price}</h5>
             <div className="flex space-x-4">
               <button
                 onClick={handleCartData}

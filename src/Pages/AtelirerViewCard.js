@@ -30,6 +30,7 @@ function AtelirerViewCard() {
   
 
   const price = bottle.price
+
   const id = bottle.id
   const title = bottleName
   
@@ -38,7 +39,7 @@ function AtelirerViewCard() {
       dispatch(cartActions.addItemToCart({
         id,
        title,
-        price
+        price, isEngrave: false
       }))
       
   
