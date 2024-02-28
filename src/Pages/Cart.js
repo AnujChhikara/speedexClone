@@ -1,6 +1,6 @@
 
 import { useSelector } from 'react-redux';
-import CartItem from "../Components/Common/CartItem";
+import CartItem from "../Components/utils/CartItem";
 import { Link } from 'react-router-dom';
 
 
@@ -14,7 +14,7 @@ function Cart() {
 
   if(cartItems.length === 0){
     return <div className='mt-32 text-lg flex  justify-center items-center'>
-      <img className='' src='images/shopping.png' alt='empty cart'/>
+      <img className='' src='https://res.cloudinary.com/dmurcewte/image/upload/v1709131460/shopping_vhij8c.png' alt='empty cart'/>
       <div className='flex flex-col items-center '>
       <p className="text-gray-600">Oops! Your cart is feeling a bit lonely.</p>
           <p className="text-gray-600">Why not fill it with some amazing items?</p>

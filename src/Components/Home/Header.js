@@ -3,12 +3,12 @@
 function Home() {
   
   return (
-    <div className="absolute top-40 align  ">
+    <header className="absolute top-40 align  ">
       <div className="flex">
         <div className={`flex justify-center bottle w-44  `}>
           <img
             className="md:h-[440px] sm:h-80 md:-rotate-60 sm:-rotate-50 sm:ml-10 md:ml-0     "
-            src="/Images/b.webp"
+            src="https://res.cloudinary.com/dmurcewte/image/upload/v1709131650/b_xuvb5n.webp"
             alt=""
           />
           <img
@@ -29,7 +29,7 @@ function Home() {
           
         </div>
       </div>
-    </div>
+    </header>
   );
 }
 export default Home;

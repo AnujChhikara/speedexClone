@@ -1,4 +1,4 @@
-import Home from "../Components/Home/Home";
+import Home from "../Components/Home/Header";
 import Body from "../Components/Home/Body";
 import Review from "../Components/Home/Review/Review";
 

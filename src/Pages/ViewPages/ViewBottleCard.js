@@ -1,13 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import "../App.css";
-import { useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { fit } from "@cloudinary/url-gen/actions/resize";
 import { CloudinaryImage } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 import { useDispatch } from 'react-redux';
-import AllBottleData from "../Components/AllBottlesData";
-import { cartActions } from "../Store/cartSlice";
+import AllBottleData from "../../Data/AllBottlesData";
+import { cartActions } from "../../Store/cartSlice";
 
 
 function ViewBottleCard() {
@@ -107,8 +105,6 @@ function ViewBottleCard() {
     if(engrave.length > 0) {
       setIsChecked(!isChecked);
     }
-    
-     // Toggle the value (true to false, false to true)
   };
  
 
@@ -129,7 +125,7 @@ const title = bottleName
     isEngrave: isChecked
   }));
   setAddCartUI(false)
-}, 2000);
+}, 1500);
    
 
   }
@@ -314,12 +310,29 @@ const title = bottleName
           <div className="flex items-center  space-x-4">
             <h5 className="font-semibold text-xl">₹{isChecked ? bottle.price+30 : bottle.price}</h5>
             <div className="flex space-x-4">
-              <button
-                onClick={handleCartData}
-                className={`bg-[#000000] rounded-3xl text-white px-4  h-10 ${addCartUi && 'animate-pulse'}`} 
-              >
-                {addCartUi ? 'Adding to cart...': 'Add to cart'}
-              </button>
+              {
+                addCartUi && (
+                  <button
+                  onClick={handleCartData}
+                  disabled
+                  className={`bg-[#000000] rounded-3xl text-white px-4  h-10 animate:pulse}`} 
+                >
+                  Adding to cart...
+                </button>
+
+                )
+              }
+              {
+                !addCartUi && (
+                  <button
+                  onClick={handleCartData}
+                  className={`bg-[#000000] rounded-3xl text-white px-4  h-10 `} 
+                >
+                  Add to cart
+                </button>
+                )
+              }
+             
             </div>
           </div>
         </div>

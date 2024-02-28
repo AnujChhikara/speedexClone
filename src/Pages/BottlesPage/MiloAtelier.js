@@ -1,5 +1,5 @@
-import AtelierData from "../Components/AtelierData";
-import AtelierCard from "../Components/AtelierCard";
+import AtelierData from "../../Data/AtelierData";
+import AtelierCard from "../../Components/utils/AtelierCard";
 function MiloAtelier() {
   const milo500Data = AtelierData.find((obj) => obj.id === "Milo-500").data;
   const milo500Bottles = milo500Data.map(function (item) {

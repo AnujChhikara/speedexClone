@@ -2,21 +2,16 @@ import React, { useState } from 'react'
 
 import { useSelector } from 'react-redux';
 import PaymentSuccessModal from '../Components/utils/paymentSuccess';
-import { redirect, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 function Checkout() {
 	
 	const navigate = useNavigate()
 	const [modalIsOpen, setModalIsOpen] = useState(false)
+	const [isPaying, setIsPaying] = useState(false)
     const cartItems =  useSelector((state) => state.cart.items)
 
-	// if(cartItems.length === 0){
-	// return 	redirect('/')
-	// }
-	
-    
 
-    
 
   const cartTotal = cartItems.reduce(
     (totalPrice, item) => totalPrice + item.quantity * item.price,
@@ -25,10 +20,15 @@ function Checkout() {
 
 
   function handleSubmit(event){
-    event.preventDefault()
-    setModalIsOpen(true)
-    
-  }
+	setIsPaying(true)
+	event.preventDefault()
+
+	setTimeout(() => {
+		setModalIsOpen(true)
+        
+        setIsPaying(false)
+      }, 2000)
+     }
 
   const closeModal = () => {
 	
@@ -94,14 +94,14 @@ function Checkout() {
 				</div>
 				<div className="px-8 mt-4 border-t pt-4">
 					<div className="flex items-end justify-between">
-						<span className="font-semibold">Today you pay</span>
+						<span className="font-semibold">Total Amount</span>
 						<span className="font-semibold">&#8377;{parseFloat((cartTotal*1.08).toFixed(0))}</span>
 					</div>
 		
 				</div>
 				
 				<div className="flex flex-col px-8 pt-4">
-					<button className="flex items-center justify-center bg-blue-600 text-sm font-medium w-full h-10 rounded text-blue-50 hover:bg-blue-700">Pay Securely</button>
+					<button className="flex items-center justify-center bg-blue-600 text-sm font-medium w-full h-10 rounded text-blue-50 hover:bg-blue-700">{isPaying ? "Payment in Process.." : "Pay Securely"}</button>
 					
 				</div>
 			</div>

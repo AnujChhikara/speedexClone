@@ -1,37 +1,11 @@
-import BottleCard from "../Components/BottleCard";
-
-import AllBottleData from "../Components/AllBottlesData";
+import { getBottle } from "../../Components/functions";
 
 function feedingBottles() {
-  const silkData = AllBottleData.find((obj) => obj.id === "Silk").data;
+  
+  const silkBottles = getBottle("Silk")
+  const blissBottles = getBottle("Bliss")
 
-  const silkBottles = silkData.map(function (item) {
-    return (
-      <BottleCard
-        imgUrl={item.imgUrl}
-        id={item.id}
-        key={item.id}
-        bottleName="Silk"
-        name={item.name}
-        cutPrice={item.cutPrice}
-        price={item.price}
-      />
-    );
-  });
-  const blissData = AllBottleData.find((obj) => obj.id === "Bliss").data;
-  const blissBottles = blissData.map(function (item) {
-    return (
-      <BottleCard
-        imgUrl={item.imgUrl}
-        id={item.id}
-        key={item.id}
-        bottleName="Bliss"
-        name={item.name}
-        cutPrice={item.cutPrice}
-        price={item.price}
-      />
-    );
-  });
+  
   return (
     <div>
       <div className="flex flex-col sm:pt-28  justify-center items-center mb-28">

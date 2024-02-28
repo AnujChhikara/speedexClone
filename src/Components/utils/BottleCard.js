@@ -7,6 +7,7 @@ function BottleCard(props) {
   const handleMouseEnter = () => {
     setIsHover(true);
   };
+  console.log(props.name)
 
   const handleMouseLeave = () => {
     setIsHover(false);

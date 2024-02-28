@@ -1,29 +1,36 @@
 import "./App.css";
 import HomePage from "./Pages/HomePage";
 import PageNotFound from "./Pages/PageNotFound";
-import SingleWall from "./Pages/SingleWall";
-import DoubleWall from "./Pages/DoubleWall";
-import CoBrand from "./Pages/CoBrand";
-import ViewBottleCard from "./Pages/ViewBottleCard";
-import FeedingBottles from "./Pages/FeedingBottles";
-import Career from "./Pages/Career";
-import PrivacyPolicy from "./Pages/PrivacyPolicy";
-import Refund from "./Pages/Refund";
-import CompanyProfile from "./Pages/CompanyProfile";
+import SingleWall from "./Pages/BottlesPage/SingleWall";
+import DoubleWall from "./Pages/BottlesPage/DoubleWall";
+import CoBrand from "./Pages/UtilsPage/CoBrand";
+import ViewBottleCard from "./Pages/ViewPages/ViewBottleCard";
+import FeedingBottles from "./Pages/BottlesPage/FeedingBottles";
+import Career from "./Pages/UtilsPage/Career";
+import PrivacyPolicy from "./Pages/UtilsPage/PrivacyPolicy";
+import Refund from "./Pages/UtilsPage/Refund";
+import CompanyProfile from "./Pages/UtilsPage/CompanyProfile";
 import Footer from "./Components/Common/Footer";
 import Navbar from "./Components/Common/Navbar";
-import MiloAtelier from "./Pages/MiloAtelier";
-import AtelirerViewCard from "./Pages/AtelirerViewCard";
+import MiloAtelier from "./Pages/BottlesPage/MiloAtelier";
+import AtelirerViewCard from "./Pages/ViewPages/AtelirerViewCard";
 import Cart from "./Pages/Cart";
 import ScrollToTop from './Components/Common/ScrollToTop'
 import Checkout from "./Pages/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 
 
 
 function App() {
+  
+  const cartItems =  useSelector((state) => state.cart.items)
+  let isSecure = false
+  if(cartItems.length > 0) {
+    isSecure = true
+  }
   return (
     <BrowserRouter>
       <Navbar />
@@ -42,7 +49,7 @@ function App() {
         <Route path="/about" element={<CompanyProfile />} />
         <Route path="/Atelier" element={<MiloAtelier />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/checkout" element={isSecure? <Checkout /> : <PageNotFound/>} />
 
         <Route
           path="/product/:bottleName/:productId"
