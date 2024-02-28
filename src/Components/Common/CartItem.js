@@ -21,7 +21,7 @@ function CartItem(props) {
       AtelierBottle = allBottles.data[index];
       image = new CloudinaryImage(`Milo_500/${AtelierBottle.imdId}`, {
         cloudName: "dmurcewte",
-      }).resize(fit().width(110).height(150));
+      }).resize(fit().width(110).height(100));
       
     } 
     
@@ -35,7 +35,7 @@ function CartItem(props) {
 
     }
     let finalPrice = totalPrice
-    console.log(isEngrave)
+  
 
     if(isEngrave){
       finalPrice += 30
@@ -48,35 +48,39 @@ function CartItem(props) {
     
      <>
      {bottleName === "Milo-500" ? (
-      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-       <th scope="row" class="px-6 flex items-center space-x-6 ml-10 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+      <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+       <th scope="row" className="px-6 flex items-center space-x-6 ml-8 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
           <AdvancedImage cldImg={image} />
           <h2>{AtelierBottle.name}</h2>
           </th>
         
         
-        <td class="px-6 py-4"> 500ml</td>
+        <td className="px-6 py-4"> 500ml</td>
        
         
   
-<td class="px-6 py-4">{quantity}</td>
-        <td class="px-6 py-4">&#8377;{finalPrice}</td>
+<td className="px-6 py-4">{quantity}</td>
+        <td className="px-6 py-4">&#8377;{finalPrice}</td>
         </tr>
         ) : (
-          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-         <th scope="row" class="px-6 py-4 flex items-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
-          <img className="w-32" src={imgUrl} alt="productImage" />
+          <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+         <th scope="row" className="px-6 py-4  flex items-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
+          <img className="w-24" src={imgUrl} alt="productImage" />
           <h2>{bottleName}</h2>
           </th>
         
           
         
-        <td class="px-6 py-4">{capacity}ml</td>
+        <td className="px-6 py-4">{capacity}ml</td>
         
      
   
-        <td class="px-6 py-4">{quantity}</td>
-        <td class="px-6 py-4"> &#8377;{finalPrice}</td>
+        <td className="px-6 py-4 flex space-x-4">
+          <button>-</button>
+          <p>{quantity}</p>
+          <button>+</button>
+        </td>
+        <td className="px-6 py-4"> &#8377;{finalPrice}</td>
         </tr>
         )
         }

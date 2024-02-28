@@ -12,6 +12,7 @@ import { cartActions } from "../Store/cartSlice";
 function AtelirerViewCard() {
   const { bottleName, productId } = useParams();
   const dispatch =  useDispatch()
+  const[addCartUi, setAddCartUI] = useState(false)
  
   const [info, setInfo] = useState(true);
   const handleInfoT = () => {
@@ -36,18 +37,21 @@ function AtelirerViewCard() {
   
   
     function handleCartData(){
-      dispatch(cartActions.addItemToCart({
-        id,
-       title,
-        price, isEngrave: false
-      }))
-      
+      setAddCartUI(true)
+      setTimeout(() => {
+        dispatch(cartActions.addItemToCart({
+          id,
+          title,
+          price,
+          isEngrave: false
+        }));
+        setAddCartUI(false)
+      }, 2000);
+         
+   
   
     }
    
-    
-  
-    const buttonText = 'Add To Cart'
 
   const floral = Colors.find((obj) => obj.theme === "Floral and Fauna");
   const floralLink = floral.data.map(function (color, index) {
@@ -250,9 +254,9 @@ function AtelirerViewCard() {
               <div className="flex space-x-4">
               <button
                 onClick={handleCartData}
-                className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
+                className={`bg-[#000000] rounded-3xl text-white px-4  h-10 ${addCartUi && 'animate-pulse'}`} 
               >
-                {buttonText}
+                {addCartUi ? 'Adding to cart...': 'Add to cart'}
               </button>
               </div>
             </div>

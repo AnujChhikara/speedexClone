@@ -4,6 +4,7 @@ import AllBottleData from "../Components/AllBottlesData";
 function SingleWall() {
   const simplexData = AllBottleData.find((obj) => obj.id === "Simplex").data;
   const simplexBottles = simplexData.map(function (item) {
+    
     return (
       <BottleCard
         imgUrl={item.imgUrl}
@@ -14,7 +15,8 @@ function SingleWall() {
         cutPrice={item.cutPrice}
         price={item.price}
       />
-    );
+      
+    ) ;
   });
   const hydrateData = AllBottleData.find((obj) => obj.id === "Hydrate").data;
   const hydrateBottles = hydrateData.map(function (item) {

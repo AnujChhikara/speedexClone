@@ -12,6 +12,7 @@ import { cartActions } from "../Store/cartSlice";
 
 function ViewBottleCard() {
   const { bottleName, productId } = useParams();
+  
   const dispatch =  useDispatch()
   const [selectedCap, setSelectedCap] = useState({
     id: "Cap1",
@@ -22,6 +23,7 @@ function ViewBottleCard() {
   const [engrave, setEngrave] = useState("");
   const [engraveColor, setEngraveColor] = useState("");
   const [isChecked, setIsChecked] = useState(false);
+  const[addCartUi, setAddCartUI] = useState(false)
 
 
   const handleEngraveColor = (e) => {
@@ -52,8 +54,25 @@ function ViewBottleCard() {
   const handleClick = (image) => {
     setSelectedCap(image);
   };
+
+  
+  function extractNumberFromString(str) {
+   
+    var numericString = str.replace(/\D/g, '');
+  
+  
+    var numericValue = parseInt(numericString, 10);
+  
+    return numericValue;
+  }
+
+  const IntId =extractNumberFromString(productId)
+
+  
+
+
   const allBottles = AllBottleData.find((obj) => obj.id === bottleName);
-  const bottle = allBottles.data[productId - 1];
+  const bottle = allBottles.data[IntId - 1];
   // const [hexColor, setHexColor] = useState(bottle.hex);
 
   const myImage = new CloudinaryImage(`${bottle.imgId}`, {
@@ -97,21 +116,27 @@ const price = bottle.price
 const id = bottle.id
 const title = bottleName
 
+
+
   function handleCartData(){
-    dispatch(cartActions.addItemToCart({
-      id,
-     title,
-      price,
-      isEngrave: isChecked
-      
-    }))
-    
+    setAddCartUI(true)
+
+    setTimeout(() => {
+  dispatch(cartActions.addItemToCart({
+    id,
+    title,
+    price,
+    isEngrave: isChecked
+  }));
+  setAddCartUI(false)
+}, 2000);
+   
 
   }
  
   
 
-  const buttonText = 'Add To Cart'
+
   
 
   return (
@@ -213,8 +238,8 @@ const title = bottleName
           <div className="flex space-x-6">
             <h4 className="font-bold font-roboto">Size</h4>
             <div className="flex space-x-4 font-light text-base">
-              <div className="border px-1 border-gray-400">750ml</div>
-              <div className="border px-1 border-gray-400">1000ml</div>
+              <div className="border-2 px-2 py-1 border-gray-300">{allBottles.capacity}ml</div>
+              
             </div>
           </div>
 
@@ -291,9 +316,9 @@ const title = bottleName
             <div className="flex space-x-4">
               <button
                 onClick={handleCartData}
-                className="bg-[#000000] rounded-3xl text-white px-4  h-10 "
+                className={`bg-[#000000] rounded-3xl text-white px-4  h-10 ${addCartUi && 'animate-pulse'}`} 
               >
-                {buttonText}
+                {addCartUi ? 'Adding to cart...': 'Add to cart'}
               </button>
             </div>
           </div>

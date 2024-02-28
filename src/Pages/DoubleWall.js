@@ -4,6 +4,7 @@ import AllBottleData from "../Components/AllBottlesData";
 function DoubleWall() {
   const miloData = AllBottleData.find((obj) => obj.id === "Milo").data;
 
+
   const miloBottles = miloData.map(function (item) {
     return (
       <BottleCard
@@ -51,23 +52,7 @@ function DoubleWall() {
       />
     );
   });
-  const nightingleData = AllBottleData.find(
-    (obj) => obj.id === "Nightingale"
-  ).data;
 
-  const nightingleBottles = nightingleData.map(function (item) {
-    return (
-      <BottleCard
-        imgUrl={item.imgUrl}
-        bottleName="Nightingale"
-        id={item.id}
-        key={item.id}
-        name={item.name}
-        cutPrice={item.cutPrice}
-        price={item.price}
-      />
-    );
-  });
   const flasqData = AllBottleData.find((obj) => obj.id === "Flasq").data;
 
   const flasqBottles = flasqData.map(function (item) {
@@ -184,14 +169,7 @@ function DoubleWall() {
             {eliteGoldBottles}
           </div>
         </div>
-        <div className="flex flex-col items-center mb-4">
-          <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
-            Nightingale
-          </h3>
-          <div className="flex flex-wrap justify-center">
-            {nightingleBottles}
-          </div>
-        </div>
+     
         <div className="flex flex-col items-center mb-4">
           <h3 className=" uppercase md:text-[92px] sm:text-[40px] font-roboto mb-4">
             flasq
@@ -227,6 +205,7 @@ function DoubleWall() {
           <div className="flex flex-wrap justify-center">{sharkBottles}</div>
         </div>
       </div>
+      
     </div>
   );
 }
