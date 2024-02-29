@@ -65,17 +65,17 @@ function CartItem(props) {
      <>
      {bottleName === "Milo-500" ? (
       <tr className="bg-white border-b dark:bg-gray-800  dark:border-gray-700">
-       <th scope="row" className="px-6 flex items-center  space-x-6 ml-8 py-4 font-medium  text-white ">
-          <AdvancedImage cldImg={image} />
+       <th scope="row" className="md:px-6 sm:px-2 sm:py-2 md:py-4 sm:w-[90px] md:w-auto md:flex md:flex-row sm:flex sm:items-center sm:flex-col text-center md:space-x-6 sm:ml-4 md:ml-8 py-4 font-medium  text-white ">
+          <AdvancedImage className="" cldImg={image} />
           <h2>{AtelierBottle.name}</h2>
           </th>
         
         
-        <td className="px-6 py-4"> 500ml</td>
+        <td className="md:px-6 sm:px-5 py-4"> 500ml</td>
        
         
   
-          <td  className="px-6 py-4"> 
+          <td  className="md:px-6 sm:px-3 py-4"> 
           <p className=''>
             <button className='mr-4'  onClick={decreaseQuanity}>
             -
@@ -87,18 +87,18 @@ function CartItem(props) {
         </tr>
         ) : (
           <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-         <th scope="row" className="px-6 py-4  flex items-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
+         <th scope="row" className="md:px-6 sm:px-2 sm:py-2 md:py-4  md:flex md:flex-row sm:flex sm:flex-col items-center font-medium text-gray-900 whitespace-nowrap dark:text-white">
           <img className="w-24" src={imgUrl} alt="productImage" />
-          <h2>{bottleName}</h2>
+          <h2 >{bottleName}</h2>
           </th>
         
           
         
-        <td className="px-6 py-4">{capacity}ml</td>
+        <td className="md:px-6 sm:px-3 py-4">{capacity}ml</td>
         
      
   
-        <td className="px-6 py-4">
+        <td className="md:px-6 sm:px-3 py-4">
          
           <p className=''>
             <button className='mr-4'  onClick={decreaseQuanity}>

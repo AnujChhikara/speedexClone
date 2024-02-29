@@ -315,7 +315,7 @@ const title = bottleName
                   <button
                   onClick={handleCartData}
                   disabled
-                  className={`bg-[#000000] rounded-3xl text-white px-4  h-10 animate:pulse}`} 
+                  className={`bg-[#000000] rounded-3xl text-white px-4  h-10 animate-pulse}`} 
                 >
                   Adding to cart...
                 </button>

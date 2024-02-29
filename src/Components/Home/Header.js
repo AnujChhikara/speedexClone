@@ -22,10 +22,16 @@ function Home() {
             alt=""
           />
         </div>
-        <div className="md:w-[360px] space-y-6 text-center flex-col sm:w-44 tracking-tighter md:font-bold text-pink-700  md:text-5xl sm:text-sm font-medium md:ml-60 flex items-start relative  sm:mt-2">
-          <h1 className="underline">
-
-          Sustainable Sips:</h1> <span className="text-4xl text-pink-500">Steel and Printed Water Bottles for Eco-Conscious Living</span>
+        <div className="md:w-[500px] text-center flex-col justify-center  sm:w-44  md:font-bold  md:text-5xl sm:text-sm font-medium md:ml-60 flex relative sm:mt-2">
+        <div class="container md:block sm:hidden">
+  <div class="wrapper headiing-text">
+    <h1 className="heading"><p className="">Rapid Refresh</p> Speedex's Stainless Hydration Revolution</h1>
+  </div>
+  
+</div>
+<div className="md:hidden sm:block">
+  <h1 className="outline">Speedex's Stainless Bottles</h1>
+  </div>
           
         </div>
       </div>

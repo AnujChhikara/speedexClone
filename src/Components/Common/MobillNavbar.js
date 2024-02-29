@@ -74,7 +74,7 @@ function MobileNav(props) {
         <div>
           <Link to="/" onClick={onClose}>
             <img
-              className="w-12 "
+              className="w-20 "
               src="https://speedexind.com/wp-content/uploads/2022/11/logo-final.webp"
               alt="Logoimgae"
             />

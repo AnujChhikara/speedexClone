@@ -50,6 +50,12 @@ const cartSlice = createSlice({
                 exitingitem.totalPrice = exitingitem.totalPrice - exitingitem.price
             }
 
+        },
+        resetCart(state){
+            state.items = []
+            state.totalQuantity = 0
+            state.changed = false
+
         }
       
     }

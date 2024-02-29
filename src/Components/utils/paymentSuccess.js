@@ -7,20 +7,21 @@ const PaymentSuccessModal = ({ isOpen, closeModal }) => {
       isOpen={isOpen}
       onRequestClose={closeModal}
       contentLabel="Payment Success Modal"
-      className='mt-40 w-screen flex flex-col justify-center items-center'
+      className='w-screen h-screen  '
       ariaHideApp={false}
     >
-        <div className='w-1/3 text-gray-400 rounded-lg bg-gray-800 h-80 flex flex-col pt-6 px-4 items-center space-y-8'>
-      <h2 className='text-4xl font-bold text-green-500'>Payment Successful!</h2>
-     <div className='flex flex-col items-center'>
+      <div className='mt-40 flex flex-col justify-center items-center '>
+        <div className='md:w-1/4 sm:w-11/12 sm:h-[340px] md:h-auto text-gray-500 font-mono rounded-lg bg-purple-200 h-80 flex flex-col pt-6 pb-2 px-4 items-center space-y-6'>
+      <h2 className='md:text-4xl sm:text-3xl font-bold text-green-400'>Payment Successful!</h2>
+     <div className='flex flex-col text-center items-center space-y-2 md:w-80'>
       <p>Your payment has been successfully processed, and we are now preparing to dispatch your item.</p>
 
 <p>Once your item is shipped, you will receive a confirmation email with the tracking details. </p>
 
 
 </div>
-      <button className='bg-gray-500 hover:bg-gray-400 px-4 py-2 text-lg font-semibold rounded-xl text-white' onClick={closeModal}>Close</button>
-      </div>
+      <button className='bg-gray-800 hover:bg-gray-700 px-4 py-2 text-lg font-semibold rounded-xl text-white' onClick={closeModal}>Shop More..</button>
+      </div></div>
     </Modal>
   );
 };

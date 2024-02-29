@@ -1,12 +1,14 @@
 import React, { useState } from 'react'
 
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import PaymentSuccessModal from '../Components/utils/paymentSuccess';
 import {  useNavigate } from "react-router-dom";
+import { cartActions } from '../Store/cartSlice';
 
 function Checkout() {
 	
 	const navigate = useNavigate()
+	const dispatch = useDispatch()
 	const [modalIsOpen, setModalIsOpen] = useState(false)
 	const [isPaying, setIsPaying] = useState(false)
     const cartItems =  useSelector((state) => state.cart.items)
@@ -33,13 +35,15 @@ function Checkout() {
   const closeModal = () => {
 	
     setModalIsOpen(false);
+	dispatch(cartActions.resetCart())
+
 	navigate('..')
    
     
   };
 
   return (<> 
-    <form onSubmit={handleSubmit} className="flex items-center justify-center w-screen min-h-screen bg-gray-100 text-gray-800 p-8">
+    <form onSubmit={handleSubmit} className="flex sm:mt-10 md:mt-0 items-center justify-center w-screen min-h-screen bg-gray-100 text-gray-800 p-8">
 
 	
 	<div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 w-full max-w-screen-lg">

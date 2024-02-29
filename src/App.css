@@ -199,3 +199,39 @@ select:focus {
     transform: translate3d(4px, 0, 0);
   }
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+
+.headingText{
+  font-family: "Anton", sans-serif;
+}
+
+.heading{
+  font-size: 3.8vw;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: transparent;
+  letter-spacing: 0.2vw;
+  margin: 0;
+  background-clip: initial;
+  background: linear-gradient(124deg, #ff0000 30%, #eeff00 19%, #e1ed2f 40%, #56b337 20%, #56b337 39%, #e1ed2f 39%, #e1ed2f 40%, #00fff2 40%, #00fff2 59%, #e1ed2f 50%, #e1ed2f 76%, #ff0000 70%, #ff0000 100%);
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+ 
+  background-position: center center;
+  background-size: 100% 100%;
+  transition: all 0.5s;
+}
+
+.outline {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5em;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 2px black;
+}
