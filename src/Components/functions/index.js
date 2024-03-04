@@ -39,3 +39,15 @@ export const getAtelierCategory = (theme,Colors,bottleName) => {
 
 }
  
+
+ 
+export function extractNumberFromString(str) {
+   
+  var numericString = str.replace(/\D/g, '');
+
+
+  var numericValue = parseInt(numericString, 10);
+
+  return numericValue;
+}
+

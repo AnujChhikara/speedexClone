@@ -88,7 +88,7 @@ function Footer() {
         />
       </div>
       <div className="bg-black text-white flex justify-center items-center text-lg py-5">
-        <h4>&#169;2024 by <a className="border-2 border-white px-4 ml-2 py-1 hover:shadow-md  hover:shadow-white " href="https://anujchhikara.vercel.app/">Anuj</a> </h4>
+        <h4> Copyright © Anuj 2024 . All rights reserved.</h4>
       </div>
       <div className="h-5 "></div>
     </div>

@@ -41,6 +41,7 @@ body {
   color: white;
   font-weight: 600;
 }
+
 @media only screen and (max-width: 720px) {
   .bg {
     /* background-color: #e49393; */
@@ -80,8 +81,8 @@ select:focus {
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 8s linear infinite;
-  text-align: center;
+  animation: marquee 20s linear infinite;
+  text-align: end;
 }
 
 @keyframes marquee {
