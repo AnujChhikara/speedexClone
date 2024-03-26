@@ -13,6 +13,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "aos": "^3.0.0-beta.6",
+    "axios": "^1.6.8",
     "cloudinary-react": "^1.8.1",
     "hamburger-react": "^2.5.0",
     "imagekit": "^4.1.3",
