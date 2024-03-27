@@ -20,6 +20,7 @@ import Checkout from "./Pages/Checkout";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
 import RegisterUser from "./Pages/user/registerUser";
+import LoginUser from "./Pages/user/login";
 
 
 
@@ -42,6 +43,8 @@ function App() {
         <Route path="*" element={<PageNotFound />} />
         {/* user Routes */}
         <Route path="/register" element={<RegisterUser/>} />
+        <Route path="/login" element={<LoginUser/>} />
+        
 
         <Route path="/single-wall" element={<SingleWall />} />
         <Route path="/hot-n-cold" element={<DoubleWall />} />

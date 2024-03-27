@@ -1,7 +1,10 @@
-import axios from 'axios'
-import React from 'react'
+
+import React, { useState } from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function RegisterUser() {
+  const [errorMsg, setErrorMessage] = useState('')
+  const navigate = useNavigate()
 
     const handleFormSubmittion = async (event) =>{
         const selectElement = document.getElementById('gender');
@@ -20,7 +23,8 @@ function RegisterUser() {
     gender
 
   }
-
+  try {
+   
   const response = await fetch('http://localhost:8000/api/v1/users/register',{
     method:"POST",
     headers:{
@@ -29,21 +33,43 @@ function RegisterUser() {
     body: JSON.stringify(userData)
   })
 
-  
-  console.log(response.status)
 
-    }
+  if(response.ok){
+    
+    const res_data = await response.json()
+    console.log(res_data)
+    navigate('/login')
+    
+  } else{
+    const errorMessage = await response.json()
+    setErrorMessage(errorMessage.msg)
+    
+
+  }
+    
+  } catch (error) {
+    console.log(error)
+    
+  }
+
+}
+
+
   return (
-    <div className='w-screen text-black mt-40 mx-20 h-screen'>
-       <section className="bg-gray-50 dark:bg-gray-900">
-  <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <div className='mt-40'>
+
+       <section className="">
+  <div className="flex flex-row-reverse  bg-zinc-800 mx-20 rounded-xl px-4 py-8 items-center justify-around ">
       
-      <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
-          <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
+      <div className=" w-[450px]  rounded-lg shadow-zinc-600 shadow-lg  md:mt-0 sm:max-w-md xl:p-0 ">
+          <div className=" space-y-4 p-4">
               <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
                   Create an account
               </h1>
-              <form className="space-y-4 md:space-y-6" onSubmit={handleFormSubmittion}>
+           {
+            errorMsg? <p className='text-red-400'>{errorMsg}</p>: <></>
+           }
+              <form className="space-y-4 " onSubmit={handleFormSubmittion}>
               <div>
                       <label htmlFor="fullName" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Full Name</label>
                       <input type="text" name="fullName" id="fullName" placeholder="xyz" className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""/>
@@ -65,14 +91,7 @@ function RegisterUser() {
                         
                         </select>
                  
-                  <div className="flex items-start">
-                      <div className="flex items-center h-5">
-                        <input id="terms" aria-describedby="terms" type="checkbox" className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800" required=""/>
-                      </div>
-                      <div className="ml-3 text-sm">
-                        <label htmlFor="terms" className="font-light text-gray-500 dark:text-gray-300">I accept the <a className="font-medium text-primary-600 hover:underline dark:text-primary-500" href="/">Terms and Conditions</a></label>
-                      </div>
-                  </div>
+                  
                   <button type="submit" className="w-full text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Create an account</button>
                   <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                       Already have an account? <a href="/login" className="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
@@ -80,9 +99,13 @@ function RegisterUser() {
               </form>
           </div>
       </div>
+      <div>
+        <img className='rounded-xl shadow-white shadow-2xl h-[480px]' src="https://imgs.search.brave.com/7VMURaXdr7NRDbNV5cG7ihrVFqG5NSQXjHttIi_Lbw8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jbXMu/Y2xvdWRpbmFyeS52/cHN2Yy5jb20vaW1h/Z2VzL2Nfc2NhbGUs/ZHByX2F1dG8sZl9h/dXRvLGZsX3Byb2dy/ZXNzaXZlLHdfNDUw/L2xlZ2FjeV9kYW0v/ZW4tdXMvUzAwMTcx/NDI5MS9NWFAyNjUx/Mi1GZWItUHJvZHVj/dC1TcG90bGlnaHQt/UFBBRy1UaWxlLURy/aW5rd2FyZS0wMDE.jpeg" alt='product'/>
+      </div>
   </div>
 </section>
-    </div>
+</div>
+   
   )
 }
 

@@ -23,8 +23,8 @@ function Home() {
           />
         </div>
         <div className="md:w-[500px] text-center flex-col justify-center  sm:w-44  md:font-bold  md:text-5xl sm:text-sm font-medium md:ml-60 flex relative sm:mt-2">
-        <div class="container md:block sm:hidden">
-  <div class="wrapper headiing-text">
+        <div className="container md:block sm:hidden">
+  <div className="wrapper headiing-text">
     <h1 className="heading"><p className="">Rapid Refresh</p> Speedex's Stainless Hydration Revolution</h1>
   </div>
   
