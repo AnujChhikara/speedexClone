@@ -2,9 +2,12 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 
+
+
 function RegisterUser() {
   const [errorMsg, setErrorMessage] = useState('')
   const navigate = useNavigate()
+ 
 
     const handleFormSubmittion = async (event) =>{
         const selectElement = document.getElementById('gender');

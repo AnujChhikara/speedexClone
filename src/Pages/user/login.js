@@ -1,9 +1,13 @@
 import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
+import { userActions } from '../../Store/userSlice'
+import { useDispatch } from 'react-redux'
+
 
 function LoginUser() {
     const [errorMsg, setErrorMessage] = useState('')
     const navigate = useNavigate()
+    const dispatch =  useDispatch()
   
       const handleFormSubmittion = async (event) =>{
           
@@ -32,9 +36,21 @@ function LoginUser() {
   
   
     if(response.ok){
-      
       const res_data = await response.json()
-      console.log(res_data.data)
+      const userData = res_data.data
+      console.log(userData)
+
+      dispatch(userActions.updateUser({
+        fullName:userData.fullName,
+        email:userData.email,
+        gender:userData.gender,
+        avatar:'https://imgs.search.brave.com/LbRkMxCR8e5-YGmT_QKoFdQQacf4jDiiSg1FWtu0aHs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mcmVl/YWlhdmF0YXJnZW5l/cmF0b3IucHJvL3dw/LWNvbnRlbnQvdXBs/b2Fkcy8yMDIzLzAz/L2FpLWdlbmVyYXRl/ZC1nY2UzNTM0MDE2/XzE5MjAtMTAyNHgx/MDI0LmpwZw'
+
+      }));
+     
+      
+      
+      
       navigate('/')
       
     } else{

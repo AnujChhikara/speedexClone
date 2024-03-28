@@ -21,13 +21,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useSelector } from "react-redux";
 import RegisterUser from "./Pages/user/registerUser";
 import LoginUser from "./Pages/user/login";
-
+import Profile from "./Pages/UtilsPage/userProfile";
 
 
 
 function App() {
   
   const cartItems =  useSelector((state) => state.cart.items)
+  const user =  useSelector((state) => state.user)
+  let userLoggedIn = false
+  if(user){
+    userLoggedIn= true
+  }
   let isSecure = false
   if(cartItems.length > 0) {
     isSecure = true
@@ -44,6 +49,11 @@ function App() {
         {/* user Routes */}
         <Route path="/register" element={<RegisterUser/>} />
         <Route path="/login" element={<LoginUser/>} />
+        <Route path="/profile" element={userLoggedIn ? (
+          <Profile/>
+        ) : (
+          <LoginUser/>
+        )}/>
         
 
         <Route path="/single-wall" element={<SingleWall />} />
