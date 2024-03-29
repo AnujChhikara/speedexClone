@@ -9,9 +9,9 @@ function Profile() {
         <div className='flex flex-col justify-center items-center shadow-lg shadow-gray-500 p-4'>
     <img className="w-40 rounded-lg" src={user.avatar} alt="User Avatar" />
     <div className="px-6 py-4">
-      <div className="font-bold text-xl mb-2">{user.fullName}</div>
-      <p className="text-gray-700 text-base mb-2">Email:- {user.email}</p>
-      <p className="text-gray-700 text-base mb-2">Gender: {user.gender}</p>
+      <div className="font-bold flex space-x-2 text-xl mb-2"><h3 className='text-lg font-semibold'>Name:</h3><p>{user.fullName}</p></div>
+      <div className="font-bold flex space-x-2 text-xl mb-2"><h3 className='text-lg font-semibold'>Email:</h3><p>{user.email}</p></div>
+      <div className="font-bold flex space-x-2 text-xl mb-2"><h3 className='text-lg font-semibold'>Gender:</h3><p>{user.gender}</p></div>
     </div>
   </div></div>
   )
